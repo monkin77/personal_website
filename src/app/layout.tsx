@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Head from "next/head";
 import { Box, Container } from "@chakra-ui/react";
+import Navbar from './components/navbar';
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -40,7 +41,9 @@ export default function RootLayout({
             <title>João Mesquita - Homepage</title>
           </Head>
 
-          <Container maxW="container.md" pt={14}>
+          <Navbar />
+
+          <Container maxW="container.md" mt={60}>
             {children}
           </Container>
         </Box>
