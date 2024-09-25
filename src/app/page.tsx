@@ -1,21 +1,12 @@
-import { Box, Container, Heading } from "@chakra-ui/react";
+import Image from "next/image";
+import Hero from "./components/Hero";
 
 export default function Home() {
   return (
-    <Container>
-        <Box borderRadius="lg" bg="red" p={3} mb={6} textAlign="center">
-            {"Hello, welcome to my personal website!"}
-        </Box>
-
-        <Box display={{md: 'flex'}}>
-            <Box flexGrow={1}>
-                <Heading as="h2" variant="page-title">
-                    {"João Mesquita"}
-                </Heading>
-                
-                <p>{"Computer Engineer / Researcher / Tech Enthusiast"}</p>
-            </Box>
-        </Box>
-    </Container>
+    <main className="relative bg-background flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
+        <div className="max-w-7xl w-full">
+            <Hero />
+        </div>
+    </main>
   );
 }
