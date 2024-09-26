@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Grid from "./components/Grid";
 import Hero from "./components/Hero";
 import { FloatingNav } from "./components/ui/FloatingNav";
 import { FaHome } from "react-icons/fa";
@@ -22,6 +22,8 @@ export default function Home() {
                 <FloatingNav navItems={navItems} />
 
                 <Hero />
+
+                <Grid />
             </div>
         </main>
     );
