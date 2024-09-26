@@ -1,6 +1,8 @@
 import React from "react";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
+import MagicButton from "./ui/MagicButton";
+import { FaLocationArrow } from "react-icons/fa";
 
 const Hero = () => {
     return (
@@ -39,11 +41,19 @@ const Hero = () => {
                         words="Welcome to João Mesquita's (Monkin) Personal Website :)"
                         duration={0.5}
                         colorShiftIdx={5}
+                        filter={true}
                     />
 
                     <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
                         {"Computer Engineer | Researcher | Passionate Learner"}
                     </p>
+
+                    <a>
+                        <MagicButton title="Show my Work"
+                        icon={<FaLocationArrow />}
+                        position="right"
+                        />
+                    </a>
                 </div>
             </div>
         </div>
