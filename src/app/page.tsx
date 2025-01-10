@@ -6,11 +6,12 @@ import { FloatingNav } from "./components/ui/FloatingNav";
 import { navItems } from "./data";
 import Experience from "./components/Experience";
 import Approach from "./components/Approach";
+import Footer from "./components/Footer";
 
 export default function Home() {
     return (
         <main className="relative bg-background flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
-            <div className="max-w-7xl w-full">
+            <div className="max-w-7xl w-full mb-10">
                 <FloatingNav navItems={navItems} />
 
                 <Hero />
@@ -24,6 +25,8 @@ export default function Home() {
                 <Experience />
 
                 <Approach />
+
+                <Footer />
             </div>
         </main>
     );
