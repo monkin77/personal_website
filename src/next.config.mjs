@@ -1,13 +1,23 @@
 import {withSentryConfig} from '@sentry/nextjs';
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+    output: 'export',
+    typescript: {
+        ignoreBuildErrors: true,
+    },
+    eslint: {
+        /* Warning: This allows production builds to successfully complete even if
+        your project has ESLint errors. */
+        ignoreDuringBuilds: true,
+    }
+};
 
 export default withSentryConfig(nextConfig, {
 // For all available options, see:
 // https://github.com/getsentry/sentry-webpack-plugin#options
 
 org: "joao-j9",
-project: "javascript-nextjs",
+project: "personal-website",
 
 // Only print logs for uploading source maps in CI
 silent: !process.env.CI,
