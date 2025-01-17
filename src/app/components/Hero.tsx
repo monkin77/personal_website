@@ -6,7 +6,7 @@ import { FaLocationArrow } from "react-icons/fa";
 
 const Hero = () => {
     return (
-        <div className="pb-20 pt-28">
+        <div className="pt-12 pb-12 md:pb-20 md:pt-24">
             <div>
                 <Spotlight
                     className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen"
@@ -29,8 +29,8 @@ const Hero = () => {
                 <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
             </div>
 
-            <div className="flex justify-center relative my-20 z-10 flex-col md:flex-row">
-                <div className="flex flex-col items-center justify-center mb-5 md:mb-0">
+            <div className="flex justify-center relative mt-20 mb-5 md:mb-10 z-10 flex-col md:flex-row">
+                <div className="flex flex-col items-center justify-center">
                     <img
                         src="avatars/monkin_avatar_firefly.jpg"
                         alt="Monkin's Avatar"
@@ -39,9 +39,9 @@ const Hero = () => {
                 </div>
 
                 <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60] flex flex-col items-center justify-center">
-                    <h2 className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
+                    {/* <h2 className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
                         Dynamic Web Magic with Next.js
-                    </h2>
+                    </h2> */}
 
                     <TextGenerateEffect
                         className="text-center"
