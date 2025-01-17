@@ -1,7 +1,10 @@
 import {withSentryConfig} from '@sentry/nextjs';
+
+const isDev = process.env.NODE_ENV === 'development' || false;
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    output: 'export',
+    output: 'export', // 'standalone',
     typescript: {
         ignoreBuildErrors: true,
     },
@@ -9,6 +12,9 @@ const nextConfig = {
         /* Warning: This allows production builds to successfully complete even if
         your project has ESLint errors. */
         ignoreDuringBuilds: true,
+    },
+    images: {
+        unoptimized: isDev,  // Disables image optimization if True
     }
 };
 

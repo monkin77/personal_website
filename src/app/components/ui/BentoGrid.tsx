@@ -11,6 +11,8 @@ import { IoCopyOutline } from "react-icons/io5";
 import confettiAnimData from "../../data/confetti.json";
 import compEngAnimData from "../../data/anim/computer_engineer_anim2.json";
 import { aboutGridItems as gridItems } from "@/app/data";
+import { LinkPreview } from "./LinkPreview";
+import Link from "next/link";
 
 const animationList = [compEngAnimData, confettiAnimData];
 
@@ -62,7 +64,7 @@ export const BentoGrid = ({ className }: { className?: string }) => {
         >
             {/* Grid Item 1 */}
             <BentoGridItemWrapper
-                className="lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60-vh]"
+                className="lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60-vh] overflow-visible"
                 innerClassName="relative"
             >
                 <div className="relative h-full">
@@ -90,7 +92,18 @@ export const BentoGrid = ({ className }: { className?: string }) => {
                     {/* Main Grid Item Content (Title and so on)*/}
                     <div className="group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-40 flex flex-col px-5 p-5 lg:p-10 text-center">
                         <div className="font-sans font-bold text-lg lg:text-3xl z-10 w-full">
-                            {gridItems[0].title}
+                            {gridItems[0].title}{" "}
+                            {/* Do I need to wrap it with a Link from NextJS? */}
+                            {/* <Link href="/resume"> */}
+                            <LinkPreview
+                                url="/resume"
+                                imageSrc="resume_preview.png"
+                                isStatic
+                                className=""
+                            >
+                                <span className="text-purple">Extended Resume</span>
+                            </LinkPreview>
+                            {/* </Link> */}
                         </div>
                     </div>
                 </div>
@@ -199,8 +212,10 @@ export const BentoGrid = ({ className }: { className?: string }) => {
                     )}
                 </div>
 
-                <div className="group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-40 flex flex-col px-5 p-5
-                    lg:p-10 justify-center md:justify-start lg:justify-center">
+                <div
+                    className="group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-40 flex flex-col px-5 p-5
+                    lg:p-10 justify-center md:justify-start lg:justify-center"
+                >
                     <div className="font-sans font-extralight text-[#c1c2d3] text-sm md:text-xs lg:text-base z-10">
                         {gridItems[4].description}
                     </div>
@@ -253,4 +268,3 @@ export const BentoGrid = ({ className }: { className?: string }) => {
         </div>
     );
 };
-

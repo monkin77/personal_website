@@ -24,7 +24,7 @@ export const aboutGridItems: {
 }[] = [
     {
         id: 1,
-        title: "Take a look at my Extended Resume", // who takes interest in various scientific fields.",
+        title: "Take a look at my", // who takes interest in various scientific fields.",
         description: "",
         className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60-vh]",
         imgClassName: "",
