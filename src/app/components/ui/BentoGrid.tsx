@@ -6,9 +6,12 @@ import { GridGlobe } from "./Globe/GridGlobe";
 import { leftTechStack, rightTechStack } from "@/app/data";
 import Lottie from "react-lottie";
 import { useState } from "react";
-import confettiAnimData from "../../data/confetti.json";
 import MagicButton from "./MagicButton";
 import { IoCopyOutline } from "react-icons/io5";
+import confettiAnimData from "../../data/confetti.json";
+import compEngAnimData from "../../data/anim/computer_engineer_anim2.json";
+
+const animationList = [compEngAnimData, confettiAnimData];
 
 export const BentoGrid = ({
     className,
@@ -40,6 +43,7 @@ export const BentoGridItem = ({
     icon,
     id,
     img,
+    animIdx,
     imgClassName,
     titleClassName,
     spareImg,
@@ -51,10 +55,12 @@ export const BentoGridItem = ({
     icon?: React.ReactNode;
     id: number;
     img?: string;
+    animIdx?: number;
     imgClassName?: string;
     titleClassName?: string;
     spareImg?: string;
 }) => {
+
     const [copied, setCopied] = useState(false);
 
     const handleCopy = () => {
@@ -88,6 +94,23 @@ export const BentoGridItem = ({
                             )}
                         />
                     )}
+
+                    {(animIdx != null) && [1].includes(id) && (
+                        <div className="w-full h-full">
+                            <Lottie
+                                options={{
+                                    loop: true,
+                                    autoplay: true,
+                                    animationData: animationList[animIdx],
+                                    rendererSettings: {
+                                        /* preserveAspectRatio:
+                                            "xMidYMid slice", */
+                                    },
+                                }}
+                                speed={0.75}
+                            /> 
+                        </div>
+                    )}
                 </div>
 
                 <div
@@ -119,7 +142,7 @@ export const BentoGridItem = ({
                         {description}
                     </div>
 
-                    <div className="font-sans font-bold text-lg lg:text-3xl max-w-96 z-10">
+                    <div className="font-sans font-bold text-lg lg:text-3xl z-10 w-full">
                         {title}
                     </div>
 

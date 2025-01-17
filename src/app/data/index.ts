@@ -19,16 +19,18 @@ export const aboutGridItems: {
     imgClassName: string;
     titleClassName: string;
     img: string;
+    animIdx?: number;
     spareImg: string;
 }[] = [
     {
         id: 1,
-        title: "I'm an Informatics and Computing Engineer with a passion for ",
+        title: "Take a look at my Extended Resume", // who takes interest in various scientific fields.",
         description: "",
         className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60-vh]",
-        imgClassName: "w-full h-full",
-        titleClassName: "justify-end",
-        img: "/b1.svg",
+        imgClassName: "",
+        titleClassName: "text-center",
+        img: "",// "/b1.svg",
+        animIdx: 0,
         spareImg: "",
     },
     {
@@ -80,6 +82,7 @@ export const aboutGridItems: {
         imgClassName: "",
         titleClassName: "justify-center md:max-w-full max-w-60 text-center",
         img: "",
+        animIdx: 1,
         spareImg: "",
     },
 ];

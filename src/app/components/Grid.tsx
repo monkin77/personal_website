@@ -14,6 +14,7 @@ function Grid() {
                         description={item.description}
                         className={item.className}
                         img={item.img}
+                        animIdx={item.animIdx}
                         imgClassName={item.imgClassName}
                         titleClassName={item.titleClassName}
                         spareImg={item.spareImg}
