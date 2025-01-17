@@ -82,7 +82,7 @@ export const BentoGridItem = ({
                     "linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(59, 59, 68, 1) 26%, rgba(93, 108, 111, 1) 100%)",
             }}
         >
-            <div className={`${id === 6 ? "flex justify-center" : ""} h-full`}>
+            <div className={`${id === 6 ? "flex justify-center" : ""} ${id === 1 ? "relative" : ""} h-full`}>
                 <div className="w-full h-full absolute">
                     {img && (
                         <img
@@ -96,7 +96,7 @@ export const BentoGridItem = ({
                     )}
 
                     {(animIdx != null) && [1].includes(id) && (
-                        <div className="w-full h-full">
+                        <div className="bottom-1 h-[95%]">
                             <Lottie
                                 options={{
                                     loop: true,
