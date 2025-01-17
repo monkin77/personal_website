@@ -1,8 +1,12 @@
+"use client"
+
 import React from "react";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 import MagicButton from "./ui/MagicButton";
 import { FaLocationArrow } from "react-icons/fa";
+import Lottie from "react-lottie";
+import compEngAnim from '../data/computer_engineer_anim.json';
 
 const Hero = () => {
     return (
@@ -29,6 +33,21 @@ const Hero = () => {
                 <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
             </div>
 
+            {/* <div className="w-20 h-20">
+                <Lottie
+                    options={{
+                        loop: true,
+                        autoplay: true,
+                        animationData: compEngAnim,
+                        rendererSettings: {
+                            preserveAspectRatio:
+                                "xMidYMid slice",
+                        },
+                    }}
+                    speed={0.1}
+                />
+            </div> MOVE THIS TO a separate file */}
+
             <div className="flex justify-center relative mt-20 mb-5 md:mb-10 z-10 flex-col md:flex-row">
                 <div className="flex flex-col items-center justify-center">
                     <img
@@ -48,7 +67,7 @@ const Hero = () => {
                         textClassName="md:text-3xl lg:text-4xl"
                         words="Welcome to João Mesquita's (Monkin) Personal Website :)"
                         duration={0.5}
-                        colorShiftIdx={5}
+                        colorShiftIdx={4}
                         filter={true}
                     />
 

@@ -23,7 +23,7 @@ export const aboutGridItems: {
 }[] = [
     {
         id: 1,
-        title: "I prioritize client collaboration, fostering open communication ",
+        title: "I'm an Informatics and Computing Engineer with a passion for ",
         description: "",
         className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60-vh]",
         imgClassName: "w-full h-full",
