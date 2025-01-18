@@ -71,9 +71,9 @@ const Hero = () => {
                         {"Computer Engineer | Researcher | Passionate Learner"}
                     </p>
 
-                    <a>
+                    <a href="#projects">
                         <MagicButton
-                            title="Show my Work"
+                            title="Show my Projects"
                             icon={<FaLocationArrow />}
                             position="right"
                         />
