@@ -36,8 +36,8 @@ export const aboutGridItems: {
     },
     {
         id: 3,
-        title: "My tech stack",
-        description: "I constantly try to improve",
+        title: "AI & Neuroscience",
+        description: "Bridging the gap between",
         img: "",
         spareImg: "",
     },

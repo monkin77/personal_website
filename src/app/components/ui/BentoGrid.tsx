@@ -10,11 +10,12 @@ import MagicButton from "./MagicButton";
 import { IoCopyOutline } from "react-icons/io5";
 import confettiAnimData from "../../data/confetti.json";
 import compEngAnimData from "../../data/anim/computer_engineer_anim2.json";
+import brainAnimData from "../../data/anim/brain.json";
 import { aboutGridItems as gridItems } from "@/app/data";
 import { LinkPreview } from "./LinkPreview";
-import { useRouter } from 'next/navigation'
+import { useRouter } from "next/navigation";
 
-const animationList = [compEngAnimData, confettiAnimData];
+const animationList = [compEngAnimData, confettiAnimData, brainAnimData];
 
 const contactEmail = "test@gmail.com";
 
@@ -57,8 +58,8 @@ export const BentoGrid = ({ className }: { className?: string }) => {
 
     const handleTravelLog = () => {
         // Redirect to the travel log page
-        router.push('/travels');
-    }
+        router.push("/travels");
+    };
 
     return (
         <div
@@ -143,32 +144,19 @@ export const BentoGrid = ({ className }: { className?: string }) => {
                         {gridItems[2].title}
                     </div>
 
-                    <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2">
-                        <div className="flex flex-col gap-3 lg:gap-8">
-                            {leftTechStack.map((item, idx) => (
-                                <span
-                                    key={idx}
-                                    className="py-2 lg:py-4 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132e]"
-                                >
-                                    {item}
-                                </span>
-                            ))}
-
-                            <span className="py-4 px-3 rounded-lg text-center bg-[#10132e]" />
-                        </div>
-
-                        <div className="flex flex-col gap-3 lg:gap-8">
-                            <span className="py-4 px-3 rounded-lg text-center bg-[#10132e]" />
-
-                            {rightTechStack.map((item, idx) => (
-                                <span
-                                    key={idx}
-                                    className="py-2 lg:py-4 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132e]"
-                                >
-                                    {item}
-                                </span>
-                            ))}
-                        </div>
+                    <div className="flex w-fit h-full scale-125 absolute right-4 md:right-8">
+                        <Lottie
+                            options={{
+                                loop: true,
+                                autoplay: true,
+                                animationData: brainAnimData,
+                                rendererSettings: {
+                                    /* preserveAspectRatio:
+                                            "xMidYMid slice", */
+                                },
+                            }}
+                            speed={0.5}
+                        />
                     </div>
                 </div>
             </BentoGridItemWrapper>
