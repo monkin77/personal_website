@@ -12,7 +12,7 @@ import confettiAnimData from "../../data/confetti.json";
 import compEngAnimData from "../../data/anim/computer_engineer_anim2.json";
 import { aboutGridItems as gridItems } from "@/app/data";
 import { LinkPreview } from "./LinkPreview";
-import Link from "next/link";
+import { useRouter } from 'next/navigation'
 
 const animationList = [compEngAnimData, confettiAnimData];
 
@@ -46,6 +46,7 @@ const BentoGridItemWrapper = ({
 
 export const BentoGrid = ({ className }: { className?: string }) => {
     const [copied, setCopied] = useState(false);
+    const router = useRouter();
 
     const handleCopy = () => {
         // TODO: Get the email from .env file
@@ -53,6 +54,11 @@ export const BentoGrid = ({ className }: { className?: string }) => {
 
         setCopied(true);
     };
+
+    const handleTravelLog = () => {
+        // Redirect to the travel log page
+        router.push('/travels');
+    }
 
     return (
         <div
@@ -101,7 +107,9 @@ export const BentoGrid = ({ className }: { className?: string }) => {
                                 isStatic
                                 className=""
                             >
-                                <span className="text-purple">Extended Resume</span>
+                                <span className="text-purple">
+                                    Extended Resume
+                                </span>
                             </LinkPreview>
                             {/* </Link> */}
                         </div>
@@ -111,8 +119,12 @@ export const BentoGrid = ({ className }: { className?: string }) => {
 
             {/* Grid Item 2 */}
             <BentoGridItemWrapper className="lg:col-span-2 md:col-span-3 md:row-span-2">
-                <div className="group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-40 flex flex-col px-5 p-5 lg:p-10 justify-start">
-                    <div className="font-sans font-bold text-lg lg:text-3xl z-10 w-full">
+                <div
+                    className="group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-40 flex flex-col px-5 p-5 lg:p-10 justify-start 
+                        cursor-pointer hover:scale-105 hover:shadow-md hover:opacity-85 focus:ring-2"
+                    onClick={handleTravelLog}
+                >
+                    <div className="font-sans font-bold text-lg lg:text-3xl z-10 w-full text-center">
                         {gridItems[1].title}
                     </div>
 
