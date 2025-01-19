@@ -51,8 +51,8 @@ export const aboutGridItems: {
 
     {
         id: 5,
-        title: "Currently building a JS Animation library",
-        description: "The Inside Scoop",
+        title: "Specializing in Comp. Neuroscience & Spiking Neural Networks.",
+        description: "What have I been up to lately?",
         img: "/b5.svg",
         spareImg: "/grid.svg",
     },
@@ -147,33 +147,33 @@ export const testimonials = [
 export const companies = [
     {
         id: 1,
-        name: "cloudinary",
-        img: "/cloud.svg",
-        nameImg: "/cloudName.svg",
+        name: "Huawei",
+        img: "/companies/huawei.png",
+        // nameImg: "/cloudName.svg",
     },
     {
         id: 2,
-        name: "appwrite",
-        img: "/app.svg",
-        nameImg: "/appName.svg",
+        name: "OERN",
+        img: "/companies/oern.webp",
+        // nameImg: "/appName.svg",
     },
     {
         id: 3,
-        name: "HOSTINGER",
-        img: "/host.svg",
-        nameImg: "/hostName.svg",
+        name: "CMU Portugal",
+        img: "/companies/cmu_2.jpg",
+        // nameImg: "/hostName.svg",
     },
     {
         id: 4,
-        name: "stream",
-        img: "/s.svg",
-        nameImg: "/streamName.svg",
+        name: "ESA",
+        img: "/companies/esa.png",
+        // nameImg: "/streamName.svg",
     },
     {
         id: 5,
-        name: "docker.",
-        img: "/dock.svg",
-        nameImg: "/dockerName.svg",
+        name: "CNES",
+        img: "/companies/cnes.png",
+        // nameImg: "/dockerName.svg",
     },
 ];
 

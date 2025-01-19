@@ -1,12 +1,12 @@
 import Grid from "./components/Grid";
 import Hero from "./components/Hero";
 import RecentProjects from "./components/RecentProjects";
-import Clients from "./components/Clients";
 import { FloatingNav } from "./components/ui/FloatingNav";
 import { navItems } from "./data";
 import Experience from "./components/Experience";
 import Approach from "./components/Approach";
 import Footer from "./components/Footer";
+import Awards from "./components/Awards";
 
 export default function Home() {
     return (
@@ -20,7 +20,7 @@ export default function Home() {
 
                 <RecentProjects />
 
-                <Clients />
+                <Awards />
 
                 <Experience />
 
