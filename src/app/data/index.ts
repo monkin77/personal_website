@@ -116,21 +116,29 @@ export const projects = [
     },
 ];
 
-export const testimonials = [
+export const testimonials: {quote: string, name: string, title: string, logo?: string}[] = [
     {
-        quote: "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-        name: "Michael Johnson",
-        title: "Director of AlphaStream Technologies",
+        quote: "Awarded a merit scholarship by Huawei for academic excellence and outstanding performance. With less than 1% selection rate, this scholarship is part of the Huawei \
+        Scholarship Program, which aims to support students in their academic pursuits. I am grateful for the recognition and support from the company.",
+        name: "Huawei",
+        title: "Merit Scholarship",
+        logo: "/companies/huawei_2.png"
     },
     {
-        quote: "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-        name: "Michael Johnson",
-        title: "Director of AlphaStream Technologies",
+        quote: "Carnegie Mellon Portugal, in a partnership with CMU, sponsored my Research Project at Carnegie Mellon University in Pittsburgh, USA. This opportunity allowed me \
+        to work with world-class computational neuroscientists and gain new perspectives on my research and the future of the field. The CMU Portugal Visiting Researcher Scholarship \
+        covered my university fees and living expenses during my stay in the US and I am grateful for the support from the institution.",
+        name: "Carnegie Mellon Portugal",
+        title: "Research Scholarship",
+        logo: "/companies/cmu_2.jpg"
     },
     {
-        quote: "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-        name: "Michael Johnson",
-        title: "Director of AlphaStream Technologies",
+        quote: "ActInSpace is an international innovation contest initiated by the French Space Agency (CNES) and the European Space Agency (ESA). I was part of the winning team in \
+        the Portuguese edition of the contest, where we ideated and explored the potential of a space-based solution for a real-world problem. The victory granted us the opportunity \
+        to represent Portugal in the international final in Toulouse, France, where we competed and connected with teams from around the world!",
+        name: "ActInSpace, ESA & CNES",
+        title: "ActInSpace Portugal 2022 Winner",
+        logo: "/companies/actInSpace.png"
     },
     {
         quote: "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
@@ -144,7 +152,7 @@ export const testimonials = [
     },
 ];
 
-export const companies = [
+export const companies: {id: number, name: string, img: string, nameImg?: string}[] = [
     {
         id: 1,
         name: "Huawei",

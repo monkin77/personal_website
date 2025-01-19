@@ -15,7 +15,7 @@ const Awards = () => {
                 <InfiniteMovingCards
                     items={testimonials}
                     direction="right"
-                    speed="normal"
+                    speed="fast"
                 />
 
                 <div className="flex flex-wrap items-center justify-center gap-4 md:gap-16 max-lg:mt-10">
