@@ -3,6 +3,7 @@ import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 import MagicButton from "./ui/MagicButton";
 import { FaLocationArrow } from "react-icons/fa";
+import AvatarSlider from "./AvatarSlider";
 
 const Hero = () => {
     return (
@@ -29,28 +30,15 @@ const Hero = () => {
                 <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
             </div>
 
-            {/* <div className="w-20 h-20">
-                <Lottie
-                    options={{
-                        loop: true,
-                        autoplay: true,
-                        animationData: compEngAnim,
-                        rendererSettings: {
-                            preserveAspectRatio:
-                                "xMidYMid slice",
-                        },
-                    }}
-                    speed={0.1}
-                />
-            </div> MOVE THIS TO a separate file */}
-
             <div className="flex justify-center relative mt-20 mb-5 md:mb-10 z-10 flex-col md:flex-row">
-                <div className="flex flex-col items-center justify-center">
-                    <img
+                <div className="flex flex-col items-center justify-center relative h-full">
+                    <AvatarSlider />
+
+                    {/* <img
                         src="avatars/monkin_avatar_firefly.jpg"
                         alt="Monkin's Avatar"
                         className="w-32 md:w-64 aspect-square rounded-full"
-                    />
+                    /> */}
                 </div>
 
                 <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60] flex flex-col items-center justify-center">
