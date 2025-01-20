@@ -80,29 +80,6 @@ export const projects = [
     },
     {
         id: 2,
-        title: "Java Compiler",
-        des: "A Compiler for a subset of Java (Java--), going through all compilation stages: Lexical, Syntatic, and Semantic Analysis,\
-         Optimizations and Code Generation.",
-        img: "/projects/java_compiler_code.png",
-        iconLists: [
-            "/technologies/java.svg",
-            "/technologies/gradle.svg",
-            "/technologies/github-white.svg",
-        ],
-        link: "https://github.com/monkin77/feup-comp",
-        linkText: "Check Repository",
-    },
-    {
-        id: 3,
-        title: "Monkin's Habitat - Personal Website",
-        des: "A Personal Portfolio Website, introducing myself to the world and showcasing my projects, experiences, and unique traits :)",
-        img: "/projects/portfolio.png",
-        iconLists: ["/technologies/next.svg", "/technologies/typescript.svg", "/technologies/tailwind.svg", "/technologies/threejs.svg", "/technologies/vercel.svg"],
-        link: "/",
-        linkText: "Check Live Website",
-    },
-    {
-        id: 4,
         title: "SNNs to Detect Patterns of Neuronal Activity",
         des: "Exploring the Detection of relevant patterns of Neuronal Activity using Neuromorphic Hardware and Spiking NNs.",
         img: "/projects/intel-loihi.jpg",
@@ -117,6 +94,30 @@ export const projects = [
         link: "https://github.com/monkin77/thesis-lava/tree/main",
         linkText: "Check Repository",
     },
+    {
+        id: 3,
+        title: "Monkin's Habitat - Personal Website",
+        des: "A Personal Portfolio Website, introducing myself to the world and showcasing my projects, experiences, and unique traits :)",
+        img: "/projects/portfolio.png",
+        iconLists: ["/technologies/next.svg", "/technologies/typescript.svg", "/technologies/tailwind.svg", "/technologies/threejs.svg", "/technologies/vercel.svg"],
+        link: "/",
+        linkText: "Check Live Website",
+    },
+    {
+        id: 4,
+        title: "Java Compiler",
+        des: "A Compiler for a subset of Java (Java--), going through all compilation stages: Lexical, Syntatic, and Semantic Analysis,\
+         Optimizations and Code Generation.",
+        img: "/projects/java_compiler_code.png",
+        iconLists: [
+            "/technologies/java.svg",
+            "/technologies/gradle.svg",
+            "/technologies/github-white.svg",
+        ],
+        link: "https://github.com/monkin77/feup-comp",
+        linkText: "Check Repository",
+    },
+   
 ];
 
 export const testimonials: {quote: string, name: string, title: string, logo?: string}[] = [

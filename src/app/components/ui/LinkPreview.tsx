@@ -86,6 +86,7 @@ export const LinkPreview = ({
             layout={layout}
             priority={true}
             alt="hidden image"
+            className="z-50"
           />
         </div>
       ) : null}

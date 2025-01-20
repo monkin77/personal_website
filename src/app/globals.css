@@ -83,6 +83,10 @@
     @apply font-bold text-4xl md:text-5xl text-center;
   }
 
+  .sub-heading {
+    @apply font-semibold text-2xl md:text-3xl text-center;
+  }
+
   .black-gradient {
     background: linear-gradient(90deg, #161a31 0%, #06091f 100%);
   }

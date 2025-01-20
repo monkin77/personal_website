@@ -95,7 +95,7 @@ export const BentoGrid = ({ className }: { className?: string }) => {
                                 isStatic
                                 className=""
                             >
-                                <span className="text-purple">
+                                <span className="text-purple underline">
                                     Extended Resume
                                 </span>
                             </LinkPreview>

@@ -2,6 +2,7 @@ import React from "react";
 import { projects } from "../data";
 import { PinContainer } from "./ui/3DPin/PinContainer";
 import { FaLocationArrow } from "react-icons/fa";
+import { LinkPreview } from "./ui/LinkPreview";
 
 function RecentProjects() {
     return (
@@ -11,7 +12,7 @@ function RecentProjects() {
                 <span className="text-purple">Recent Projects</span>
             </h1>
 
-            <div className="flex flex-wrap items-center justify-center p-4 gap-x-24 gap-y-8 mt-10">
+            <div className="flex flex-wrap items-center justify-center p-4 gap-x-24 gap-y-8 mt-10 z-20 relative">
                 {projects.map(
                     ({ id, title, des, img, iconLists, link, linkText, imgCite }, idx) => (
                         <div
@@ -49,7 +50,7 @@ function RecentProjects() {
                                         {iconLists.map((icon, iconIdx) => (
                                             <div
                                                 key={iconIdx}
-                                                className="border border-white/[0.2] rounded-full bg-black lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center"
+                                                className="border border-white/[0.2] rounded-full bg-black lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center z-10 relative"
                                                 style={{
                                                     transform: `translateX(-${
                                                         6 * iconIdx
@@ -59,7 +60,7 @@ function RecentProjects() {
                                                 <img
                                                     src={icon}
                                                     alt={icon}
-                                                    className="p-2"
+                                                    className="p-2 z-10 relative"
                                                 />
                                             </div>
                                         ))}
@@ -80,6 +81,22 @@ function RecentProjects() {
                     )
                 )}
             </div>
+
+            <h1 className="!leading-normal sub-heading z-50 relative mt-3 md:mt-6">
+                Visit my {" "}
+
+                <LinkPreview
+                    url="/resume"
+                    imageSrc="resume_preview.png"
+                    isStatic
+                >
+                    <span className="text-purple underline">
+                        Extended Resume
+                    </span>
+                </LinkPreview>
+
+                {" "}  for the Complete List!
+            </h1>
         </div>
     );
 }
