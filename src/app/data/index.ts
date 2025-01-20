@@ -6,7 +6,7 @@ export const navItems: {
     { name: "Home", link: "/" },
     { name: "About", link: "#about" },
     { name: "Projects", link: "#projects" },
-    // { name: "Testimonials", link: "#testimonials" },
+    { name: "Awards", link: "#awards" },
     { name: "Experience", link: "#experience" },
     { name: "Contact", link: "#contact" },
 ];
@@ -125,30 +125,35 @@ export const testimonials: {quote: string, name: string, title: string, logo?: s
         logo: "/companies/huawei_2.png"
     },
     {
-        quote: "Carnegie Mellon Portugal, in a partnership with CMU, sponsored my Research Project at Carnegie Mellon University in Pittsburgh, USA. This opportunity allowed me \
-        to work with world-class computational neuroscientists and gain new perspectives on my research and the future of the field. The CMU Portugal Visiting Researcher Scholarship \
-        covered my university fees and living expenses during my stay in the US and I am grateful for the support from the institution.",
+        quote: "Carnegie Mellon Portugal sponsored my Research Project at Carnegie Mellon University in Pittsburgh, USA. This opportunity allowed me \
+        to work with world-class computational neuroscientists and gain new perspectives on my research and the future of the field. The Research Scholarship \
+        covered my university fees and living expenses during my stay and I'm grateful for the support from the institution.",
         name: "Carnegie Mellon Portugal",
         title: "Research Scholarship",
         logo: "/companies/cmu_2.jpg"
     },
     {
-        quote: "ActInSpace is an international innovation contest initiated by the French Space Agency (CNES) and the European Space Agency (ESA). I was part of the winning team in \
-        the Portuguese edition of the contest, where we ideated and explored the potential of a space-based solution for a real-world problem. The victory granted us the opportunity \
-        to represent Portugal in the international final in Toulouse, France, where we competed and connected with teams from around the world!",
+        quote: "ActInSpace is an international innovation contest sponsored by the French Space Agency and the European Space Agency. I was part of the winning team in \
+        the Portuguese edition of the contest, where we ideated and explored the potential of a space-based solution for a real-world problem. The victory allowed us \
+        to represent Portugal in the international final in France, where we connected with teams around the world!",
         name: "ActInSpace, ESA & CNES",
         title: "ActInSpace Portugal 2022 Winner",
         logo: "/companies/actInSpace.png"
     },
     {
-        quote: "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-        name: "Michael Johnson",
-        title: "Director of AlphaStream Technologies",
+        quote: "OERN, the Engineer's Syndicate of Northern Portugal, recognized the relevance of my dissertation in the field of Computational Neuroscience and awarded me a \
+        Merit Grant. The participation involved presenting my work through a video presentation and a written report, fromo where 50 students were selected to receive the prize.",
+        name: "OERN - Ordem dos Engenheiros Região Norte",
+        title: "Merit Grant for Dissertation Work",
+        logo: "/companies/oern.webp"
     },
     {
-        quote: "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-        name: "Michael Johnson",
-        title: "Director of AlphaStream Technologies",
+        quote: "Pmate is a high-school level national mathematics competition hosted in Portugal, where students compete in a series of mathematical challenges. \
+        The purpose of the competition is to solve all the problems in the shortest time possible. Having participated multiple times, I was awarded the 2nd place \
+        in both 2017 and 2018 editions.",
+        name: "Pmate",
+        title: "Pmate 2017 & 2018 - 2nd Place",
+        logo: "/companies/pmate.png"
     },
 ];
 
