@@ -13,7 +13,7 @@ function RecentProjects() {
 
             <div className="flex flex-wrap items-center justify-center p-4 gap-x-24 gap-y-8 mt-10">
                 {projects.map(
-                    ({ id, title, des, img, iconLists, link, linkText }, idx) => (
+                    ({ id, title, des, img, iconLists, link, linkText, imgCite }, idx) => (
                         <div
                             key={idx}
                             className="sm:h-[41rem] h-[32rem] lg:min-h-[32.5rem] flex items-center justify-center sm:w-[570px] w-[80vw]"
@@ -32,6 +32,8 @@ function RecentProjects() {
                                         alt={title}
                                         className="absolute w-11/12 h-[90%] my-auto object-cover rounded-lg lg:rounded-xl"
                                     />
+
+                                    {imgCite && <p className="absolute top-[10%] right-[7%] opacity-60 text-[0.5rem] md:text-xs">{imgCite}</p>}
                                 </div>
 
                                 <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1">
