@@ -24,8 +24,6 @@ export default function Home() {
 
                 <Experience />
 
-                <Approach />
-
                 <Footer />
             </div>
         </main>
