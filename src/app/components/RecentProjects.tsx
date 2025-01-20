@@ -13,7 +13,7 @@ function RecentProjects() {
 
             <div className="flex flex-wrap items-center justify-center p-4 gap-x-24 gap-y-8 mt-10">
                 {projects.map(
-                    ({ id, title, des, img, iconLists, link }, idx) => (
+                    ({ id, title, des, img, iconLists, link, linkText }, idx) => (
                         <div
                             key={idx}
                             className="sm:h-[41rem] h-[32rem] lg:min-h-[32.5rem] flex items-center justify-center sm:w-[570px] w-[80vw]"
@@ -65,7 +65,7 @@ function RecentProjects() {
 
                                     <div className="flex flex-row justify-center items-center">
                                         <p className="flex lg:text-xl md:text-xs text-sm text-purple">
-                                            Check Live Site
+                                            {linkText}
                                         </p>
                                         <FaLocationArrow
                                             className="ms-3 "

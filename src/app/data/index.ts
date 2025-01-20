@@ -23,7 +23,7 @@ export const aboutGridItems: {
         id: 1,
         title: "Take a look at my", // who takes interest in various scientific fields.",
         description: "",
-        img: "",// "/b1.svg",
+        img: "",
         animIdx: 0,
         spareImg: "",
     },
@@ -71,32 +71,33 @@ export const rightTechStack = ["React.js", "Next.js", "Typescript", "Java"]; // 
 export const projects = [
     {
         id: 1,
-        title: "NI Jobs",
+        title: "NIJobs",
         des: "A platform for companies to advertise their job opportunities to University of Porto's students.",
         img: "/projects/nijobs.png",
         iconLists: ["/technologies/react.svg", "/technologies/typescript.svg", "/technologies/nodejs.svg", "/technologies/docker.svg", "/technologies/material-ui.svg"],
-        link: "https://github.com/adrianhajdin?tab=repositories",
+        link: "https://github.com/NIAEFEUP/nijobs-fe",
+        linkText: "Check Repository",
     },
     {
         id: 2,
-        title: "Yoom - Video Conferencing App",
-        des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
-        img: "/p2.svg",
+        title: "Java Compiler",
+        des: "A Compiler for a subset of Java (Java--), going through all compilation stages: Lexical, Syntatic, and Semantic Analysis,\
+         Optimizations and Code Generation.",
+        img: "/projects/java_compiler_code.png",
         iconLists: [
-            "/next.svg",
-            "/tail.svg",
-            "/ts.svg",
-            "/stream.svg",
-            "/c.svg",
+            "/technologies/java.svg",
+            "/technologies/gradle.svg",
+            "/technologies/github-white.svg",
         ],
-        link: "https://github.com/adrianhajdin/zoom-clone",
+        link: "https://github.com/monkin77/feup-comp",
+        linkText: "Check Repository",
     },
     {
         id: 3,
-        title: "AI Image SaaS - Canva Application",
-        des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
-        img: "/p3.svg",
-        iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
+        title: "Monkin's Habitat - Personal Website",
+        des: "A Personal Portfolio Website, introducing myself to the world and showcasing my projects, experiences, and unique traits :)",
+        img: "/projects/portfolio.png",
+        iconLists: ["/technologies/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
         link: "https://github.com/adrianhajdin/ai_saas_app",
     },
     {
@@ -185,7 +186,6 @@ export const companies: {id: number, name: string, img: string, nameImg?: string
         id: 5,
         name: "CNES",
         img: "/companies/cnes.png",
-        // nameImg: "/dockerName.svg",
     },
 ];
 
@@ -223,17 +223,17 @@ export const workExperience = [
 export const socialMedia = [
     {
         id: 1,
-        img: "/git.svg",
+        img: "/socials/github.svg",
         url: "https://github.com/monkin77",
     },
     {
         id: 2,
-        img: "/twit.svg",
+        img: "/socials/twitter.svg",
         url: "https://x.com/Monkinerin0",
     },
     {
         id: 3,
-        img: "/link.svg",
+        img: "/socials/linked-in.svg",
         url: "https://www.linkedin.com/in/joao-mesquita7/"
     },
 ];
