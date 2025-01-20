@@ -3,21 +3,16 @@
 import { cn } from "@/lib/utils";
 import { BackgroundGradientAnimation } from "./GradientBg";
 import { GridGlobe } from "./Globe/GridGlobe";
-import { leftTechStack, rightTechStack } from "@/app/data";
 import Lottie from "react-lottie";
-import { useState } from "react";
 import MagicButton from "./MagicButton";
-import { IoCopyOutline } from "react-icons/io5";
-import confettiAnimData from "../../data/confetti.json";
+import { IoNavigateOutline } from "react-icons/io5";
 import compEngAnimData from "../../data/anim/computer_engineer_anim2.json";
 import brainAnimData from "../../data/anim/brain.json";
 import { aboutGridItems as gridItems } from "@/app/data";
 import { LinkPreview } from "./LinkPreview";
 import { useRouter } from "next/navigation";
 
-const animationList = [compEngAnimData, confettiAnimData, brainAnimData];
-
-const contactEmail = "test@gmail.com";
+const animationList = [compEngAnimData, brainAnimData];
 
 const BentoGridItemWrapper = ({
     className,
@@ -46,15 +41,7 @@ const BentoGridItemWrapper = ({
 };
 
 export const BentoGrid = ({ className }: { className?: string }) => {
-    const [copied, setCopied] = useState(false);
     const router = useRouter();
-
-    const handleCopy = () => {
-        // TODO: Get the email from .env file
-        navigator.clipboard.writeText(contactEmail);
-
-        setCopied(true);
-    };
 
     const handleTravelLog = () => {
         // Redirect to the travel log page
@@ -241,27 +228,16 @@ export const BentoGrid = ({ className }: { className?: string }) => {
                         {gridItems[5].title}
                     </div>
 
-                    <div className="mt-5 relative">
-                        <div className={`absolute -bottom-5 right-0`}>
-                            <Lottie
-                                options={{
-                                    loop: copied,
-                                    autoplay: copied,
-                                    animationData: confettiAnimData,
-                                    rendererSettings: {
-                                        preserveAspectRatio: "xMidYMid slice",
-                                    },
-                                }}
+                    <div className="mt-5 relative h-full">
+                        <a href="#experience">
+                            <MagicButton
+                                title={"Go to Section"}
+                                icon={<IoNavigateOutline className="w-4 h-4 md:w-6 md:h-6" />}
+                                position="left"
+                                otherClasses="!bg-[#161a31]"
                             />
-                        </div>
-
-                        <MagicButton
-                            title={copied ? "Email copied!" : "Copy my email"}
-                            icon={<IoCopyOutline />}
-                            position="left"
-                            otherClasses="!bg-[#161a31]"
-                            onClick={handleCopy}
-                        />
+                        </a>
+                        
                     </div>
                 </div>
             </BentoGridItemWrapper>

@@ -58,10 +58,9 @@ export const aboutGridItems: {
     },
     {
         id: 6,
-        title: "Do you want to start a project together?",
+        title: "See my Previous Work Experiences",
         description: "",
         img: "",
-        animIdx: 1,
         spareImg: "",
     },
 ];
