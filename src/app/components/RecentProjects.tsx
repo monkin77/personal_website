@@ -8,7 +8,7 @@ function RecentProjects() {
         <div className="py-20" id="projects">
             <h1 className="heading">
                 A small selection of{" "}
-                <span className="text-purple">recent projects</span>
+                <span className="text-purple">Recent Projects</span>
             </h1>
 
             <div className="flex flex-wrap items-center justify-center p-4 gap-x-24 gap-y-8 mt-10">
@@ -20,7 +20,7 @@ function RecentProjects() {
                         >
                             <PinContainer title={link} href={link}>
                                 <div className="relative flex items-center justify-center sm:w-[570px] w-[80vw] overflow-hidden sm:h-[40vh] h-[30vh] mb-10">
-                                    <div className="relative w-full h-full overflow-hidden lg:rounded-3xl bg-[#13162d]">
+                                    <div className="relative w-full h-full overflow-hidden rounded-lg lg:rounded-3xl bg-[#13162d]">
                                         <img
                                             src="/bg.png"
                                             alt="background img"
@@ -30,7 +30,7 @@ function RecentProjects() {
                                     <img
                                         src={img}
                                         alt={title}
-                                        className="z-10 absolute bottom-0"
+                                        className="absolute w-11/12 h-[90%] my-auto object-cover rounded-lg lg:rounded-xl"
                                     />
                                 </div>
 
