@@ -4,7 +4,7 @@ import { companies, testimonials } from "../data";
 
 const Awards = () => {
     return (
-        <div className="" id="awards">
+        <div className="pb-10" id="awards">
             <h1 className="heading">
                 Collection of <span className="text-purple">Awards</span>,{" "}
                 <span className="text-purple">Scholarships</span> &{" "}

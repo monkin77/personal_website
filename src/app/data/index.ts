@@ -6,8 +6,8 @@ export const navItems: {
     { name: "Home", link: "/" },
     { name: "About", link: "#about" },
     { name: "Projects", link: "#projects" },
-    { name: "Awards", link: "#awards" },
     { name: "Experience", link: "#experience" },
+    { name: "Awards", link: "#awards" },
     { name: "Contact", link: "#contact" },
 ];
 
@@ -196,8 +196,9 @@ export const companies: {id: number, name: string, img: string, nameImg?: string
 export const workExperience = [
     {
         id: 1,
-        title: "Frontend Engineer Intern",
-        desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+        title: "CERN OpenLab Intern 2023",
+        desc: "Developed a novel Mobile App for the Indico Project, a web-based event management system used by CERN and other research institutions. Additionally, attended \
+        a series of lectures on Physics and High-Performance Computing and other CERN-related events for the 30 selected students worldwide.",
         className: "md:col-span-2",
         thumbnail: "/exp1.svg",
     },
@@ -223,6 +224,29 @@ export const workExperience = [
         thumbnail: "/exp4.svg",
     },
 ];
+
+export const slideData = [
+    {
+      title: "Mystic Mountains",
+      button: "Explore Component",
+      src: "https://images.unsplash.com/photo-1494806812796-244fe51b774d?q=80&w=3534&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    },
+    {
+      title: "Urban Dreams",
+      button: "Explore Component",
+      src: "https://images.unsplash.com/photo-1518710843675-2540dd79065c?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    },
+    {
+      title: "Neon Nights",
+      button: "Explore Component",
+      src: "https://images.unsplash.com/photo-1590041794748-2d8eb73a571c?q=80&w=3456&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    },
+    {
+      title: "Desert Whispers",
+      button: "Explore Component",
+      src: "https://images.unsplash.com/photo-1679420437432-80cfbf88986c?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    },
+  ];
 
 export const socialMedia = [
     {

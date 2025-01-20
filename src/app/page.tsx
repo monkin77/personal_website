@@ -20,10 +20,10 @@ export default function Home() {
 
                 <RecentProjects />
 
-                <Awards />
-
                 <Experience />
 
+                <Awards />
+                
                 <Footer />
             </div>
         </main>

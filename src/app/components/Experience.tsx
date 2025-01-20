@@ -1,22 +1,23 @@
 import React from "react";
-import { workExperience } from "../data";
+import { slideData, workExperience } from "../data";
 import { Button } from "./ui/MovingBorders";
+import { Carousel } from "./ui/Carousel";
 
 const Experience = () => {
     return (
-        <div className="py-20" id="experience">
+        <div className="pb-10 md:pb-20 w-full relative" id="experience">
             <h1 className="heading">
                 My{"  "}
-                <span className="text-purple">work experience</span>
+                <span className="text-purple">Work Experience</span>
             </h1>
 
-            <div className="w-full mt-12 grid lg:grid-cols-4 grid-cols-1 gap-10">
+            {/* <div className="w-full mt-12 grid lg:grid-cols-4 grid-cols-1 gap-10 relative">
                 {workExperience.map((card) => (
                     <Button
                         key={card.id}
                         borderRadius="1.75rem"
                         className="flex-1 text-white border-neutral-200 dark:border-slate-800"
-                        duration={Math.floor(Math.random() * (10**4)) + (10**4)}
+                        duration={Math.floor(Math.random() * 10 ** 4) + 10 ** 4}
                     >
                         <div className="flex lg:flex-row flex-col lg:items-center p-3 py-6 md:p-5 lg:p-10 gap-2">
                             <img
@@ -26,13 +27,21 @@ const Experience = () => {
                             />
 
                             <div className="lg:ms-5">
-                                <h1 className="text-start text-xl md:text-2xl font-bold">{card.title}</h1>
+                                <h1 className="text-start text-xl md:text-2xl font-bold">
+                                    {card.title}
+                                </h1>
 
-                                <p className="text-start text-white-100 mt-3 font-semibold">{card.desc}</p>
+                                <p className="text-start text-white-100 mt-3 font-semibold">
+                                    {card.desc}
+                                </p>
                             </div>
                         </div>
                     </Button>
                 ))}
+            </div> */}
+
+            <div className="relative overflow-hidden w-full h-full pt-10 pb-20 md:py-20">
+                <Carousel slides={slideData} />
             </div>
         </div>
     );
