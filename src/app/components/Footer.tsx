@@ -1,10 +1,9 @@
 "use client";
 
 import React from "react";
-import MagicButton from "./ui/MagicButton";
-import { FaLocationArrow } from "react-icons/fa";
 import { socialMedia } from "../data";
 import ShimmerButton from "./ui/Buttons/ShimmerButton";
+import Link from "next/link";
 
 const Footer = () => {
     return (
@@ -49,26 +48,33 @@ const Footer = () => {
                 <p className="md:text-base text-sm md:font-normal font-light">
                     Copyright © 2025 Monkin
                 </p>
+                
+                <div className="flex flex-row align-middle z-10">
+                    <div className="flex items-center mr-5 md:mr-10">
+                        <Link href="/attributions" className="cursor-pointer hover:underline">Attributions</Link>
+                    </div>
 
-                <div className="flex items-center md:gap-3 gap-6 md:mt-0 mt-2">
-                    {socialMedia.map((profile) => (
-                        <div
-                            key={profile.id}
-                            className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg 
-                            saturate-180 bg-opacity-75 bg-black-200 rounded-2xl border border-black-300"
-                        >
-                            <img
-                                src={profile.img}
-                                alt={`Img-${profile.id}`}
-                                width={20}
-                                height={20}
-                                onClick={() =>
-                                    window.open(profile.url, "_blank")
-                                }
-                            />
-                        </div>
-                    ))}
+                    <div className="flex items-center md:gap-3 gap-6 md:mt-0 mt-2">
+                        {socialMedia.map((profile) => (
+                            <div
+                                key={profile.id}
+                                className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg 
+                                saturate-180 bg-opacity-75 bg-black-200 rounded-2xl border border-black-300"
+                            >
+                                <img
+                                    src={profile.img}
+                                    alt={`Img-${profile.id}`}
+                                    width={20}
+                                    height={20}
+                                    onClick={() =>
+                                        window.open(profile.url, "_blank")
+                                    }
+                                />
+                            </div>
+                        ))}
+                    </div>
                 </div>
+                
             </div>
         </footer>
     );
