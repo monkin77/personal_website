@@ -40,7 +40,7 @@ const Experience = () => {
                 ))}
             </div> */}
 
-            <div className="relative overflow-hidden w-full h-full pt-10 pb-20 md:py-20">
+            <div className="relative overflow-hidden w-full h-full pt-10 md:py-20">
                 <Carousel slides={slideData} />
             </div>
         </div>
