@@ -1,7 +1,6 @@
 import React from "react";
-import { slideData, workExperience } from "../data";
-import { Button } from "./ui/MovingBorders";
-import { Carousel } from "./ui/Carousel";
+import { slideData } from "../data";
+import { CarouselCard } from "./ui/Carousel/CarouselCard";
 
 const Experience = () => {
     return (
@@ -41,7 +40,7 @@ const Experience = () => {
             </div> */}
 
             <div className="relative overflow-hidden w-full h-full pt-10 md:py-20">
-                <Carousel slides={slideData} />
+                <CarouselCard slides={slideData} />
             </div>
         </div>
     );

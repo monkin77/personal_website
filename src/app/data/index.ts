@@ -1,3 +1,5 @@
+import { SlideCardData } from "../components/ui/Carousel/CarouselCard";
+
 export const navItems: {
     name: string;
     link: string;
@@ -74,7 +76,13 @@ export const projects = [
         title: "NIJobs",
         des: "A platform for companies to advertise their job opportunities to University of Porto's students.",
         img: "/projects/nijobs.png",
-        iconLists: ["/technologies/react.svg", "/technologies/typescript.svg", "/technologies/nodejs.svg", "/technologies/docker.svg", "/technologies/material-ui.svg"],
+        iconLists: [
+            "/technologies/react.svg",
+            "/technologies/typescript.svg",
+            "/technologies/nodejs.svg",
+            "/technologies/docker.svg",
+            "/technologies/material-ui.svg",
+        ],
         link: "https://github.com/NIAEFEUP/nijobs-fe",
         linkText: "Check Repository",
     },
@@ -99,7 +107,13 @@ export const projects = [
         title: "Monkin's Habitat - Personal Website",
         des: "A Personal Portfolio Website, introducing myself to the world and showcasing my projects, experiences, and unique traits :)",
         img: "/projects/portfolio.png",
-        iconLists: ["/technologies/next.svg", "/technologies/typescript.svg", "/technologies/tailwind.svg", "/technologies/threejs.svg", "/technologies/vercel.svg"],
+        iconLists: [
+            "/technologies/next.svg",
+            "/technologies/typescript.svg",
+            "/technologies/tailwind.svg",
+            "/technologies/threejs.svg",
+            "/technologies/vercel.svg",
+        ],
         link: "/",
         linkText: "Check Live Website",
     },
@@ -117,16 +131,20 @@ export const projects = [
         link: "https://github.com/monkin77/feup-comp",
         linkText: "Check Repository",
     },
-   
 ];
 
-export const testimonials: {quote: string, name: string, title: string, logo?: string}[] = [
+export const testimonials: {
+    quote: string;
+    name: string;
+    title: string;
+    logo?: string;
+}[] = [
     {
         quote: "Awarded a merit scholarship by Huawei for academic excellence and outstanding performance. With less than 1% selection rate, this scholarship is part of the Huawei \
         Scholarship Program, which aims to support students in their academic pursuits. I am grateful for the recognition and support from the company.",
         name: "Huawei",
         title: "Merit Scholarship",
-        logo: "/companies/huawei_2.png"
+        logo: "/companies/huawei_2.png",
     },
     {
         quote: "Carnegie Mellon Portugal sponsored my Research Project at Carnegie Mellon University in Pittsburgh, USA. This opportunity allowed me \
@@ -134,7 +152,7 @@ export const testimonials: {quote: string, name: string, title: string, logo?: s
         covered my university fees and living expenses during my stay and I'm grateful for the support from the institution.",
         name: "Carnegie Mellon Portugal",
         title: "Research Scholarship",
-        logo: "/companies/cmu_2.jpg"
+        logo: "/companies/cmu_2.jpg",
     },
     {
         quote: "ActInSpace is an international innovation contest sponsored by the French Space Agency and the European Space Agency. I was part of the winning team in \
@@ -142,14 +160,14 @@ export const testimonials: {quote: string, name: string, title: string, logo?: s
         to represent Portugal in the international final in France, where we connected with teams around the world!",
         name: "ActInSpace, ESA & CNES",
         title: "ActInSpace Portugal 2022 Winner",
-        logo: "/companies/actInSpace.png"
+        logo: "/companies/actInSpace.png",
     },
     {
         quote: "OERN, the Engineer's Syndicate of Northern Portugal, recognized the relevance of my dissertation in the field of Computational Neuroscience and awarded me a \
         Merit Grant. The participation involved presenting my work through a video presentation and a written report, fromo where 50 students were selected to receive the prize.",
         name: "OERN - Ordem dos Engenheiros Região Norte",
         title: "Merit Grant for Dissertation Work",
-        logo: "/companies/oern.webp"
+        logo: "/companies/oern.webp",
     },
     {
         quote: "Pmate is a high-school level national mathematics competition hosted in Portugal, where students compete in a series of mathematical challenges. \
@@ -157,11 +175,16 @@ export const testimonials: {quote: string, name: string, title: string, logo?: s
         in both 2017 and 2018 editions.",
         name: "Pmate",
         title: "Pmate 2017 & 2018 - 2nd Place",
-        logo: "/companies/pmate.png"
+        logo: "/companies/pmate.png",
     },
 ];
 
-export const companies: {id: number, name: string, img: string, nameImg?: string}[] = [
+export const companies: {
+    id: number;
+    name: string;
+    img: string;
+    nameImg?: string;
+}[] = [
     {
         id: 1,
         name: "Huawei",
@@ -225,28 +248,52 @@ export const workExperience = [
     },
 ];
 
-export const slideData = [
+export const slideData: SlideCardData[] = [
     {
-      title: "Mystic Mountains",
-      button: "Explore Component",
-      src: "https://images.unsplash.com/photo-1494806812796-244fe51b774d?q=80&w=3534&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        title: "CERN OpenLab Intern 2023",
+        dates: "June 2023 - Aug. 2023",
+        company: "CERN",
+        src: "experiences/cern2.jpg",
+        companyLogo: "companies/cern.png",
+        slideClassName: "opacity-70",
+        bulletPoints: [
+            "Worked on the Indico team to create a Progressive Web App that is responsible for checking-in participants and \
+            managing events.", 
+            "Attended physics and computing lectures/workshops on various state-of-the-art topics and participated on events \
+            related to CERN, along with the 30 selected students around the world."
+        ]
     },
     {
-      title: "Urban Dreams",
-      button: "Explore Component",
-      src: "https://images.unsplash.com/photo-1518710843675-2540dd79065c?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        title: "Computational Neuroscience Researcher",
+        dates: "June 2023 - Aug. 2023",
+        company: "CERN",
+        src: "experiences/cern2.jpg",
+        companyLogo: "",
+        slideClassName: "opacity-70 ",
+        bulletPoints: [
+            "Worked on the Indico team to create a Progressive Web App that is responsible for checking-in participants and \
+            managing events.", 
+            "Attended physics and computing lectures/workshops on various state-of-the-art topics and participated on events \
+            related to CERN, along with the 30 selected students around the world."
+        ]
     },
     {
-      title: "Neon Nights",
-      button: "Explore Component",
-      src: "https://images.unsplash.com/photo-1590041794748-2d8eb73a571c?q=80&w=3456&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        title: "Neon Nights",
+        dates: "June 2023 - Aug. 2023",
+        company: "CERN",
+        src: "https://images.unsplash.com/photo-1590041794748-2d8eb73a571c?q=80&w=3456&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        companyLogo: "",
+        slideClassName: "opacity-70",
     },
     {
-      title: "Desert Whispers",
-      button: "Explore Component",
-      src: "https://images.unsplash.com/photo-1679420437432-80cfbf88986c?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        title: "Desert Whispers",
+        dates: "June 2023 - Aug. 2023",
+        company: "CERN",
+        src: "https://images.unsplash.com/photo-1679420437432-80cfbf88986c?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        companyLogo: "",
+        slideClassName: "opacity-70",
     },
-  ];
+];
 
 export const socialMedia = [
     {
@@ -262,6 +309,6 @@ export const socialMedia = [
     {
         id: 3,
         img: "/socials/linked-in.svg",
-        url: "https://www.linkedin.com/in/joao-mesquita7/"
+        url: "https://www.linkedin.com/in/joao-mesquita7/",
     },
 ];

@@ -1,15 +1,21 @@
 "use client";
 import { FaArrowRight } from "react-icons/fa";
 import { useState, useRef, useId, useEffect } from "react";
+import { cn } from "@/lib/utils";
+import { useMediaQuery } from "@/app/hooks/useMediaQuery";
 
-interface SlideData {
+export interface SlideCardData {
     title: string;
-    button: string;
+    bulletPoints?: string[];
     src: string;
+    slideClassName?: string;
+    dates: string;
+    company: string;
+    companyLogo: string;
 }
 
 interface SlideProps {
-    slide: SlideData;
+    slide: SlideCardData;
     index: number;
     current: number;
     handleSlideClick: (index: number) => void;
@@ -62,13 +68,15 @@ const Slide = ({ slide, index, current, handleSlideClick }: SlideProps) => {
         event.currentTarget.style.opacity = "1";
     };
 
-    const { src, button, title } = slide;
+    const isMediumOrLarger = useMediaQuery("(min-width: 768px)"); // TailwindCSS breakpoint
+
+    const { src, bulletPoints, title, slideClassName } = slide;
 
     return (
         <div className="[perspective:1200px] [transform-style:preserve-3d]">
             <li
                 ref={slideRef}
-                className="flex flex-1 flex-col items-center justify-center relative text-center text-white opacity-100 transition-all duration-300 ease-in-out w-[70vmin] h-[70vmin] mx-[4vmin] z-10 "
+                className="flex flex-1 flex-col relative text-white opacity-100 transition-all duration-300 ease-in-out w-[70vmin] h-[70vmin] mx-[4vmin] z-10 "
                 onClick={() => handleSlideClick(index)}
                 onMouseMove={handleMouseMove}
                 onMouseLeave={handleMouseLeave}
@@ -82,7 +90,10 @@ const Slide = ({ slide, index, current, handleSlideClick }: SlideProps) => {
                 }}
             >
                 <div
-                    className="absolute top-0 left-0 w-full h-full bg-[#1D1F2F] rounded-[1%] overflow-hidden transition-all duration-150 ease-out"
+                    className={cn(
+                        slideClassName,
+                        "absolute top-0 left-0 w-full h-full bg-[#1D1F2F] rounded-[1%] overflow-hidden transition-all duration-150 ease-out"
+                    )}
                     style={{
                         transform:
                             current === index
@@ -91,7 +102,7 @@ const Slide = ({ slide, index, current, handleSlideClick }: SlideProps) => {
                     }}
                 >
                     <img
-                        className="absolute inset-0 w-[120%] h-[120%] object-cover opacity-100 transition-opacity duration-600 ease-in-out"
+                        className="absolute inset-0 w-[120%] h-[120%] object-cover transition-opacity duration-600 ease-in-out"
                         style={{
                             opacity: current === index ? 1 : 0.5,
                         }}
@@ -106,21 +117,46 @@ const Slide = ({ slide, index, current, handleSlideClick }: SlideProps) => {
                     )}
                 </div>
 
+                {/* Text Area */}
                 <article
-                    className={`relative p-[4vmin] transition-opacity duration-1000 ease-in-out ${
+                    className={`relative transition-opacity duration-1000 ease-in-out overflow-hidden overflow-ellipsis ${
                         current === index
                             ? "opacity-100 visible"
                             : "opacity-0 invisible"
                     }`}
                 >
-                    <h2 className="text-lg md:text-2xl lg:text-4xl font-semibold  relative">
+                    <h2 className="text-lg md:text-2xl lg:text-4xl font-bold relative px-4 md:px-8 pt-4 md:pt-8 rounded">
+                        {" "}
+                        {/* bg-gray-900 bg-opacity-70  */}
                         {title}
                     </h2>
-                    <div className="flex justify-center">
-                        <button className="mt-6  px-4 py-2 w-fit mx-auto sm:text-sm text-black bg-white h-12 border border-transparent text-xs flex justify-center items-center rounded-2xl hover:shadow-lg transition duration-200 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]">
-                            {button}
-                        </button>
+
+                    <div className="flex flex-col md:flex-row justify-between px-5 pt-3 md:px-9 align-middle">
+                        <div className="flex flex-row gap-x-3 w-7 h-7 md:w-10 md:h-10 items-center">
+                            <img src={slide.companyLogo} alt={`${slide.company} logo`} className="w-full h-full"  />
+
+                            <h4 className="text-sm md:text-lg lg:text-xl font-semibold">
+                                {slide.company}
+                            </h4>
+                        </div>
+
+                        <h4 className="text-sm md:text-lg lg:text-xl font-semibold mt-2 md:mt-0">
+                            {slide.dates}
+                        </h4>
                     </div>
+
+                    {isMediumOrLarger /* Render if screen is at least at md breakpoint */ && (
+                        <ul className="mx-5 md:mx-14 md:mt-8">
+                            {bulletPoints?.map((point, index) => (
+                                <li
+                                    key={index}
+                                    className="text-gray-200 mt-3 list-disc text-sm md:text-lg"
+                                >
+                                    {point}
+                                </li>
+                            ))}
+                        </ul>
+                    )}
                 </article>
             </li>
         </div>
@@ -152,10 +188,10 @@ const CarouselControl = ({
 };
 
 interface CarouselProps {
-    slides: SlideData[];
+    slides: SlideCardData[];
 }
 
-export function Carousel({ slides }: CarouselProps) {
+export function CarouselCard({ slides }: CarouselProps) {
     const [current, setCurrent] = useState(0);
 
     const handlePreviousClick = () => {

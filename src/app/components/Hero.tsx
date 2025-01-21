@@ -49,7 +49,7 @@ const Hero = () => {
                     <TextGenerateEffect
                         className="text-center"
                         textClassName="md:text-3xl lg:text-4xl"
-                        words="Welcome to João Mesquita's (Monkin) Personal Website :)"
+                        words="Welcome to João Mesquita's (Monkin) Habitat :)"
                         duration={0.5}
                         colorShiftIdx={4}
                         filter={true}
