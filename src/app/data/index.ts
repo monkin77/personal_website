@@ -290,12 +290,42 @@ export const slideData: SlideCardData[] = [
         ]
     },
     {
-        title: "Desert Whispers",
-        dates: "June 2023 - Aug. 2023",
-        company: "CERN",
-        src: "https://images.unsplash.com/photo-1679420437432-80cfbf88986c?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        companyLogo: "",
+        title: "Co-Founder",
+        dates: "Oct. 2018 - Dec. 2022",
+        company: "VRPortal",
+        src: "experiences/vrportal.jpg",
+        companyLogo: "companies/vrportal.png",
         slideClassName: "opacity-70",
+        bulletPoints: [
+            "Launched a Virtual Reality arcade with 7000+ customers so far, providing the first VR experiences in Portugal to the \
+                public and achieving a 5.0 max rating in Google from more than 270 reviews."
+        ]
+    },
+    {
+        title: "Mobile Developer",
+        dates: "July 2021 - July 2022",
+        company: "Smartex.ai",
+        src: "experiences/smartex.png",
+        companyLogo: "companies/smartex.jpeg",
+        slideClassName: "opacity-45",
+        bulletPoints: [
+            "Development of a React Native Application to manage industrial production and reduce waste. This App is installed \
+                in more than 300 machines around multiple countries.",
+            "Design for system reliability and fault resilience, reducing the system downtime by more than 50%",
+            "Implementation of an open-source Android Module to communicate with the EsperSDK (> 91 000 Downloads)"
+        ]
+    },
+    {
+        title: "Software Engineer Intern",
+        dates: "July 2022 - Aug. 2022",
+        company: "Critical Software",
+        src: "experiences/critical_software.jpg",
+        companyLogo: "companies/critical_software.png",
+        slideClassName: "opacity-70",
+        bulletPoints: [
+            "Overview of the areas inside the company, resulting in a final project for each one, namely: Digital Enterprise \
+                Solutions (AngularJS and Quarkus), High Integrity Systems (Python) and Smart Technology Solutions (AWS)."
+        ]
     },
 ];
 

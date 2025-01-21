@@ -17,7 +17,7 @@ const CarouselCardDetails = ({bulletPoints}: {bulletPoints?: string[]}) => {
                 {bulletPoints?.map((point, index) => (
                     <li
                         key={index}
-                        className="text-gray-200 mt-3 list-disc text-sm md:text-lg"
+                        className="text-gray-50 mt-3 list-disc text-sm md:text-lg"
                     >
                         {point}
                     </li>
