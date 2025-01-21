@@ -265,25 +265,29 @@ export const slideData: SlideCardData[] = [
     },
     {
         title: "Computational Neuroscience Researcher",
-        dates: "June 2023 - Aug. 2023",
-        company: "CERN",
-        src: "experiences/cern2.jpg",
-        companyLogo: "",
+        dates: "Oct. 2024 - Dec. 2024",
+        company: "Carnegie Mellon University",
+        src: "experiences/cmu.jpg",
+        companyLogo: "companies/cmu.png",
         slideClassName: "opacity-70 ",
         bulletPoints: [
-            "Worked on the Indico team to create a Progressive Web App that is responsible for checking-in participants and \
-            managing events.", 
-            "Attended physics and computing lectures/workshops on various state-of-the-art topics and participated on events \
-            related to CERN, along with the 30 selected students around the world."
+            "Apply data science and machine learning techniques to analyze the Dynamic Range Adaptation phenomenon in the \
+            Primary Motor Cortex, under the supervision of Prof. Steven Chase.", 
         ]
     },
     {
-        title: "Neon Nights",
-        dates: "June 2023 - Aug. 2023",
-        company: "CERN",
-        src: "https://images.unsplash.com/photo-1590041794748-2d8eb73a571c?q=80&w=3456&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        companyLogo: "",
+        title: "Computational Neuroscience Researcher",
+        dates: "Sept. 2023 - July 2024",
+        company: "i3s",
+        src: "experiences/i3s.png",
+        companyLogo: "companies/i3s.png",
         slideClassName: "opacity-70",
+        bulletPoints: [
+            "Explore the viability of Neuromorphic Computing as a highly efficient alternative to traditional computing systems to \
+                perform the real-time analysis of neuronal activity",
+            "Work with Intel's neuromorphic chip (Loihi) and the LAVA framework to design neuromorphic algorithms that \
+                characterize the activity of in-vitro neuronal cultures available at i3s."
+        ]
     },
     {
         title: "Desert Whispers",

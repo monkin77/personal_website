@@ -2,7 +2,7 @@
 import { FaArrowRight } from "react-icons/fa";
 import { useState, useRef, useId, useEffect } from "react";
 import { cn } from "@/lib/utils";
-import { useMediaQuery } from "@/app/hooks/useMediaQuery";
+import CarouselCardDetails from "./CarouselCardDetails";
 
 export interface SlideCardData {
     title: string;
@@ -68,8 +68,6 @@ const Slide = ({ slide, index, current, handleSlideClick }: SlideProps) => {
         event.currentTarget.style.opacity = "1";
     };
 
-    const isMediumOrLarger = useMediaQuery("(min-width: 768px)"); // TailwindCSS breakpoint
-
     const { src, bulletPoints, title, slideClassName } = slide;
 
     return (
@@ -132,10 +130,14 @@ const Slide = ({ slide, index, current, handleSlideClick }: SlideProps) => {
                     </h2>
 
                     <div className="flex flex-col md:flex-row justify-between px-5 pt-3 md:px-9 align-middle">
-                        <div className="flex flex-row gap-x-3 w-7 h-7 md:w-10 md:h-10 items-center">
-                            <img src={slide.companyLogo} alt={`${slide.company} logo`} className="w-full h-full"  />
+                        <div className="flex flex-row gap-x-3 h-7 md:h-10 items-center">
+                            <img
+                                src={slide.companyLogo}
+                                alt={`${slide.company} logo`}
+                                className="h-full"
+                            />
 
-                            <h4 className="text-sm md:text-lg lg:text-xl font-semibold">
+                            <h4 className="text-sm md:text-base lg:text-lg font-semibold">
                                 {slide.company}
                             </h4>
                         </div>
@@ -143,20 +145,10 @@ const Slide = ({ slide, index, current, handleSlideClick }: SlideProps) => {
                         <h4 className="text-sm md:text-lg lg:text-xl font-semibold mt-2 md:mt-0">
                             {slide.dates}
                         </h4>
-                    </div>
+                    </div> 
 
-                    {isMediumOrLarger /* Render if screen is at least at md breakpoint */ && (
-                        <ul className="mx-5 md:mx-14 md:mt-8">
-                            {bulletPoints?.map((point, index) => (
-                                <li
-                                    key={index}
-                                    className="text-gray-200 mt-3 list-disc text-sm md:text-lg"
-                                >
-                                    {point}
-                                </li>
-                            ))}
-                        </ul>
-                    )}
+                    { /* Render if screen is at least at md breakpoint */}
+                    <CarouselCardDetails bulletPoints={bulletPoints} />
                 </article>
             </li>
         </div>
