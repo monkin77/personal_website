@@ -1,6 +1,6 @@
 import React from "react";
-import Profile from "./Experience";
 import Experience from "./Experience";
+import Profile from "./Profile";
 
 const ExtendedResume = () => {
     return (

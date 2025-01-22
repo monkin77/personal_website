@@ -346,3 +346,27 @@ export const socialMedia = [
         url: "https://www.linkedin.com/in/joao-mesquita7/",
     },
 ];
+
+export const extendedSocialMedia = [
+    {
+        id: 1,
+        img: "/socials/github.svg",
+        url: "https://github.com/monkin77",
+    },
+    {
+        id: 2,
+        img: "/socials/instagram.svg",
+        url: "https://www.instagram.com/joaogilmesquita/",
+    },
+    {
+        id: 3,
+        img: "/socials/twitter.svg",
+        url: "https://x.com/Monkinerin0",
+    },
+    {
+        id: 4,
+        img: "/socials/linked-in.svg",
+        url: "https://www.linkedin.com/in/joao-mesquita7/",
+    },
+];
+
