@@ -1,5 +1,6 @@
 import React from "react";
 import AvatarSlider from "../components/AvatarSlider";
+import Profile from "./Profile";
 
 const ExtendedResume = () => {
     return (
@@ -14,20 +15,15 @@ const ExtendedResume = () => {
                         João Mesquita
                     </h1>
 
-                    {/* <TextGenerateEffect
-                        className="text-center"
-                        textClassName="md:text-3xl lg:text-4xl"
-                        words="Welcome to João Mesquita's (Monkin) Habitat :)"
-                        duration={0.5}
-                        colorShiftIdx={4}
-                        filter={true}
-                    /> */}
-
-                    <p className="text-center md:tracking-wider text-sm md:text-base lg:text-xl mt-2">
+                    <p className="text-center md:tracking-wider text-sm md:text-base lg:text-xl mt-2 md:mt-3">
                         {"Computer Engineer | Researcher | Passionate Learner"}
                     </p>
                 </div>
             </div>
+
+            <Profile />
+
+
         </div>
     );
 };
