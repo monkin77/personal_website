@@ -18,6 +18,7 @@ const ResumeSocials = () => {
                         width={20}
                         height={20}
                         onClick={() => window.open(profile.url, "_blank")}
+                        title={profile.url}
                     />
                 </div>
             ))}
