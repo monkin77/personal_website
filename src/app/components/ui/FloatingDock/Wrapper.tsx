@@ -1,6 +1,5 @@
-import Image from 'next/image';
 import React from 'react'
-import { FaHome } from 'react-icons/fa'
+import { FaAddressCard, FaBriefcase, FaHammer, FaHome, FaRunning, FaTrophy, FaUser } from 'react-icons/fa'
 import { FloatingDock } from './FloatingDock';
 import { cn } from '@/lib/utils';
 
@@ -19,50 +18,43 @@ const extendedResumeNavItems: {
     {
         title: "Profile",
         icon: (
-            <FaHome className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+            <FaUser className="h-full w-full text-neutral-500 dark:text-neutral-300" />
         ),
         href: "#profile",
     },
     {
         title: "Experience",
         icon: (
-            <FaHome className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+            <FaBriefcase className="h-full w-full text-neutral-500 dark:text-neutral-300" />
         ),
         href: "#experience",
     },
     {
         title: "Projects",
-        icon: (
-            <Image
-                src="https://assets.aceternity.com/logo-dark.png"
-                width={20}
-                height={20}
-                alt="Aceternity Logo"
-            />
-        ),
+        icon: <FaHammer className="h-full w-full text-neutral-500 dark:text-neutral-300" />,
         href: "#projects",
     },
     {
         title: "Awards",
         icon: (
-            <FaHome className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+            <FaTrophy className="h-full w-full text-neutral-500 dark:text-neutral-300" />
         ),
-        href: "#awars",
+        href: "#awards",
     },
 
     {
         title: "Hobbies",
         icon: (
-            <FaHome className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+            <FaRunning className="h-full w-full text-neutral-500 dark:text-neutral-300" />
         ),
         href: "#hobbies",
     },
     {
-        title: "Contact",
+        title: "Contacts",
         icon: (
-            <FaHome className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+            <FaAddressCard className="h-full w-full text-neutral-500 dark:text-neutral-300" />
         ),
-        href: "#contact",
+        href: "#contacts",
     },
 ];
 
