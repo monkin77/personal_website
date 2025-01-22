@@ -1,7 +1,7 @@
 import React from "react";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
-import MagicButton from "./ui/MagicButton";
+import MagicButton from "./ui/Buttons/MagicButton";
 import { FaLocationArrow } from "react-icons/fa";
 import AvatarSlider from "./AvatarSlider";
 

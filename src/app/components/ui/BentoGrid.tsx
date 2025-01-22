@@ -4,7 +4,7 @@ import { cn } from "@/lib/utils";
 import { BackgroundGradientAnimation } from "./GradientBg";
 import { GridGlobe } from "./Globe/GridGlobe";
 import Lottie from "react-lottie";
-import MagicButton from "./MagicButton";
+import MagicButton from "./Buttons/MagicButton";
 import { IoNavigateOutline } from "react-icons/io5";
 import compEngAnimData from "../../data/anim/computer_engineer_anim2.json";
 import brainAnimData from "../../data/anim/brain.json";
@@ -232,12 +232,13 @@ export const BentoGrid = ({ className }: { className?: string }) => {
                         <a href="#experience">
                             <MagicButton
                                 title={"Go to Section"}
-                                icon={<IoNavigateOutline className="w-4 h-4 md:w-6 md:h-6" />}
+                                icon={
+                                    <IoNavigateOutline className="w-4 h-4 md:w-6 md:h-6" />
+                                }
                                 position="left"
                                 otherClasses="!bg-[#161a31]"
                             />
                         </a>
-                        
                     </div>
                 </div>
             </BentoGridItemWrapper>

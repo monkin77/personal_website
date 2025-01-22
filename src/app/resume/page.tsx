@@ -1,13 +1,25 @@
 import React from "react";
 import ExtendedResume from "./ExtendedResume";
 import FloatingDockWrapper from "../components/ui/FloatingDock/Wrapper";
+import { FaArrowLeft } from "react-icons/fa";
+import InvertButton from "../components/ui/Buttons/InvertButton";
+import Link from 'next/link';
 
 const Resume = () => {
+
     return (
         <main className="relative bg-background flex justify-center items-center flex-col overflow-clip mx-auto sm:px-10 px-5">
-            <div className="max-w-7xl w-full mb-10 min-h-screen relative">
-                <div className="sticky top-1">
-                    Back To Home
+            <div className="max-w-[90rem] w-full my-10 min-h-screen relative">
+                <div className="sticky top-5">
+                    <Link href="/">
+                        <InvertButton
+                            title="Back to Home"
+                            icon={<FaArrowLeft />}
+                            position="left"
+                            otherClasses=""
+                        />
+                    </Link>
+                    
                 </div>
 
                 <ExtendedResume />
