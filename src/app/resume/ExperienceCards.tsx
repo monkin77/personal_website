@@ -5,126 +5,126 @@ import { cardsContentProps, ExpandableCards } from "../components/ui/ExpandableC
 
 const cards: cardsContentProps[] = [
     {
+        animID: "anim_1",
         title: "CERN OpenLab Intern 2023",
-        location: "Geneva, Switzerland",
+        location: "CERN, Switzerland",
         date: "June 2023 - Aug. 2023",
-        description:
-            "Worked on the Indico team to create a Progressive Web App that is responsible for checking-in participants and \
-            managing events.",
-        src: "experiences/cern2.jpg",
+        src: "companies/cern.png",
+        landscapeSrc: "experiences/cern.jpg",
         ctaText: "Learn More",
-        ctaLink: "https://ui.aceternity.com/templates",
+        ctaLink: "https://github.com/monkin77/indico-checkin-pwa",
         content: () => {
             return (
                 <p>
-                    Worked on the Indico team to create a Progressive Web App
-                    that is responsible for checking-in participants and \
-                    managing events.
-                    <br /> <br /> Attended physics and computing
-                    lectures/workshops on various state-of-the-art topics and
-                    participated on events \ related to CERN, along with the 30
-                    selected students around the world.
+                    Worked on the Indico team to create a Progressive Web App that is responsible for checking-in 
+                    participants and managing events.
+                    <br /> <br /> 
+                    Attended physics and computing lectures/workshops on various state-of-the-art topics and
+                    participated on events related to CERN, along with the 30 selected students around the world.
                 </p>
             );
         },
     },
     {
-        title: "Mitran Di Chhatri",
-        location: "Geneva, Switzerland",
-        date: "June 2023 - Aug. 2023",
-        description: "Babbu Maan",
-        src: "https://assets.aceternity.com/demos/babbu-maan.jpeg",
-        ctaText: "Play",
-        ctaLink: "https://ui.aceternity.com/templates",
+        animID: "anim_2",
+        title: "Computational Neuroscience Researcher",
+        location: "Carnegie Mellon University, Pittsburgh",
+        date: "Oct. 2024 - Dec. 2024",
+        src: "companies/cmu.png",
+        landscapeSrc: "experiences/cmu.jpg",
+        ctaText: "Learn More",
+        ctaLink: "https://chaselab.github.io/research.html",
         content: () => {
             return (
                 <p>
-                    Babu Maan, a legendary Punjabi singer, is renowned for his
-                    soulful voice and profound lyrics that resonate deeply with
-                    his audience. Born in the village of Khant Maanpur in
-                    Punjab, India, he has become a cultural icon in the Punjabi
-                    music industry. <br /> <br /> His songs often reflect the
-                    struggles and triumphs of everyday life, capturing the
-                    essence of Punjabi culture and traditions. With a career
-                    spanning over two decades, Babu Maan has released numerous
-                    hit albums and singles that have garnered him a massive fan
-                    following both in India and abroad.
-                </p>
-            );
-        },
-    },
-
-    {
-        description: "Metallica",
-        title: "For Whom The Bell Tolls",
-        location: "Geneva, Switzerland",
-        date: "June 2023 - Aug. 2023",
-        src: "https://assets.aceternity.com/demos/metallica.jpeg",
-        ctaText: "Play",
-        ctaLink: "https://ui.aceternity.com/templates",
-        content: () => {
-            return (
-                <p>
-                    Metallica, an iconic American heavy metal band, is renowned
-                    for their powerful sound and intense performances that
-                    resonate deeply with their audience. Formed in Los Angeles,
-                    California, they have become a cultural icon in the heavy
-                    metal music industry. <br /> <br /> Their songs often
-                    reflect themes of aggression, social issues, and personal
-                    struggles, capturing the essence of the heavy metal genre.
-                    With a career spanning over four decades, Metallica has
-                    released numerous hit albums and singles that have garnered
-                    them a massive fan following both in the United States and
-                    abroad.
+                    Apply data science and machine learning techniques to analyze the Dynamic Range Adaptation phenomenon in the
+                    Primary Motor Cortex, under the supervision of Prof. Steven Chase.
+                    <br /> <br /> 
+                    
                 </p>
             );
         },
     },
     {
-        description: "Led Zeppelin",
-        title: "Stairway To Heaven",
-        location: "Geneva, Switzerland",
-        date: "June 2023 - Aug. 2023",
-        src: "https://assets.aceternity.com/demos/led-zeppelin.jpeg",
-        ctaText: "Play",
-        ctaLink: "https://ui.aceternity.com/templates",
+        animID: "anim_3",
+        title: "Computational Neuroscience Researcher",
+        location: "i3s, Porto",
+        date: "Sept. 2023 - July 2024",
+        src: "companies/i3s_white.png",
+        landscapeSrc: "experiences/i3s.png",
+        ctaText: "Learn More",
+        ctaLink: "https://www.i3s.up.pt/research-group.php?groupid=125",
         content: () => {
             return (
                 <p>
-                    Led Zeppelin, a legendary British rock band, is renowned for
-                    their innovative sound and profound impact on the music
-                    industry. Formed in London in 1968, they have become a
-                    cultural icon in the rock music world. <br /> <br /> Their
-                    songs often reflect a blend of blues, hard rock, and folk
-                    music, capturing the essence of the 1970s rock era. With a
-                    career spanning over a decade, Led Zeppelin has released
-                    numerous hit albums and singles that have garnered them a
-                    massive fan following both in the United Kingdom and abroad.
+                    Explore the viability of Neuromorphic Computing as a highly efficient alternative to traditional computing systems to
+                    perform the real-time analysis of neuronal activity.
+                    <br /> <br /> 
+                    Work with Intel’s neuromorphic chip (Loihi) and the LAVA framework to design neuromorphic algorithms that
+                    characterize the activity of in-vitro neuronal cultures available at i3s.
+                    Worked on the Indico team to create a Progressive Web App that is responsible for checking-in 
+                    participants and managing events.
                 </p>
             );
         },
     },
     {
-        description: "Mustafa Zahid",
-        title: "Toh Phir Aao",
-        location: "Geneva, Switzerland",
-        date: "June 2023 - Aug. 2023",
-        src: "https://assets.aceternity.com/demos/toh-phir-aao.jpeg",
-        ctaText: "Play",
-        ctaLink: "https://ui.aceternity.com/templates",
+        animID: "anim_4",
+        title: "Co-Founder",
+        location: "VRPortal, Porto",
+        date: "Oct. 2018 - Dec. 2022",
+        src: "companies/vrportal.png",
+        landscapeSrc: "experiences/vrportal.jpg",
+        ctaText: "Learn More",
+        ctaLink: "https://www.vrportal.pt/",
         content: () => {
             return (
                 <p>
-                    &quot;Aawarapan&quot;, a Bollywood movie starring Emraan
-                    Hashmi, is renowned for its intense storyline and powerful
-                    performances. Directed by Mohit Suri, the film has become a
-                    significant work in the Indian film industry. <br /> <br />{" "}
-                    The movie explores themes of love, redemption, and
-                    sacrifice, capturing the essence of human emotions and
-                    relationships. With a gripping narrative and memorable
-                    music, &quot;Aawarapan&quot; has garnered a massive fan
-                    following both in India and abroad, solidifying Emraan
-                    Hashmi&apos;s status as a versatile actor.
+                    Launched a Virtual Reality arcade with 7000+ customers so far, providing the first VR experiences in Portugal to the
+                    general public and achieving a 5.0 max rating in Google from more than 270 reviews.
+                    <br /> <br /> 
+                    
+                </p>
+            );
+        },
+    },
+    {
+        animID: "anim_5",
+        title: "Mobile Developer",
+        location: "Smartex.ai, Porto",
+        date: "July 2021 - July 2022",
+        src: "companies/smartex.jpeg",
+        landscapeSrc: "experiences/smartex.png",
+        ctaText: "Learn More",
+        ctaLink: "https://www.smartex.ai/",
+        content: () => {
+            return (
+                <p>
+                    Development of a React Native Application to manage industrial production and reduce waste. This App is installed
+                    in more than 300 machines around multiple countries.
+                    <br /> <br /> 
+                    Design for system reliability and fault resilience, reducing the system downtime by more than 50%.
+                    <br /> <br /> 
+                    Implementation of an open-source Android Module to communicate with the EsperSDK (&gt; 91 000 Downloads)
+                </p>
+            );
+        },
+    },
+    {
+        animID: "anim_6",
+        title: "Critical Software Summer Camp 2022",
+        location: "Critical Software, Porto",
+        date: "July 2021 - July 2022",
+        src: "companies/critical_software.png",
+        landscapeSrc: "experiences/critical_software_hor.jpg",
+        ctaText: "Learn More",
+        ctaLink: "https://criticalsoftware.com/en",
+        content: () => {
+            return (
+                <p>
+                    Overview of the areas inside the company, resulting in a final project for each one, namely: Digital Enterprise
+                    Solutions (AngularJS and Quarkus), High Integrity Systems (Python) and Smart Technology Solutions (AWS).
+                    <br /> <br /> 
                 </p>
             );
         },

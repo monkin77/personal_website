@@ -4,16 +4,18 @@ import Image from "next/image";
 import React, { useEffect, useId, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { useOutsideClick } from "@/app/hooks/useOutsideClick";
+import {  FaCalendarAlt } from "react-icons/fa";
 
 export type cardsContentProps = {
-    description: string;
     title: string;
     location: string;
     date: string;
     src: string;
+    landscapeSrc: string;
     ctaText: string;
     ctaLink: string;
     content: () => JSX.Element;
+    animID: string;
 };
 
 type ExpandableCardProps = {
@@ -83,16 +85,16 @@ export function ExpandableCards({ cards }: ExpandableCardProps) {
                             <CloseIcon />
                         </motion.button>
                         <motion.div
-                            layoutId={`card-${active.title}-${id}`}
+                            layoutId={`card-${active.animID}-${id}`}
                             ref={ref}
                             className="w-full max-w-3xl h-full md:h-fit md:max-h-[90%] flex flex-col bg-white dark:bg-neutral-900 sm:rounded-3xl overflow-hidden"
                         >
                             <motion.div
-                                layoutId={`image-${active.title}-${id}`}
+                                layoutId={`image-${active.animID}-${id}`}
                             >
                                 <img
                                     // priority
-                                    src={active.src}
+                                    src={active.landscapeSrc}
                                     alt={active.title}
                                     className="w-full h-60 lg:h-60 sm:rounded-tr-lg sm:rounded-tl-lg object-cover object-top"
                                 />
@@ -102,14 +104,14 @@ export function ExpandableCards({ cards }: ExpandableCardProps) {
                                 <div className="flex justify-between items-start p-4">
                                     <div className="">
                                         <motion.h3
-                                            layoutId={`title-${active.title}-${id}`}
+                                            layoutId={`title-${active.animID}-${id}`}
                                             className="font-bold text-neutral-700 dark:text-neutral-200"
                                         >
                                             {active.title}
                                         </motion.h3>
 
                                         <motion.p
-                                            layoutId={`location-${active.title}-${id}`}
+                                            layoutId={`location-${active.animID}-${id}`}
                                             className="text-neutral-600 dark:text-neutral-400 text-left md:text-lg md:mt-2"
                                         >
                                             {active.location}
@@ -117,7 +119,7 @@ export function ExpandableCards({ cards }: ExpandableCardProps) {
                                     </div>
 
                                     <motion.a
-                                        layoutId={`button-${active.title}-${id}`}
+                                        layoutId={`button-${active.animID}-${id}`}
                                         href={active.ctaLink}
                                         target="_blank"
                                         className="text-sm rounded-full font-bold bg-green-500 text-white w-32 md:w-48 py-3 text-center my-2"
@@ -126,12 +128,12 @@ export function ExpandableCards({ cards }: ExpandableCardProps) {
                                     </motion.a>
                                 </div>
 
-                                <div>
-                                    
+                                <div className="px-4 flex flex-row items-center">
+                                    <FaCalendarAlt className="text-teal-500 text-lg" />
 
                                     <motion.h3
-                                        layoutId={`date-${active.title}-${id}`}
-                                        className="font-medium text-neutral-800 dark:text-neutral-200 text-center md:text-left md:mt-3"
+                                        layoutId={`date-${active.animID}-${id}`}
+                                        className="font-medium text-neutral-800 dark:text-neutral-200 ml-3"
                                     >
                                         {active.date}
                                     </motion.h3>
@@ -159,30 +161,30 @@ export function ExpandableCards({ cards }: ExpandableCardProps) {
             <ul className="w-full mx-auto gap-4">
                 {cards.map((card, idx) => (
                     <motion.div
-                        layoutId={`card-${card.title}-${id}`}
+                        layoutId={`card-${card.animID}-${id}`}
                         key={`card-${card.title}-${id}`}
                         onClick={() => setActive(card)}
                         className="flex flex-col md:flex-row md:justify-between items-center justify-center hover:bg-neutral-50 dark:hover:bg-neutral-800 rounded-xl
-                        cursor-pointer relative h-72 md:h-48 pt-1 md:pt-0 md:p-6 bg-black mb-2"
+                        cursor-pointer relative h-72 md:h-48 pt-1 md:pt-0 md:p-6 md:bg-teal-950 md:bg-opacity-50 mb-2"
                     >
                         <div className="flex gap-3 md:gap-4 flex-col md:flex-row items-center md:items-start">
-                            <motion.div layoutId={`image-${card.title}-${id}`}>
+                            <motion.div layoutId={`image-${card.animID}-${id}`}>
                                 <img
                                     src={card.src}
                                     alt={card.title}
-                                    className="w-32 aspect-square rounded-lg object-cover object-top"
+                                    className="w-32 aspect-square rounded-lg object-contain object-top"
                                 />
                             </motion.div>
                             <div className="md:p-1">
                                 <motion.h3
-                                    layoutId={`title-${card.title}-${id}`}
+                                    layoutId={`title-${card.animID}-${id}`}
                                     className="font-medium text-neutral-800 dark:text-neutral-200 text-center md:text-left md:text-xl"
                                 >
                                     {card.title}
                                 </motion.h3>
 
                                 <motion.p
-                                    layoutId={`location-${card.title}-${id}`}
+                                    layoutId={`location-${card.animID}-${id}`}
                                     className="text-neutral-600 dark:text-neutral-400 text-center md:text-left md:text-lg md:mt-2"
                                 >
                                     {card.location}
@@ -192,14 +194,14 @@ export function ExpandableCards({ cards }: ExpandableCardProps) {
 
                         <div className="flex flex-col h-full md:px-1 md:py-4 md:justify-between">
                             <motion.h3
-                                layoutId={`date-${card.title}-${id}`}
+                                layoutId={`date-${card.animID}-${id}`}
                                 className="font-medium text-neutral-800 dark:text-neutral-200 text-center md:text-left md:mt-3"
                             >
                                 {card.date}
                             </motion.h3>
 
                             <motion.button
-                                layoutId={`button-${card.title}-${id}`}
+                                layoutId={`button-${card.animID}-${id}`}
                                 className="px-4 py-2 text-sm rounded-full font-bold bg-gray-100 hover:bg-green-500 hover:text-white text-black
                                 mt-1 md:mt-0 md:mb-4"
                             >
