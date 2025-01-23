@@ -53,9 +53,10 @@ const extendedResumeNavItems: {
 
 const FloatingDockWrapper = ({className}: {className?: string}) => {
   return (
-    <div className={cn(className, "flex items-center justify-center w-full")}>
+    <div className={cn(className, "flex right-0 -top-16 absolute md:relative md:right-0 md:top-0")}>
         <FloatingDock
-            mobileClassName="translate-y-20" // only for demo, remove for production
+            mobileClassName="" // only for demo, remove for production
+            desktopClassName=""
             items={extendedResumeNavItems}
         />
     </div>

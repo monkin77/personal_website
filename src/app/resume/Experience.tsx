@@ -1,12 +1,13 @@
 import React from 'react'
 import ResumeSectionWrapper from './ResumeSectionWrapper'
 import { FaBriefcase } from 'react-icons/fa'
+import ExperienceCards from './ExperienceCards'
 
 const Experience = () => {
   return (
-    <ResumeSectionWrapper title="Experience" icon={<FaBriefcase className='w-full h-full' />} id="experience">
+    <ResumeSectionWrapper title="Work Experience" icon={<FaBriefcase className='w-full h-full' />} id="experience">
         <div className=''>
-            <h1>test</h1>
+            <ExperienceCards />
         </div>
     </ResumeSectionWrapper>
   )

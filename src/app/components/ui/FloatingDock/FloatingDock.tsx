@@ -25,8 +25,8 @@ export const FloatingDock = ({
   mobileClassName,
 }: {
   items: { title: string; icon: React.ReactNode; href: string }[];
-  desktopClassName?: string;
-  mobileClassName?: string;
+  desktopClassName?: React.ComponentProps<"div">["className"];
+  mobileClassName?: React.ComponentProps<"div">["className"];
 }) => {
   return (
     <>
@@ -45,7 +45,7 @@ const FloatingDockMobile = ({
 }) => {
   const [open, setOpen] = useState(false);
   return (
-    <div className={cn("relative block md:hidden", className)}>
+    <div className={cn("relative block md:hidden right-0", className)}>
       <AnimatePresence>
         {open && (
           <motion.div
@@ -104,7 +104,7 @@ const FloatingDockDesktop = ({
       onMouseMove={(e) => mouseX.set(e.pageX)}
       onMouseLeave={() => mouseX.set(Infinity)}
       className={cn(
-        "mx-auto hidden md:flex h-16 gap-4 items-end  rounded-2xl bg-gray-50 dark:bg-neutral-900 px-4 pb-3",
+        "mx-auto hidden md:flex h-16 gap-4 items-end  rounded-2xl bg-gray-50 dark:bg-neutral-900 px-4 pb-3 bg-opacity-80 dark:bg-opacity-80 w-6/12 justify-around",
         className
       )}
     >

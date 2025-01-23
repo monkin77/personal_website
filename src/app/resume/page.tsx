@@ -27,7 +27,7 @@ const Resume = () => {
 
                 <ExtendedResume />
 
-                <div className="flex items-center justify-center w-full sticky bottom-20">
+                <div className="sticky bottom-20">
                     <FloatingDockWrapper className="" />
                 </div>
             </div>
