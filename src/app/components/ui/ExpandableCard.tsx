@@ -5,9 +5,11 @@ import React, { useEffect, useId, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { useOutsideClick } from "@/app/hooks/useOutsideClick";
 
-type cardsContentProps = {
+export type cardsContentProps = {
     description: string;
     title: string;
+    location: string;
+    date: string;
     src: string;
     ctaText: string;
     ctaLink: string;
@@ -143,45 +145,56 @@ export function ExpandableCards({ cards }: ExpandableCardProps) {
                 ) : null}
             </AnimatePresence>
 
-            <ul className="max-w-2xl mx-auto w-full gap-4">
-                {cards.map((card) => (
+            <ul className="w-full mx-auto gap-4">
+                {cards.map((card, idx) => (
                     <motion.div
                         layoutId={`card-${card.title}-${id}`}
                         key={`card-${card.title}-${id}`}
                         onClick={() => setActive(card)}
-                        className="p-4 flex flex-col md:flex-row justify-between items-center hover:bg-neutral-50 dark:hover:bg-neutral-800 rounded-xl cursor-pointer"
+                        className="flex flex-col md:flex-row md:justify-between items-center justify-center hover:bg-neutral-50 dark:hover:bg-neutral-800 rounded-xl
+                        cursor-pointer relative h-72 md:h-48 pt-1 md:pt-0 md:p-6"
                     >
-                        <div className="flex gap-4 flex-col md:flex-row ">
+                        <div className="flex gap-3 md:gap-4 flex-col md:flex-row items-center md:items-start">
                             <motion.div layoutId={`image-${card.title}-${id}`}>
-                                <Image
-                                    width={100}
-                                    height={100}
+                                <img
                                     src={card.src}
                                     alt={card.title}
-                                    className="h-40 w-40 md:h-14 md:w-14 rounded-lg object-cover object-top"
+                                    className="w-32 aspect-square rounded-lg object-cover object-top"
                                 />
                             </motion.div>
-                            <div className="">
+                            <div className="md:p-1">
                                 <motion.h3
                                     layoutId={`title-${card.title}-${id}`}
-                                    className="font-medium text-neutral-800 dark:text-neutral-200 text-center md:text-left"
+                                    className="font-medium text-neutral-800 dark:text-neutral-200 text-center md:text-left md:text-xl"
                                 >
                                     {card.title}
                                 </motion.h3>
+
                                 <motion.p
-                                    layoutId={`description-${card.description}-${id}`}
-                                    className="text-neutral-600 dark:text-neutral-400 text-center md:text-left"
+                                    layoutId={`location-${card.location}-${id}`}
+                                    className="text-neutral-600 dark:text-neutral-400 text-center md:text-left md:text-lg md:mt-2"
                                 >
-                                    {card.description}
+                                    {card.location}
                                 </motion.p>
                             </div>
                         </div>
-                        <motion.button
-                            layoutId={`button-${card.title}-${id}`}
-                            className="px-4 py-2 text-sm rounded-full font-bold bg-gray-100 hover:bg-green-500 hover:text-white text-black mt-4 md:mt-0"
-                        >
-                            {card.ctaText}
-                        </motion.button>
+
+                        <div className="flex flex-col h-full md:px-1 md:py-4 md:justify-between">
+                            <motion.h3
+                                layoutId={`date-${card.date}-${id}`}
+                                className="font-medium text-neutral-800 dark:text-neutral-200 text-center md:text-left md:mt-3"
+                            >
+                                {card.date}
+                            </motion.h3>
+
+                            <motion.button
+                                layoutId={`button-${card.title}-${id}`}
+                                className="px-4 py-2 text-sm rounded-full font-bold bg-gray-100 hover:bg-green-500 hover:text-white text-black
+                                mt-1 md:mt-0 md:mb-4"
+                            >
+                                {card.ctaText}
+                            </motion.button>
+                        </div>
                     </motion.div>
                 ))}
             </ul>

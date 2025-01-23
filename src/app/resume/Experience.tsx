@@ -6,7 +6,7 @@ import ExperienceCards from './ExperienceCards'
 const Experience = () => {
   return (
     <ResumeSectionWrapper title="Work Experience" icon={<FaBriefcase className='w-full h-full' />} id="experience">
-        <div className=''>
+        <div className='w-full relative'>
             <ExperienceCards />
         </div>
     </ResumeSectionWrapper>

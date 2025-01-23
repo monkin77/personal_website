@@ -1,36 +1,38 @@
 "use client";
 
 import React from "react";
-import { ExpandableCards } from "../components/ui/ExpandableCard";
+import { cardsContentProps, ExpandableCards } from "../components/ui/ExpandableCard";
 
-const cards = [
+const cards: cardsContentProps[] = [
     {
-        description: "Lana Del Rey",
-        title: "Summertime Sadness",
-        src: "https://assets.aceternity.com/demos/lana-del-rey.jpeg",
-        ctaText: "Play",
+        title: "CERN OpenLab Intern 2023",
+        location: "Geneva, Switzerland",
+        date: "June 2023 - Aug. 2023",
+        description:
+            "Worked on the Indico team to create a Progressive Web App that is responsible for checking-in participants and \
+            managing events.",
+        src: "experiences/cern2.jpg",
+        ctaText: "Learn More",
         ctaLink: "https://ui.aceternity.com/templates",
         content: () => {
             return (
                 <p>
-                    Lana Del Rey, an iconic American singer-songwriter, is
-                    celebrated for her melancholic and cinematic music style.
-                    Born Elizabeth Woolridge Grant in New York City, she has
-                    captivated audiences worldwide with her haunting voice and
-                    introspective lyrics. <br /> <br /> Her songs often explore
-                    themes of tragic romance, glamour, and melancholia, drawing
-                    inspiration from both contemporary and vintage pop culture.
-                    With a career that has seen numerous critically acclaimed
-                    albums, Lana Del Rey has established herself as a unique and
-                    influential figure in the music industry, earning a
-                    dedicated fan base and numerous accolades.
+                    Worked on the Indico team to create a Progressive Web App
+                    that is responsible for checking-in participants and \
+                    managing events.
+                    <br /> <br /> Attended physics and computing
+                    lectures/workshops on various state-of-the-art topics and
+                    participated on events \ related to CERN, along with the 30
+                    selected students around the world.
                 </p>
             );
         },
     },
     {
-        description: "Babbu Maan",
         title: "Mitran Di Chhatri",
+        location: "Geneva, Switzerland",
+        date: "June 2023 - Aug. 2023",
+        description: "Babbu Maan",
         src: "https://assets.aceternity.com/demos/babbu-maan.jpeg",
         ctaText: "Play",
         ctaLink: "https://ui.aceternity.com/templates",
@@ -55,6 +57,8 @@ const cards = [
     {
         description: "Metallica",
         title: "For Whom The Bell Tolls",
+        location: "Geneva, Switzerland",
+        date: "June 2023 - Aug. 2023",
         src: "https://assets.aceternity.com/demos/metallica.jpeg",
         ctaText: "Play",
         ctaLink: "https://ui.aceternity.com/templates",
@@ -79,6 +83,8 @@ const cards = [
     {
         description: "Led Zeppelin",
         title: "Stairway To Heaven",
+        location: "Geneva, Switzerland",
+        date: "June 2023 - Aug. 2023",
         src: "https://assets.aceternity.com/demos/led-zeppelin.jpeg",
         ctaText: "Play",
         ctaLink: "https://ui.aceternity.com/templates",
@@ -101,6 +107,8 @@ const cards = [
     {
         description: "Mustafa Zahid",
         title: "Toh Phir Aao",
+        location: "Geneva, Switzerland",
+        date: "June 2023 - Aug. 2023",
         src: "https://assets.aceternity.com/demos/toh-phir-aao.jpeg",
         ctaText: "Play",
         ctaLink: "https://ui.aceternity.com/templates",
