@@ -13,7 +13,7 @@ const Resume = () => {
             <BackgroundBeams />
 
             <div className="max-w-[90rem] w-full my-10 min-h-screen relative">
-                <div className="sticky top-5">
+                <div className="sticky top-5 z-50">
                     <Link href="/">
                         <InvertButton
                             title="Back to Home"
@@ -22,7 +22,6 @@ const Resume = () => {
                             otherClasses=""
                         />
                     </Link>
-                    
                 </div>
 
                 <ExtendedResume />

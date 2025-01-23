@@ -102,7 +102,7 @@ export function ExpandableCards({ cards }: ExpandableCardProps) {
 
                             <div>
                                 <div className="flex justify-between items-start p-4">
-                                    <div className="">
+                                    <div className="w-4/5">
                                         <motion.h3
                                             layoutId={`title-${active.animID}-${id}`}
                                             className="font-bold text-neutral-700 dark:text-neutral-200"
@@ -123,6 +123,7 @@ export function ExpandableCards({ cards }: ExpandableCardProps) {
                                         href={active.ctaLink}
                                         target="_blank"
                                         className="text-sm rounded-full font-bold bg-green-500 text-white w-32 md:w-48 py-3 text-center my-2"
+                                        title={active.ctaLink}
                                     >
                                         {active.ctaText}
                                     </motion.a>
@@ -185,14 +186,14 @@ export function ExpandableCards({ cards }: ExpandableCardProps) {
 
                                 <motion.p
                                     layoutId={`location-${card.animID}-${id}`}
-                                    className="text-neutral-600 dark:text-neutral-400 text-center md:text-left md:text-lg md:mt-2"
+                                    className="text-neutral-600 dark:text-neutral-400 text-center md:text-left md:text-lg md:mt-2 max-w-xl"
                                 >
                                     {card.location}
                                 </motion.p>
                             </div>
                         </div>
 
-                        <div className="flex flex-col h-full md:px-1 md:py-4 md:justify-between">
+                        <div className="flex flex-col h-full md:px-1 md:py-4 md:justify-between md:w-48">
                             <motion.h3
                                 layoutId={`date-${card.animID}-${id}`}
                                 className="font-medium text-neutral-800 dark:text-neutral-200 text-center md:text-left md:mt-3"
@@ -205,7 +206,7 @@ export function ExpandableCards({ cards }: ExpandableCardProps) {
                                 className="px-4 py-2 text-sm rounded-full font-bold bg-gray-100 hover:bg-green-500 hover:text-white text-black
                                 mt-1 md:mt-0 md:mb-4"
                             >
-                                {card.ctaText}
+                                Learn More
                             </motion.button>
                         </div>
                     </motion.div>

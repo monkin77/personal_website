@@ -2,6 +2,7 @@ import React from "react";
 import Experience from "./experience/Experience";
 import Profile from "./Profile";
 import Education from "./education/Education";
+import Projects from "./projects/Projects";
 
 const ExtendedResume = () => {
     return (
@@ -11,6 +12,8 @@ const ExtendedResume = () => {
             <Experience />
 
             <Education />
+
+            <Projects />
         </div>
     );
 };
