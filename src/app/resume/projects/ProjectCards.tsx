@@ -122,6 +122,106 @@ const cards: cardsContentProps[] = [
             );
         },
     },
+    {
+        animID: "anim_7",
+        title: "Panik @FEUP",
+        location: "Decentralized Social Network using a P2P Network",
+        date: "Sept. 2022 - Jan. 2023",
+        src: "projects/fakeSocial_square.png",
+        landscapeSrc: "projects/fakeSocial.png",
+        ctaText: "Repository",
+        ctaLink: "https://github.com/monkin77/feup-sdle-2/tree/main",
+        content: () => {
+            return (
+                <p>
+                    Created a peer-to-peer timeline service, similar to the centralized option Twitter. The application supports peer
+                    discovery, content routing, pub/sub, persistent storage, crash recovery, garbage collection, as well as a clean UI.
+                    <br /> <br />
+                    
+                </p>
+            );
+        },
+    },
+    {
+        animID: "anim_8",
+        title: "Wii Balance AlphaBot",
+        location: "Decentralized Social Network using a P2P Network",
+        date: "Sept. 2022 - Jan. 2023",
+        src: "projects/fakeSocial_square.png",
+        landscapeSrc: "projects/fakeSocial.png",
+        ctaText: "Repository",
+        ctaLink: "https://github.com/monkin77/feup-sdle-2/tree/main",
+        content: () => {
+            return (
+                <p>
+                    Created a peer-to-peer timeline service, similar to the centralized option Twitter. The application supports peer
+                    discovery, content routing, pub/sub, persistent storage, crash recovery, garbage collection, as well as a clean UI.
+                    <br /> <br />
+                    
+                </p>
+            );
+        },
+    },
+    {
+        animID: "anim_9",
+        title: "Mystic Realms - Unity 3D Game",
+        location: "Decentralized Social Network using a P2P Network",
+        date: "Sept. 2022 - Jan. 2023",
+        src: "projects/fakeSocial_square.png",
+        landscapeSrc: "projects/fakeSocial.png",
+        ctaText: "Repository",
+        ctaLink: "https://github.com/monkin77/Mystic-Realms",
+        content: () => {
+            return (
+                <p>
+                    Created a peer-to-peer timeline service, similar to the centralized option Twitter. The application supports peer
+                    discovery, content routing, pub/sub, persistent storage, crash recovery, garbage collection, as well as a clean UI.
+                    <br /> <br />
+                    
+                </p>
+            );
+        },
+    },
+    {
+        animID: "anim_10",
+        title: "Terrarius - Text-Based Sandbox Game",
+        location: "Decentralized Social Network using a P2P Network",
+        date: "Sept. 2022 - Jan. 2023",
+        src: "projects/fakeSocial_square.png",
+        landscapeSrc: "projects/fakeSocial.png",
+        ctaText: "Repository",
+        ctaLink: "https://github.com/monkin77/feup-sdle-2/tree/main",
+        content: () => {
+            return (
+                <p>
+                    Created a peer-to-peer timeline service, similar to the centralized option Twitter. The application supports peer
+                    discovery, content routing, pub/sub, persistent storage, crash recovery, garbage collection, as well as a clean UI.
+                    <br /> <br />
+                    
+                </p>
+            );
+        },
+    },
+    {
+        animID: "anim_11",
+        title: "Newtify, Web App",
+        location: "Decentralized Social Network using a P2P Network",
+        date: "Sept. 2022 - Jan. 2023",
+        src: "projects/fakeSocial_square.png",
+        landscapeSrc: "projects/fakeSocial.png",
+        ctaText: "Repository",
+        ctaLink: "https://github.com/monkin77/feup-sdle-2/tree/main",
+        content: () => {
+            return (
+                <p>
+                    Created a peer-to-peer timeline service, similar to the centralized option Twitter. The application supports peer
+                    discovery, content routing, pub/sub, persistent storage, crash recovery, garbage collection, as well as a clean UI.
+                    <br /> <br />
+                    
+                </p>
+            );
+        },
+    },
 ];
 
 const ProjectCards = () => {
