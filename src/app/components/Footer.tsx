@@ -31,13 +31,13 @@ const Footer = () => {
                                 onClick={() =>
                                     window.open(profile.url, "_blank")
                                 }
+                                title={profile.url}
                             >
                                 <img
                                     src={profile.img}
                                     alt={`Img-${profile.id}`}
                                     width="70%"
                                     /* height={20} */
-                                    title={profile.url}
                                 />
                             </ShimmerButton>
                         </div>

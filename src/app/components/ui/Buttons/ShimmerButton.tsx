@@ -4,10 +4,12 @@ const ShimmerButton = ({
     children,
     className,
     onClick,
+    title
 }: {
     children: React.ReactNode;
     className?: string;
     onClick?: () => void;
+    title?: string;
 }) => {
     return (
         // Button code
@@ -17,6 +19,7 @@ const ShimmerButton = ({
                 className
             )}
             onClick={onClick}
+            title={title}
         >
             {children}
         </button>
