@@ -61,10 +61,10 @@ export function ExpandableCards({ cards }: ExpandableCardProps) {
 
             <AnimatePresence>
                 {active && typeof active === "object" ? (
-                    <div className="fixed inset-0  grid place-items-center z-[100]">
+                    <div className="fixed inset-0 grid place-items-center z-[100]">
                         <motion.button
                             key={`button-${active.title}-${id}`}
-                            layout
+                            layout  
                             initial={{
                                 opacity: 0,
                             }}
@@ -85,18 +85,16 @@ export function ExpandableCards({ cards }: ExpandableCardProps) {
                         <motion.div
                             layoutId={`card-${active.title}-${id}`}
                             ref={ref}
-                            className="w-full max-w-[500px]  h-full md:h-fit md:max-h-[90%]  flex flex-col bg-white dark:bg-neutral-900 sm:rounded-3xl overflow-hidden"
+                            className="w-full max-w-3xl h-full md:h-fit md:max-h-[90%] flex flex-col bg-white dark:bg-neutral-900 sm:rounded-3xl overflow-hidden"
                         >
                             <motion.div
                                 layoutId={`image-${active.title}-${id}`}
                             >
-                                <Image
-                                    priority
-                                    width={200}
-                                    height={200}
+                                <img
+                                    // priority
                                     src={active.src}
                                     alt={active.title}
-                                    className="w-full h-80 lg:h-80 sm:rounded-tr-lg sm:rounded-tl-lg object-cover object-top"
+                                    className="w-full h-60 lg:h-60 sm:rounded-tr-lg sm:rounded-tl-lg object-cover object-top"
                                 />
                             </motion.div>
 
@@ -109,11 +107,12 @@ export function ExpandableCards({ cards }: ExpandableCardProps) {
                                         >
                                             {active.title}
                                         </motion.h3>
+
                                         <motion.p
-                                            layoutId={`description-${active.description}-${id}`}
-                                            className="text-neutral-600 dark:text-neutral-400"
+                                            layoutId={`location-${active.title}-${id}`}
+                                            className="text-neutral-600 dark:text-neutral-400 text-center md:text-left md:text-lg md:mt-2"
                                         >
-                                            {active.description}
+                                            {active.location}
                                         </motion.p>
                                     </div>
 
@@ -121,11 +120,12 @@ export function ExpandableCards({ cards }: ExpandableCardProps) {
                                         layoutId={`button-${active.title}-${id}`}
                                         href={active.ctaLink}
                                         target="_blank"
-                                        className="px-4 py-3 text-sm rounded-full font-bold bg-green-500 text-white"
+                                        className="text-sm rounded-full font-bold bg-green-500 text-white w-80 md:w-48 py-3 text-center my-2"
                                     >
                                         {active.ctaText}
                                     </motion.a>
                                 </div>
+                                
                                 <div className="pt-4 relative px-4">
                                     <motion.div
                                         layout
@@ -171,7 +171,7 @@ export function ExpandableCards({ cards }: ExpandableCardProps) {
                                 </motion.h3>
 
                                 <motion.p
-                                    layoutId={`location-${card.location}-${id}`}
+                                    layoutId={`location-${card.title}-${id}`}
                                     className="text-neutral-600 dark:text-neutral-400 text-center md:text-left md:text-lg md:mt-2"
                                 >
                                     {card.location}
