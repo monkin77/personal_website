@@ -1,7 +1,10 @@
 "use client";
 
 import React from "react";
-import { cardsContentProps, ExpandableCards } from "../components/ui/ExpandableCard";
+import {
+    cardsContentProps,
+    ExpandableCards,
+} from "../../components/ui/ExpandableCard";
 
 const cards: cardsContentProps[] = [
     {
@@ -16,11 +19,14 @@ const cards: cardsContentProps[] = [
         content: () => {
             return (
                 <p>
-                    Worked on the Indico team to create a Progressive Web App that is responsible for checking-in 
-                    participants and managing events.
-                    <br /> <br /> 
-                    Attended physics and computing lectures/workshops on various state-of-the-art topics and
-                    participated on events related to CERN, along with the 30 selected students around the world.
+                    Worked on the Indico team to create a Progressive Web App
+                    that is responsible for checking-in participants and
+                    managing events.
+                    <br /> <br />
+                    Attended physics and computing lectures/workshops on various
+                    state-of-the-art topics and participated on events related
+                    to CERN, along with the 30 selected students around the
+                    world.
                 </p>
             );
         },
@@ -37,10 +43,11 @@ const cards: cardsContentProps[] = [
         content: () => {
             return (
                 <p>
-                    Apply data science and machine learning techniques to analyze the Dynamic Range Adaptation phenomenon in the
-                    Primary Motor Cortex, under the supervision of Prof. Steven Chase.
-                    <br /> <br /> 
-                    
+                    Apply data science and machine learning techniques to
+                    analyze the Dynamic Range Adaptation phenomenon in the
+                    Primary Motor Cortex, under the supervision of Prof. Steven
+                    Chase.
+                    <br /> <br />
                 </p>
             );
         },
@@ -57,12 +64,15 @@ const cards: cardsContentProps[] = [
         content: () => {
             return (
                 <p>
-                    Explore the viability of Neuromorphic Computing as a highly efficient alternative to traditional computing systems to
+                    Explore the viability of Neuromorphic Computing as a highly
+                    efficient alternative to traditional computing systems to
                     perform the real-time analysis of neuronal activity.
-                    <br /> <br /> 
-                    Work with Intel’s neuromorphic chip (Loihi) and the LAVA framework to design neuromorphic algorithms that
-                    characterize the activity of in-vitro neuronal cultures available at i3s.
-                    Worked on the Indico team to create a Progressive Web App that is responsible for checking-in 
+                    <br /> <br />
+                    Work with Intel’s neuromorphic chip (Loihi) and the LAVA
+                    framework to design neuromorphic algorithms that
+                    characterize the activity of in-vitro neuronal cultures
+                    available at i3s. Worked on the Indico team to create a
+                    Progressive Web App that is responsible for checking-in
                     participants and managing events.
                 </p>
             );
@@ -80,10 +90,11 @@ const cards: cardsContentProps[] = [
         content: () => {
             return (
                 <p>
-                    Launched a Virtual Reality arcade with 7000+ customers so far, providing the first VR experiences in Portugal to the
-                    general public and achieving a 5.0 max rating in Google from more than 270 reviews.
-                    <br /> <br /> 
-                    
+                    Launched a Virtual Reality arcade with 7000+ customers so
+                    far, providing the first VR experiences in Portugal to the
+                    general public and achieving a 5.0 max rating in Google from
+                    more than 270 reviews.
+                    <br /> <br />
                 </p>
             );
         },
@@ -100,12 +111,16 @@ const cards: cardsContentProps[] = [
         content: () => {
             return (
                 <p>
-                    Development of a React Native Application to manage industrial production and reduce waste. This App is installed
-                    in more than 300 machines around multiple countries.
-                    <br /> <br /> 
-                    Design for system reliability and fault resilience, reducing the system downtime by more than 50%.
-                    <br /> <br /> 
-                    Implementation of an open-source Android Module to communicate with the EsperSDK (&gt; 91 000 Downloads)
+                    Development of a React Native Application to manage
+                    industrial production and reduce waste. This App is
+                    installed in more than 300 machines around multiple
+                    countries.
+                    <br /> <br />
+                    Design for system reliability and fault resilience, reducing
+                    the system downtime by more than 50%.
+                    <br /> <br />
+                    Implementation of an open-source Android Module to
+                    communicate with the EsperSDK (&gt; 91 000 Downloads)
                 </p>
             );
         },
@@ -122,9 +137,11 @@ const cards: cardsContentProps[] = [
         content: () => {
             return (
                 <p>
-                    Overview of the areas inside the company, resulting in a final project for each one, namely: Digital Enterprise
-                    Solutions (AngularJS and Quarkus), High Integrity Systems (Python) and Smart Technology Solutions (AWS).
-                    <br /> <br /> 
+                    Overview of the areas inside the company, resulting in a
+                    final project for each one, namely: Digital Enterprise
+                    Solutions (AngularJS and Quarkus), High Integrity Systems
+                    (Python) and Smart Technology Solutions (AWS).
+                    <br /> <br />
                 </p>
             );
         },

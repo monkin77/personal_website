@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaAddressCard, FaBriefcase, FaHammer, FaRunning, FaTrophy, FaUser } from 'react-icons/fa'
+import { FaAddressCard, FaBriefcase, FaGraduationCap, FaHammer, FaRunning, FaTrophy, FaUser } from 'react-icons/fa'
 import { FloatingDock } from './FloatingDock';
 import { cn } from '@/lib/utils';
 
@@ -21,6 +21,13 @@ const extendedResumeNavItems: {
             <FaBriefcase className="h-full w-full text-neutral-500 dark:text-neutral-300" />
         ),
         href: "#experience",
+    },
+    {
+        title: "Education",
+        icon: (
+            <FaGraduationCap className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        ),
+        href: "#education",
     },
     {
         title: "Projects",

@@ -1,6 +1,7 @@
 import React from "react";
-import Experience from "./Experience";
+import Experience from "./experience/Experience";
 import Profile from "./Profile";
+import Education from "./education/Education";
 
 const ExtendedResume = () => {
     return (
@@ -8,6 +9,8 @@ const ExtendedResume = () => {
             <Profile />
 
             <Experience />
+
+            <Education />
         </div>
     );
 };
