@@ -114,8 +114,8 @@ export const projects = [
             "/technologies/threejs.svg",
             "/technologies/vercel.svg",
         ],
-        link: "/",
-        linkText: "Check Live Website",
+        link: "https://github.com/monkin77/personal_website",
+        linkText: "Check Repository",
     },
     {
         id: 4,
