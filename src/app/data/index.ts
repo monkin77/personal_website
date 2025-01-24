@@ -47,16 +47,16 @@ export const aboutGridItems: {
         id: 4,
         title: "Tech enthusiast with a passion for development.",
         description: "",
-        img: "/grid.svg",
-        spareImg: "/b4.svg",
+        img: "/hero-section/grid.svg",
+        spareImg: "/hero-section/b4.svg",
     },
 
     {
         id: 5,
         title: "Specializing in Comp. Neuroscience & Spiking Neural Networks.",
         description: "What have I been up to lately?",
-        img: "/b5.svg",
-        spareImg: "/grid.svg",
+        img: "/hero-section/b5.svg",
+        spareImg: "/hero-section/grid.svg",
     },
     {
         id: 6,

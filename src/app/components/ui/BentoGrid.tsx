@@ -11,6 +11,7 @@ import brainAnimData from "../../data/anim/brain.json";
 import { aboutGridItems as gridItems } from "@/app/data";
 import { LinkPreview } from "./LinkPreview";
 import { useRouter } from "next/navigation";
+import Image from "next/image";
 
 const animationList = [compEngAnimData, brainAnimData];
 
@@ -152,20 +153,23 @@ export const BentoGrid = ({ className }: { className?: string }) => {
             <BentoGridItemWrapper className="lg:col-span-2 md:col-span-3 md:row-span-1">
                 <div className="w-full h-full absolute">
                     {gridItems[3].img && (
-                        <img
+                        <Image
                             src={gridItems[3].img}
                             alt={gridItems[3].img}
                             className="object-cover" // , object-center"
+                            fill
                         />
                     )}
                 </div>
 
                 <div className="absolute right-0 -bottom-5">
                     {gridItems[3].spareImg && (
-                        <img
+                        <Image
                             src={gridItems[3].spareImg}
                             alt={gridItems[3].spareImg}
                             className="object-cover, object-center w-full h-full"
+                            width={350}
+                            height={200}
                         />
                     )}
                 </div>
@@ -181,20 +185,24 @@ export const BentoGrid = ({ className }: { className?: string }) => {
             <BentoGridItemWrapper className="md:col-span-3 md:row-span-2">
                 <div className="w-full h-full absolute">
                     {gridItems[4].img && (
-                        <img
+                        <Image
                             src={gridItems[4].img}
                             alt={gridItems[4].img}
                             className="absolute right-0 bottom-0 md:w-96 w-60 object-cover"
+                            width={400}
+                            height={400}
                         />
                     )}
                 </div>
 
                 <div className="absolute right-0 -bottom-5 w-full opacity-80">
                     {gridItems[4].spareImg && (
-                        <img
+                        <Image
                             src={gridItems[4].spareImg}
                             alt={gridItems[4].spareImg}
                             className="object-cover, object-center w-full h-full"
+                            width={600}
+                            height={600}
                         />
                     )}
                 </div>
