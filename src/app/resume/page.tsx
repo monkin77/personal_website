@@ -9,7 +9,7 @@ import { BackgroundBeams } from "../components/ui/Bg/BackgroundBeams";
 const Resume = () => {
 
     return (
-        <main className="relative bg-background flex justify-center items-center flex-col overflow-clip mx-auto sm:px-10 px-5">
+        <main className="relative bg-background flex justify-center items-center flex-col overflow-x-clip mx-auto sm:px-10 px-5">
             <BackgroundBeams />
 
             <div className="max-w-[90rem] w-full my-10 min-h-screen relative">
@@ -25,10 +25,10 @@ const Resume = () => {
                 </div>
 
                 <ExtendedResume />
+            </div>
 
-                <div className="sticky bottom-20">
-                    <FloatingDockWrapper className="" />
-                </div>
+            <div className="fixed right-4 lg:right-[5%] 2xl:right-[8%] top-2/3 md:top-16 z-50">
+                <FloatingDockWrapper className="" />
             </div>
         </main>
     );
