@@ -164,7 +164,7 @@ export const testimonials: {
     },
     {
         quote: "OERN, the Engineer's Syndicate of Northern Portugal, recognized the relevance of my dissertation in the field of Computational Neuroscience and awarded me a \
-        Merit Grant. The participation involved presenting my work through a video presentation and a written report, fromo where 50 students were selected to receive the prize.",
+        Merit Grant. The participation involved presenting my work through a video presentation and a written report, from where 50 students were selected to receive the prize.",
         name: "OERN - Ordem dos Engenheiros Região Norte",
         title: "Merit Grant for Dissertation Work",
         logo: "/companies/oern.webp",
