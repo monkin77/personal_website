@@ -2,12 +2,15 @@
 import { FaArrowRight } from "react-icons/fa";
 import { useState, useRef, useId, useEffect } from "react";
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 
 export interface SlideData {
     title: string;
     button: string;
     src: string;
     slideClassName?: string;
+    srcW: number; // Image Width
+    srcH: number; // Image Height
 }
 
 interface SlideProps {
@@ -64,7 +67,7 @@ const Slide = ({ slide, index, current, handleSlideClick }: SlideProps) => {
         event.currentTarget.style.opacity = "1";
     };
 
-    const { src, button, title, slideClassName } = slide;
+    const { src, button, title, slideClassName, srcW, srcH } = slide;
 
     return (
         <div className="[perspective:1200px] [transform-style:preserve-3d]">
@@ -92,7 +95,7 @@ const Slide = ({ slide, index, current, handleSlideClick }: SlideProps) => {
                                 : "none",
                     }}
                 >
-                    <img
+                    <Image
                         className="absolute inset-0 w-[120%] h-[120%] object-cover transition-opacity duration-600 ease-in-out"
                         style={{
                             opacity: current === index ? 1 : 0.5,
@@ -102,7 +105,10 @@ const Slide = ({ slide, index, current, handleSlideClick }: SlideProps) => {
                         onLoad={imageLoaded}
                         loading="eager"
                         decoding="sync"
+                        height={srcW}
+                        width={srcH}
                     />
+
                     {current === index && (
                         <div className="absolute inset-0 bg-black/30 transition-all duration-1000" />
                     )}

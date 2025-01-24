@@ -138,6 +138,8 @@ export const testimonials: {
     name: string;
     title: string;
     logo?: string;
+    logoW?: number;
+    logoH?: number;
 }[] = [
     {
         quote: "Awarded a merit scholarship by Huawei for academic excellence and outstanding performance. With less than 1% selection rate, this scholarship is part of the Huawei \
@@ -145,6 +147,8 @@ export const testimonials: {
         name: "Huawei",
         title: "Merit Scholarship",
         logo: "/companies/huawei_2.png",
+        logoW: 472,
+        logoH: 479,
     },
     {
         quote: "Carnegie Mellon Portugal sponsored my Research Project at Carnegie Mellon University in Pittsburgh, USA. This opportunity allowed me \
@@ -153,6 +157,8 @@ export const testimonials: {
         name: "Carnegie Mellon Portugal",
         title: "Research Scholarship",
         logo: "/companies/cmu_2.jpg",
+        logoW: 2363,
+        logoH: 710,
     },
     {
         quote: "ActInSpace is an international innovation contest sponsored by the French Space Agency and the European Space Agency. I was part of the winning team in \
@@ -161,6 +167,8 @@ export const testimonials: {
         name: "ActInSpace, ESA & CNES",
         title: "ActInSpace Portugal 2022 Winner",
         logo: "/companies/actInSpace.png",
+        logoW: 715,
+        logoH: 601,
     },
     {
         quote: "OERN, the Engineer's Syndicate of Northern Portugal, recognized the relevance of my dissertation in the field of Computational Neuroscience and awarded me a \
@@ -168,6 +176,8 @@ export const testimonials: {
         name: "OERN - Ordem dos Engenheiros Região Norte",
         title: "Merit Grant for Dissertation Work",
         logo: "/companies/oern.webp",
+        logoW: 723,
+        logoH: 613,
     },
     {
         quote: "Pmate is a high-school level national mathematics competition hosted in Portugal, where students compete in a series of mathematical challenges. \
@@ -176,6 +186,8 @@ export const testimonials: {
         name: "Pmate",
         title: "Pmate 2017 & 2018 - 2nd Place",
         logo: "/companies/pmate.png",
+        logoW: 408,
+        logoH: 162,
     },
 ];
 
