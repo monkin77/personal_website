@@ -3,12 +3,26 @@ import TravelsMap from "./TravelsMap";
 import { TextGenerateEffect } from "../components/ui/TextGenerateEffect";
 import { Meteors } from "../components/ui/Bg/MeteorEffect";
 import TravelsCards from "./TravelsCards";
+import Link from "next/link";
+import InvertButton from "../components/ui/Buttons/InvertButton";
+import { FaArrowLeft } from "react-icons/fa";
 
 const TravelLog = () => {
     return (
         <div className="py-5 md:py-10 dark:bg-black bg-black w-full relative overflow-x-clip">            
             <div className="w-full text-center mb-4 md:mb-8">
                 <Meteors number={20}  />
+
+                <div className="hidden lg:inline-block absolute top-10 left-10 z-50">
+                    <Link href="/">
+                        <InvertButton
+                            title="Back to Home"
+                            icon={<FaArrowLeft />}
+                            position="left"
+                            otherClasses=""
+                        />
+                    </Link>
+                </div>
 
                 <TextGenerateEffect
                     className="text-center"
