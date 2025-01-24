@@ -194,37 +194,65 @@ export const testimonials: {
 export const companies: {
     id: number;
     name: string;
-    img: string;
-    nameImg?: string;
+    img: {
+        url: string,
+        width: number,
+        height: number,
+    };
+    nameImg?: {
+        url: string,
+        width: number,
+        height: number,
+    };
 }[] = [
     {
         id: 1,
         name: "Huawei",
-        img: "/companies/huawei.png",
+        img: {
+            url: "/companies/huawei.png",
+            width: 300,
+            height: 74,
+        },
         // nameImg: "/cloudName.svg",
     },
     {
         id: 2,
         name: "OERN",
-        img: "/companies/oern.webp",
+        img: {
+            url: "/companies/oern.webp",
+            width: 723,
+            height: 213,
+        },
         // nameImg: "/appName.svg",
     },
     {
         id: 3,
         name: "CMU Portugal",
-        img: "/companies/cmu_2.jpg",
+        img: {
+            url: "/companies/cmu_2.jpg",
+            width: 3363,
+            height: 710,
+        },
         // nameImg: "/hostName.svg",
     },
     {
         id: 4,
         name: "ESA",
-        img: "/companies/esa.png",
+        img: {
+            url: "/companies/esa.png",
+            width: 3388,
+            height: 2127,
+        },
         // nameImg: "/streamName.svg",
     },
     {
         id: 5,
         name: "CNES",
-        img: "/companies/cnes.png",
+        img: {
+            url: "/companies/cnes.png",
+            width: 800,
+            height: 257,
+        },
     },
 ];
 

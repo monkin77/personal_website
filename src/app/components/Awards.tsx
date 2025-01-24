@@ -1,6 +1,7 @@
 import React from "react";
 import { InfiniteMovingCards } from "./ui/InfiniteMovingCards";
 import { companies, testimonials } from "../data";
+import Image from "next/image";
 
 const Awards = () => {
     return (
@@ -28,23 +29,29 @@ const Awards = () => {
                             {img &&
                                 (nameImg ? (
                                     <>
-                                        <img
-                                            src={img}
+                                        <Image
+                                            src={img.url}
                                             alt={name}
                                             className="md:w-10 w-5"
+                                            width={img.width}
+                                            height={img.height}
                                         />
 
-                                        <img
-                                            src={nameImg}
+                                        <Image
+                                            src={nameImg.url}
                                             alt={name}
                                             className="md:w-24 w-20"
+                                            width={nameImg.width}
+                                            height={nameImg.height}
                                         />
                                     </>
                                 ) : (
-                                    <img
-                                        src={img}
+                                    <Image
+                                        src={img.url}
                                         alt={name}
                                         className="md:w-32 w-20"
+                                        width={img.width}
+                                        height={img.height}
                                     />
                                 ))}
                         </div>
