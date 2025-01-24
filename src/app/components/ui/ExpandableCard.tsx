@@ -10,7 +10,11 @@ export type cardsContentProps = {
     title: string;
     location: string;
     date: string;
-    src: string;
+    src: {
+        url: string;
+        width: number;
+        height: number;
+    };
     landscapeSrc: string;
     ctaText: string;
     ctaLink: string;
@@ -79,7 +83,7 @@ export function ExpandableCards({ cards }: ExpandableCardProps) {
                                     duration: 0.05,
                                 },
                             }}
-                            className="flex absolute top-2 right-2 lg:hidden items-center justify-center bg-white rounded-full h-6 w-6"
+                            className="flex absolute top-2 right-2 lg:hidden items-center justify-center bg-white rounded-full h-6 w-6 z-50"
                             onClick={() => setActive(null)}
                         >
                             <CloseIcon />
@@ -92,12 +96,16 @@ export function ExpandableCards({ cards }: ExpandableCardProps) {
                             <motion.div
                                 layoutId={`image-${active.animID}-${id}`}
                             >
-                                <img
-                                    // priority
-                                    src={active.landscapeSrc}
-                                    alt={active.title}
-                                    className="w-full h-60 lg:h-60 sm:rounded-tr-lg sm:rounded-tl-lg object-cover object-top"
-                                />
+                                <div className="w-full h-60 lg:h-60 relative">
+                                    <Image
+                                        // priority
+                                        src={active.landscapeSrc}
+                                        alt={active.title}
+                                        className="sm:rounded-tr-lg sm:rounded-tl-lg object-cover object-top"
+                                        fill
+                                    />
+                                </div>
+                               
                             </motion.div>
 
                             <div className="h-full">
@@ -173,11 +181,14 @@ export function ExpandableCards({ cards }: ExpandableCardProps) {
                     >
                         <div className="flex gap-3 md:gap-4 flex-col md:flex-row items-center md:items-start">
                             <motion.div layoutId={`image-${card.animID}-${id}`}>
-                                <img
-                                    src={card.src}
+                                <Image
+                                    src={card.src.url}
                                     alt={card.title}
                                     className="w-32 aspect-square rounded-lg object-contain object-top"
+                                    width={card.src.width}
+                                    height={card.src.height}
                                 />
+
                             </motion.div>
                             <div className="md:p-1">
                                 <motion.h3

@@ -31,9 +31,6 @@ const cards: Card[] = [
 ];
 
 const HobbiesCards = () => {
-    {
-        /* <ExpandableCards cards={cards} />; */
-    }
     return (
         <div>
             <div className="flex-row w-5/6 md:w-full mx-auto">
