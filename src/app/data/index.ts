@@ -255,6 +255,8 @@ export const slideData: SlideCardData[] = [
         company: "CERN",
         src: "experiences/cern2.jpg",
         companyLogo: "companies/cern.png",
+        logoW: 443,
+        logoH: 450,
         slideClassName: "opacity-70",
         bulletPoints: [
             "Worked on the Indico team to create a Progressive Web App that is responsible for checking-in participants and \
@@ -269,6 +271,8 @@ export const slideData: SlideCardData[] = [
         company: "Carnegie Mellon University",
         src: "experiences/cmu.jpg",
         companyLogo: "companies/cmu.png",
+        logoW: 1143,
+        logoH: 729,
         slideClassName: "opacity-70 ",
         bulletPoints: [
             "Apply data science and machine learning techniques to analyze the Dynamic Range Adaptation phenomenon in the \
@@ -281,6 +285,8 @@ export const slideData: SlideCardData[] = [
         company: "i3s",
         src: "experiences/i3s.png",
         companyLogo: "companies/i3s.png",
+        logoW: 157,
+        logoH: 220,
         slideClassName: "opacity-70",
         bulletPoints: [
             "Explore the viability of Neuromorphic Computing as a highly efficient alternative to traditional computing systems to \
@@ -295,6 +301,8 @@ export const slideData: SlideCardData[] = [
         company: "VRPortal",
         src: "experiences/vrportal.jpg",
         companyLogo: "companies/vrportal.png",
+        logoW: 1064,
+        logoH: 1063,
         slideClassName: "opacity-70",
         bulletPoints: [
             "Launched a Virtual Reality arcade with 7000+ customers so far, providing the first VR experiences in Portugal to the \
@@ -307,6 +315,8 @@ export const slideData: SlideCardData[] = [
         company: "Smartex.ai",
         src: "experiences/smartex.png",
         companyLogo: "companies/smartex.jpeg",
+        logoW: 200,
+        logoH: 200,
         slideClassName: "opacity-45",
         bulletPoints: [
             "Development of a React Native Application to manage industrial production and reduce waste. This App is installed \
@@ -321,6 +331,8 @@ export const slideData: SlideCardData[] = [
         company: "Critical Software",
         src: "experiences/critical_software.jpg",
         companyLogo: "companies/critical_software.png",
+        logoW: 995,
+        logoH: 1024,
         slideClassName: "opacity-70",
         bulletPoints: [
             "Overview of the areas inside the company, resulting in a final project for each one, namely: Digital Enterprise \

@@ -3,6 +3,7 @@ import { FaArrowRight } from "react-icons/fa";
 import { useState, useRef, useId, useEffect } from "react";
 import { cn } from "@/lib/utils";
 import CarouselCardDetails from "./CarouselCardDetails";
+import Image from "next/image";
 
 export interface SlideCardData {
     title: string;
@@ -12,6 +13,8 @@ export interface SlideCardData {
     dates: string;
     company: string;
     companyLogo: string;
+    logoW: number; // Logo Width
+    logoH: number; // Logo Height
 }
 
 interface SlideProps {
@@ -99,7 +102,7 @@ const Slide = ({ slide, index, current, handleSlideClick }: SlideProps) => {
                                 : "none",
                     }}
                 >
-                    <img
+                    <Image
                         className="absolute inset-0 w-[120%] h-[120%] object-cover transition-opacity duration-600 ease-in-out"
                         style={{
                             opacity: current === index ? 1 : 0.5,
@@ -109,6 +112,9 @@ const Slide = ({ slide, index, current, handleSlideClick }: SlideProps) => {
                         onLoad={imageLoaded}
                         loading="eager"
                         decoding="sync"
+                        height={4096}
+                        width={3072}
+                        /* TODO: CHeck if this is okay */
                     />
                     {current === index && (
                         <div className="absolute inset-0 bg-black/30 transition-all duration-1000" />
@@ -130,12 +136,16 @@ const Slide = ({ slide, index, current, handleSlideClick }: SlideProps) => {
                     </h2>
 
                     <div className="flex flex-col md:flex-row justify-between px-5 pt-3 md:px-9 align-middle">
-                        <div className="flex flex-row gap-x-3 h-7 md:h-10 items-center">
-                            <img
-                                src={slide.companyLogo}
-                                alt={`${slide.company} logo`}
-                                className="h-full"
-                            />
+                        <div className="flex flex-row gap-x-3 h-7 md:h-10 items-center relative">
+                            <div className="h-7 md:h-10 relative">
+                                <Image
+                                    src={slide.companyLogo}
+                                    alt={`${slide.company} logo`}
+                                    className="h-full w-auto"
+                                    width={slide.logoW}
+                                    height={slide.logoH}
+                                />
+                            </div>
 
                             <h4 className="text-sm md:text-base lg:text-lg font-semibold">
                                 {slide.company}
@@ -145,9 +155,9 @@ const Slide = ({ slide, index, current, handleSlideClick }: SlideProps) => {
                         <h4 className="text-sm md:text-lg lg:text-xl font-semibold mt-2 md:mt-0">
                             {slide.dates}
                         </h4>
-                    </div> 
+                    </div>
 
-                    { /* Render if screen is at least at md breakpoint */}
+                    {/* Render if screen is at least at md breakpoint */}
                     <CarouselCardDetails bulletPoints={bulletPoints} />
                 </article>
             </li>
