@@ -14,7 +14,7 @@ const ResumeSectionWrapper = ({
     id: string;
 }) => {
     return (
-        <TracingBeam>
+        <TracingBeam id={`beam-${id}`}>
             <div
                 className="max-w-[90vw] min-h-96 flex flex-col items-center mt-10 md:mt-15 px-1 py-5 md:px-5 md:py-10 relative"
                 id={id}

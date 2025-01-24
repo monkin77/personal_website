@@ -11,9 +11,11 @@ import { cn } from "@/lib/utils";
 export const TracingBeam = ({
   children,
   className,
+  id
 }: {
   children: React.ReactNode;
   className?: string;
+  id: string;
 }) => {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
@@ -49,6 +51,7 @@ export const TracingBeam = ({
     <motion.div
       ref={ref}
       className={cn("relative w-full max-w-5xl mx-auto h-full", className)}
+      id={id}
     >
       <div className="absolute -left-4 md:-left-20 top-3">
         <motion.div
@@ -97,7 +100,7 @@ export const TracingBeam = ({
           <motion.path
             d={`M 1 0V -36 l 18 24 V ${svgHeight * 0.8} l -18 24V ${svgHeight}`}
             fill="none"
-            stroke="url(#gradient)"
+            stroke={`url(#${id}-gradient)`}
             strokeWidth="1.25"
             className="motion-reduce:hidden"
             transition={{
@@ -106,7 +109,7 @@ export const TracingBeam = ({
           ></motion.path>
           <defs>
             <motion.linearGradient
-              id="gradient"
+              id={`${id}-gradient`}
               gradientUnits="userSpaceOnUse"
               x1="0"
               x2="0"
