@@ -10,9 +10,13 @@ const Resume = () => {
 
     return (
         <main className="relative bg-background flex justify-center items-center flex-col overflow-x-clip mx-auto sm:px-10 px-5">
-            <BackgroundBeams />
+            <BackgroundBeams className="h-1/3" />
 
-            <div className="max-w-[90rem] w-full my-10 min-h-screen relative">
+            <BackgroundBeams className="top-1/4 h-1/3" />
+
+            <BackgroundBeams className="top-2/3 h-1/3" />
+
+            <div className="max-w-[90rem] w-full my-10 min-h-screen relative" >
                 <div className="sticky top-5 z-50">
                     <Link href="/">
                         <InvertButton
@@ -30,6 +34,8 @@ const Resume = () => {
             <div className="fixed right-4 lg:right-[5%] 2xl:right-[8%] top-2/3 md:top-16 z-50">
                 <FloatingDockWrapper className="" />
             </div>
+
+           {/*  <BackgroundBeams className="h-[200vh] bottom-0" /> */}
         </main>
     );
 };

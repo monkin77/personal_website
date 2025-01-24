@@ -6,7 +6,7 @@ import ResumeSocials from "./Socials";
 const Profile = () => {
     return (
         <div
-            className="flex justify-center relative mt-20 mb-5 md:mb-10 z-10 flex-col md:flex-row"
+            className="flex justify-center relative mt-14 mb-5 md:mb-10 z-10 flex-col md:flex-row"
             id="#"
         >
             <div className="flex flex-col items-center justify-center relative h-full">
