@@ -3,6 +3,7 @@ import { projects } from "../data";
 import { PinContainer } from "./ui/3DPin/PinContainer";
 import { FaLocationArrow } from "react-icons/fa";
 import { LinkPreview } from "./ui/LinkPreview";
+import Image from "next/image";
 
 function RecentProjects() {
     return (
@@ -14,7 +15,19 @@ function RecentProjects() {
 
             <div className="flex flex-wrap items-center justify-center p-4 gap-x-24 gap-y-8 mt-10 z-20 relative">
                 {projects.map(
-                    ({ id, title, des, img, iconLists, link, linkText, imgCite }, idx) => (
+                    (
+                        {
+                            id,
+                            title,
+                            des,
+                            img,
+                            iconLists,
+                            link,
+                            linkText,
+                            imgCite,
+                        },
+                        idx
+                    ) => (
                         <div
                             key={idx}
                             className="sm:h-[41rem] h-[32rem] lg:min-h-[32.5rem] flex items-center justify-center sm:w-[570px] w-[80vw]"
@@ -22,19 +35,27 @@ function RecentProjects() {
                             <PinContainer title={link} href={link}>
                                 <div className="relative flex items-center justify-center sm:w-[570px] w-[80vw] overflow-hidden sm:h-[40vh] h-[30vh] mb-10">
                                     <div className="relative w-full h-full overflow-hidden rounded-lg lg:rounded-3xl bg-[#13162d]">
-                                        <img
+                                        <Image
                                             src="/bg.png"
                                             alt="background img"
+                                            fill
                                         />
                                     </div>
 
-                                    <img
-                                        src={img}
-                                        alt={title}
-                                        className="absolute w-11/12 h-[90%] my-auto object-cover rounded-lg lg:rounded-xl"
-                                    />
+                                    <div className="absolute w-11/12 h-[90%] my-auto">
+                                        <Image
+                                            src={img}
+                                            alt={title}
+                                            className="object-cover rounded-lg lg:rounded-xl"
+                                            fill
+                                        />
+                                    </div>
 
-                                    {imgCite && <p className="absolute top-[10%] right-[7%] opacity-60 text-[0.5rem] md:text-xs">{imgCite}</p>}
+                                    {imgCite && (
+                                        <p className="absolute top-[10%] right-[7%] opacity-60 text-[0.5rem] md:text-xs">
+                                            {imgCite}
+                                        </p>
+                                    )}
                                 </div>
 
                                 <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1">
@@ -57,10 +78,11 @@ function RecentProjects() {
                                                     }px)`,
                                                 }}
                                             >
-                                                <img
+                                                <Image
                                                     src={icon}
                                                     alt={icon}
                                                     className="p-2 z-10 relative"
+                                                    fill
                                                 />
                                             </div>
                                         ))}
@@ -83,8 +105,7 @@ function RecentProjects() {
             </div>
 
             <h1 className="!leading-normal sub-heading z-50 relative mt-3 md:mt-6">
-                Visit my {" "}
-
+                Visit my{" "}
                 <LinkPreview
                     url="/resume"
                     imageSrc="resume_preview.png"
@@ -93,9 +114,8 @@ function RecentProjects() {
                     <span className="text-purple underline">
                         Extended Resume
                     </span>
-                </LinkPreview>
-
-                {" "}  for the Complete List!
+                </LinkPreview>{" "}
+                for the Complete List!
             </h1>
         </div>
     );
