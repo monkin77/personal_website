@@ -1,71 +1,42 @@
 "use client";
 
 import React from "react";
-import {
-    cardsContentProps,
-    ExpandableCards,
-} from "../../components/ui/ExpandableCard";
+import { Card, FocusCards } from "@/app/components/ui/FocusCards";
 
-const cards: cardsContentProps[] = [
+const cards: Card[] = [
     {
-        animID: "anim_1",
-        title: "SNNs to Detect Patterns of Neuronal Activity",
-        location: "Master's Dissertation, FEUP & i3s",  // Using the location field as the subtitle
-        date: "Sept. 2023 - Sept. 2024",
-        src: "projects/intel-loihi_square.jpg",
-        landscapeSrc: "projects/intel-loihi.jpg",
-        ctaText: "Repository",
-        ctaLink: "https://github.com/monkin77/thesis-lava/tree/main",
-        content: () => {
-            return (
-                <p>
-                    Exploring the Detection of relevant patterns of Neuronal Activity using Neuromorphic Hardware and SNNs.
-                    <br /> <br />
-                </p>
-            );
-        },
+        title: "Neuroscience",
+        src: "/interests/neuroscience.jpg",
     },
     {
-        animID: "anim_2",
-        title: "NIJobs - Web Application",
-        location: "A Platform for Companies to advertise their Job Opportunities to University of Porto's Students",
-        date: "Jan. 2021 - Jan. 2023",
-        src: "projects/nijobs_square.png",
-        landscapeSrc: "projects/nijobs.png",
-        ctaText: "Repository",
-        ctaLink: "https://github.com/NIAEFEUP/nijobs-fe",
-        content: () => {
-            return (
-                <p>
-                    Contributed to a Web Application from NIAEFEUP that connects companies and students looking for jobs.
-                    <br /> <br />
-                </p>
-            );
-        },
+        title: "Basketball",
+        src: "/interests/basketball.jpg",
     },
     {
-        animID: "anim_3",
-        title: "Monkin's Habitat - Personal Website",
-        location: "A Personal Portfolio to introduce myself and showcase my work",
-        date: "Feb. 2020 - Feb. 2023",
-        src: "projects/portfolio_square.png",
-        landscapeSrc: "projects/portfolio.png",
-        ctaText: "Repository",
-        ctaLink: "https://github.com/monkin77/personal_website",
-        content: () => {
-            return (
-                <p>
-                    A Personal Portfolio Website, introducing myself to the world and showcasing my projects, experiences, and unique traits :)
-                    <br /> <br />
-
-                </p>
-            );
-        },
+        title: "Travelling",
+        src: "/interests/travel.jpg",
+    },
+    {
+        title: "Food Markets",
+        src: "/interests/foodMarket.jpg",
+    },
+    {
+        title: "Volleyball",
+        src: "/interests/volleyball.jpg",
     },
 ];
 
 const HobbiesCards = () => {
-    return <ExpandableCards cards={cards} />;
+    {
+        /* <ExpandableCards cards={cards} />; */
+    }
+    return (
+        <div>
+            <div className="flex-row w-5/6 md:w-full mx-auto">
+                <FocusCards cards={cards} />
+            </div>
+        </div>
+    );
 };
 
 export default HobbiesCards;

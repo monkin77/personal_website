@@ -11,7 +11,7 @@ const cards: cardsContentProps[] = [
         animID: "anim_1",
         title: "Visiting Research Scholarship",
         location: "Carnegie Mellon Portugal - Visiting Students Program",
-        date: "Sept. 2024",
+        date: "September 2024",
         src: "/companies/cmu_1.jpg",
         landscapeSrc: "/companies/cmu_2.jpg",
         ctaText: "See Article",
