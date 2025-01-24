@@ -4,15 +4,18 @@ import React from "react";
 import { socialMedia } from "../data";
 import ShimmerButton from "./ui/Buttons/ShimmerButton";
 import Link from "next/link";
+import Image from "next/image";
 
 const Footer = () => {
     return (
         <footer className="w-full md:pt-10 pb-10" id="contact">
             <div className="w-full absolute left-0 -bottom-72 min-h-96">
-                <img
+                <Image
                     src="/footer-grid.svg"
                     alt="grid"
                     className="w-full h-full opacity-50"
+                    width={1920}
+                    height={1080}
                 />
             </div>
 
@@ -33,11 +36,11 @@ const Footer = () => {
                                 }
                                 title={profile.url}
                             >
-                                <img
+                                <Image
                                     src={profile.img}
                                     alt={`Img-${profile.id}`}
-                                    width="70%"
-                                    /* height={20} */
+                                    className="p-3 md:p-4"
+                                    fill
                                 />
                             </ShimmerButton>
                         </div>
@@ -59,18 +62,20 @@ const Footer = () => {
                         {socialMedia.map((profile) => (
                             <div
                                 key={profile.id}
-                                className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg 
+                                className="w-10 h-10 md:w-10 md:h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg 
                                 saturate-180 bg-opacity-75 bg-black-200 rounded-2xl border border-black-300"
                             >
-                                <img
+                                <Image
                                     src={profile.img}
                                     alt={`Img-${profile.id}`}
-                                    width={20}
-                                    height={20}
+                                    /* width={20}
+                                    height={20} */
                                     onClick={() =>
                                         window.open(profile.url, "_blank")
                                     }
                                     title={profile.url}
+                                    fill
+                                    className="p-2 md:p-2"
                                 />
                             </div>
                         ))}
