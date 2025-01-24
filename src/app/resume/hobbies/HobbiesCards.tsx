@@ -24,6 +24,10 @@ const cards: Card[] = [
         title: "Volleyball",
         src: "/interests/volleyball.jpg",
     },
+    {
+        title: "Learning",
+        src: "/interests/learning.jpg",
+    },
 ];
 
 const HobbiesCards = () => {

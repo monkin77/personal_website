@@ -169,7 +169,7 @@ export function ExpandableCards({ cards }: ExpandableCardProps) {
                         key={`card-${card.title}-${id}`}
                         onClick={() => setActive(card)}
                         className="flex flex-col md:flex-row md:justify-between items-center justify-center hover:bg-neutral-50 dark:hover:bg-neutral-800 rounded-xl
-                        cursor-pointer relative h-72 md:h-48 pt-1 md:pt-0 md:p-6 md:bg-teal-950 md:bg-opacity-50 mb-2"
+                        cursor-pointer relative h-72 md:h-48 pt-1 md:pt-0 md:p-6 md:bg-teal-950 md:bg-opacity-50 mb-4"
                     >
                         <div className="flex gap-3 md:gap-4 flex-col md:flex-row items-center md:items-start">
                             <motion.div layoutId={`image-${card.animID}-${id}`}>
