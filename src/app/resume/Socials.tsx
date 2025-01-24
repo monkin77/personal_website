@@ -2,6 +2,7 @@
 
 import React from "react";
 import { extendedSocialMedia } from "../data";
+import Image from "next/image";
 
 const ResumeSocials = () => {
     return (
@@ -9,17 +10,19 @@ const ResumeSocials = () => {
             {extendedSocialMedia.map((profile) => (
                 <div
                     key={profile.id}
-                    className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg 
+                    className="w-10 h-10 md:w-12 md:h-12 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg 
                                                 saturate-180 bg-opacity-75 bg-black-200 rounded-2xl border border-black-300 hover:opacity-75"
                     onClick={() => window.open(profile.url, "_blank")}
                     title={profile.url}
                 >
-                    <img
-                        src={profile.img}
-                        alt={`Img-${profile.id}`}
-                        width={20}
-                        height={20}
-                    />
+                    <div className="w-7 h-7 md:w-8 md:h-8 relative">
+                        <Image
+                            src={profile.img}
+                            alt={`Img-${profile.id}`}
+                            className=""
+                            fill
+                        />
+                    </div>
                 </div>
             ))}
         </div>

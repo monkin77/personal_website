@@ -33,12 +33,6 @@ const Hero = () => {
             <div className="flex justify-center relative mt-20 mb-5 md:mb-10 z-10 flex-col md:flex-row">
                 <div className="flex flex-col items-center justify-center relative h-full">
                     <AvatarSlider />
-
-                    {/* <img
-                        src="avatars/monkin_avatar_firefly.jpg"
-                        alt="Monkin's Avatar"
-                        className="w-32 md:w-64 aspect-square rounded-full"
-                    /> */}
                 </div>
 
                 <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60] flex flex-col items-center justify-center">
