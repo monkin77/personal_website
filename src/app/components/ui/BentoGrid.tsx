@@ -78,7 +78,7 @@ export const BentoGrid = ({ className }: { className?: string }) => {
                                             "xMidYMid slice", */
                                         },
                                     }}
-                                    speed={0.75}
+                                    speed={0.5}
                                 />
                             )}
                         </div>
