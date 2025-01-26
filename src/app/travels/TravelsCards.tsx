@@ -23,6 +23,58 @@ const cards: { [continentName: string]: Card[] } = {
             title: "Germany",
             src: "/countries/germany.jpg",
         },
+        {
+            title: "England",
+            src: "/countries/england.jpg",
+        },
+        {
+            title: "Ireland",
+            src: "/countries/ireland.webp",
+        },
+        {
+            title: "Scotland",
+            src: "/countries/scotland.jpg",
+        },
+        {
+            title: "Austria",
+            src: "/countries/austria.jpg",
+        },
+        {
+            title: "Belgium",
+            src: "/countries/belgium.jpg",
+        },
+        {
+            title: "Greece",
+            src: "/countries/greece.jpg",
+        },
+        {
+            title: "Croatia",
+            src: "/countries/croatia.jpg",
+        },
+        {
+            title: "Turkey",
+            src: "/countries/turkey.jpg",
+        },
+        {
+            title: "Norway",
+            src: "/countries/norway.jpg",
+        },
+        {
+            title: "Sweden",
+            src: "/countries/sweden.jpg",
+        },
+        {
+            title: "Finland",
+            src: "/countries/sweden.jpg",
+        },
+        {
+            title: "Estonia",
+            src: "/countries/sweden.jpg",
+        },
+        {
+            title: "Russia",
+            src: "/countries/sweden.jpg",
+        },
     ],
     "Asia": [
         {

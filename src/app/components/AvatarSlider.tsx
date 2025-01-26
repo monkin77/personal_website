@@ -4,10 +4,8 @@ import React from "react";
 import { ImagesSlider } from "./ui/ImagesSlider";
 import { motion } from "framer-motion";
 
-const animatedSrcs = [
+const avatarSrcs = [
     "avatars/monkin_avatar_firefly.jpg",
-]
-const portraitSrcs = [
     "avatars/portrait_nature.jpg",
     "avatars/funny_portrait.jpg",
     "avatars/portrait_led.jpg",
@@ -16,10 +14,8 @@ const portraitSrcs = [
     "avatars/portrait_rainbow.jpg",
     "avatars/pool_portrait.jpg"
 ];
-// Sort the portraitSrcs array randomly. Keep the first element as it is.
-portraitSrcs.sort(() => Math.random() - 0.5);
-
-const avatarSrcs = [...animatedSrcs, ...portraitSrcs];
+// Sort the avatarSrcs array randomly. Keep the first element as it is.
+avatarSrcs.sort(() => Math.random() - 0.5);
 
 const AvatarSlider = () => {
     return (
