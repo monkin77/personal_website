@@ -271,6 +271,12 @@ const cards: cardsContentProps[] = [
         landscapeSrc: "projects/wii_alphabot.png",
         ctaText: "Repository",
         ctaLink: "https://github.com/monkin77/Wii-Balance-AlphaBot",
+        iconLists: [
+            "/technologies/c.svg",
+            "/technologies/linux.svg",
+            "/technologies/python.svg",
+            "/technologies/raspberry.svg",
+        ],
         content: () => {
             return (
                 <p>
@@ -306,6 +312,7 @@ const cards: cardsContentProps[] = [
         ctaText: "Play Game",
         ctaLink:
             "https://brunogomes30.itch.io/mystical-realms-power-of-the-elements",
+        iconLists: ["/technologies/unity.svg"],
         content: () => {
             return (
                 <p>
@@ -317,6 +324,16 @@ const cards: cardsContentProps[] = [
                     <br /> <br />
                     This game was made by 7 Developers, 1 Sound Designer, and 1
                     Game Modeler.
+                    <br /> <br />
+                    Check the{" "}
+                    <a
+                        className="underline"
+                        href="https://github.com/monkin77/Mystic-Realms"
+                        target="_blank"
+                    >
+                        GitHub Repository here
+                    </a>
+                    .
                 </p>
             );
         },
@@ -334,6 +351,7 @@ const cards: cardsContentProps[] = [
         landscapeSrc: "projects/countdown.png",
         ctaText: "",
         ctaLink: "",
+        iconLists: ["/technologies/react.svg"],
         content: () => {
             return (
                 <p>
@@ -360,6 +378,11 @@ const cards: cardsContentProps[] = [
         landscapeSrc: "projects/terrarius.png",
         ctaText: "Repository",
         ctaLink: "https://github.com/monkin77/LPOO-Terrarius",
+        iconLists: [
+            "/technologies/java.svg",
+            "/technologies/github-white.svg",
+            "/technologies/gradle.svg",
+        ],
         content: () => {
             return (
                 <p>
@@ -388,6 +411,10 @@ const cards: cardsContentProps[] = [
         landscapeSrc: "projects/feup_rcom.png",
         ctaText: "Repository",
         ctaLink: "https://github.com/monkin77/feup_iart",
+        iconLists: [
+            "/technologies/linux.svg",
+            "/technologies/c.svg",
+        ],
         content: () => {
             return (
                 <p>
@@ -415,6 +442,12 @@ const cards: cardsContentProps[] = [
         landscapeSrc: "projects/loan_predictor.png",
         ctaText: "Repository",
         ctaLink: "https://github.com/monkin77/feup-ac",
+        iconLists: [
+            "/technologies/python.svg",
+            "/technologies/scikit-learn.svg",
+            "/technologies/jupyter.svg",
+            "/technologies/pandas.svg",
+        ],
         content: () => {
             return (
                 <p>
@@ -441,6 +474,10 @@ const cards: cardsContentProps[] = [
         landscapeSrc: "projects/sgi.png",
         ctaText: "Repository",
         ctaLink: "https://github.com/monkin77/feup-sgi",
+        iconLists: [
+            "/technologies/javascript.svg",
+            "/technologies/webgl.svg",
+        ],
         content: () => {
             return (
                 <p>
@@ -470,6 +507,12 @@ const cards: cardsContentProps[] = [
         landscapeSrc: "projects/indwish.png",
         ctaText: "Repository",
         ctaLink: "https://github.com/monkin77/feup-pri",
+        iconLists: [
+            "/technologies/python.svg",
+            "/technologies/solr.svg",
+            "/technologies/react.svg",
+            "/technologies/pandas.svg",
+        ],
         content: () => {
             return (
                 <p>
