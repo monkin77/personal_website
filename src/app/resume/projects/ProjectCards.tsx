@@ -10,7 +10,7 @@ const cards: cardsContentProps[] = [
     {
         animID: "anim_1",
         title: "SNNs to Detect Patterns of Neuronal Activity",
-        location: "Master's Dissertation, FEUP & i3s",  // Using the location field as the subtitle
+        location: "MSc Dissertation: Neuromorphic Computing and Event-Driven Algorithms for the real-time analysis of neuronal Activity",  // Using the location field as the subtitle
         date: "Sept. 2023 - Sept. 2024",
         src: {
             url: "projects/intel-loihi_square.jpg",
@@ -25,6 +25,11 @@ const cards: cardsContentProps[] = [
                 <p>
                     Exploring the Detection of relevant patterns of Neuronal Activity using Neuromorphic Hardware and SNNs.
                     <br /> <br />
+                    This project was conducted at the Neuroengineering and Computational Neuroscience group at i3s, under the supervision of {" "}
+                    <a className="underline" href="https://scholar.google.com/citations?user=Jwr9SgMAAAAJ&hl=en&inst=1381320739207392350" target="_blank">Prof. Paulo Aguiar</a>.
+                    <br /> <br />
+                    Intel Labs supported the project by providing access to the Loihi Neuromorphic Chip. The written dissertation can be found {" "}
+                    <a className="underline" href="https://hdl.handle.net/10216/161063" target="_blank">here</a>.
                 </p>
             );
         },

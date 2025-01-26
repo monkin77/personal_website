@@ -45,7 +45,7 @@ const cards: cardsContentProps[] = [
         content: () => {
             return (
                 <p>
-                    CGPA: ? / 20
+                    Studied for a semester in Hong Kong as part of an exchange program, where I took courses in Computer Science, Big Data, and Bioengineering.
                     <br /> <br />
                 </p>
             );
@@ -69,7 +69,8 @@ const cards: cardsContentProps[] = [
                 <p>
                     Grade: 93/100 (93%)
                     <br /> <br />
-            
+                    Based on the introductory neurobiology courses taught at Harvard College, Fundamentals of Neuroscience is a three-part series that explores the structure 
+                    and function of the entire nervous system — from the microscopic inner workings of a single nerve cell to the staggering complexity of the brain.
                 </p>
             );
         },

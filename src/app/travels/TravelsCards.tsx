@@ -35,7 +35,7 @@ const cards: { [continentName: string]: Card[] } = {
             title: "Scotland",
             src: "/countries/scotland.jpg",
         },
-        {
+        /* {
             title: "Austria",
             src: "/countries/austria.jpg",
         },
@@ -74,7 +74,7 @@ const cards: { [continentName: string]: Card[] } = {
         {
             title: "Russia",
             src: "/countries/sweden.jpg",
-        },
+        }, */
     ],
     "Asia": [
         {
