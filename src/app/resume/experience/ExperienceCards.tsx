@@ -31,6 +31,8 @@ const cards: cardsContentProps[] = [
                     state-of-the-art topics and participated on events related
                     to CERN, along with the 30 selected students around the
                     world.
+                    <br /> <br />
+                    Check my Work Report {" "}<a className="underline" href="https://zenodo.org/records/8343735" target="_blank">here</a>.
                 </p>
             );
         },
