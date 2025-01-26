@@ -20,6 +20,7 @@ export type cardsContentProps = {
     ctaLink: string;
     content: () => JSX.Element;
     animID: string;
+    iconLists?: string[];
 };
 
 type ExpandableCardProps = {
@@ -105,7 +106,6 @@ export function ExpandableCards({ cards }: ExpandableCardProps) {
                                         fill
                                     />
                                 </div>
-                               
                             </motion.div>
 
                             <div className="h-full">
@@ -139,15 +139,45 @@ export function ExpandableCards({ cards }: ExpandableCardProps) {
                                     )}
                                 </div>
 
-                                <div className="px-4 flex flex-row items-center">
-                                    <FaCalendarAlt className="text-teal-500 text-lg" />
+                                <div className="flex flex-row justify-between pl-4 pr-2 md:px-4">
+                                    <div className="flex flex-row items-center">
+                                        <FaCalendarAlt className="text-teal-500 text-lg" />
 
-                                    <motion.h3
-                                        layoutId={`date-${active.animID}-${id}`}
-                                        className="font-medium text-neutral-800 dark:text-neutral-200 ml-3"
-                                    >
-                                        {active.date}
-                                    </motion.h3>
+                                        <motion.h3
+                                            layoutId={`date-${active.animID}-${id}`}
+                                            className="text-sm md:text-base font-medium text-neutral-800 dark:text-neutral-200 ml-3"
+                                        >
+                                            {active.date}
+                                        </motion.h3>
+                                    </div>
+
+                                    {active.iconLists && (
+                                        <motion.div
+                                            className="flex items-center mt-1 md:mt-0"
+                                            layoutId={`icon-${active.animID}-${id}`}
+                                        >
+                                            {active.iconLists.map(
+                                                (icon, iconIdx) => (
+                                                    <div
+                                                        key={iconIdx}
+                                                        className="border border-white/[0.2] rounded-full bg-black lg:w-9 lg:h-9 w-8 h-8 flex justify-center items-center z-10 relative"
+                                                        style={{
+                                                            transform: `translateX(-${
+                                                                6 * iconIdx
+                                                            }px)`,
+                                                        }}
+                                                    >
+                                                        <Image
+                                                            src={icon}
+                                                            alt={icon}
+                                                            className="p-2 z-10 relative"
+                                                            fill
+                                                        />
+                                                    </div>
+                                                )
+                                            )}
+                                        </motion.div>
+                                    )}
                                 </div>
 
                                 <div className="pt-4 relative px-4 pb-4">
@@ -188,7 +218,6 @@ export function ExpandableCards({ cards }: ExpandableCardProps) {
                                     width={card.src.width}
                                     height={card.src.height}
                                 />
-
                             </motion.div>
                             <div className="md:p-1">
                                 <motion.h3
@@ -204,6 +233,32 @@ export function ExpandableCards({ cards }: ExpandableCardProps) {
                                 >
                                     {card.location}
                                 </motion.p>
+
+                                {card.iconLists && (
+                                    <motion.div
+                                        className="hidden md:flex md:items-center md:mt-2"
+                                        layoutId={`icon-${card.animID}-${id}`}
+                                    >
+                                        {card.iconLists.map((icon, iconIdx) => (
+                                            <div
+                                                key={iconIdx}
+                                                className="border border-white/[0.2] rounded-full bg-black lg:w-9 lg:h-9 w-8 h-8 flex justify-center items-center z-10 relative"
+                                                style={{
+                                                    transform: `translateX(-${
+                                                        6 * iconIdx
+                                                    }px)`,
+                                                }}
+                                            >
+                                                <Image
+                                                    src={icon}
+                                                    alt={icon}
+                                                    className="p-2 z-10 relative"
+                                                    fill
+                                                />
+                                            </div>
+                                        ))}
+                                    </motion.div>
+                                )}
                             </div>
                         </div>
 

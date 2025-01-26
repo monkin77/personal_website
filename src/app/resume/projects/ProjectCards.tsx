@@ -10,7 +10,8 @@ const cards: cardsContentProps[] = [
     {
         animID: "anim_1",
         title: "SNNs to Detect Patterns of Neuronal Activity",
-        location: "MSc Dissertation: Neuromorphic Computing and Event-Driven Algorithms for the real-time analysis of neuronal Activity",  // Using the location field as the subtitle
+        location:
+            "MSc Dissertation: Neuromorphic Computing and Event-Driven Algorithms for the real-time analysis of neuronal Activity", // Using the location field as the subtitle
         date: "Sept. 2023 - Sept. 2024",
         src: {
             url: "projects/intel-loihi_square.jpg",
@@ -20,16 +21,42 @@ const cards: cardsContentProps[] = [
         landscapeSrc: "projects/intel-loihi.jpg",
         ctaText: "Repository",
         ctaLink: "https://github.com/monkin77/thesis-lava/tree/main",
+        iconLists: [
+            "/technologies/python.svg",
+            "/technologies/jupyter.svg",
+            "/technologies/poetry.svg",
+            "/technologies/numpy.svg",
+            "/technologies/scikit-learn.svg",
+        ],
         content: () => {
             return (
                 <p>
-                    Exploring the Detection of relevant patterns of Neuronal Activity using Neuromorphic Hardware and SNNs.
+                    Exploring the Detection of relevant patterns of Neuronal
+                    Activity using Neuromorphic Hardware and SNNs.
                     <br /> <br />
-                    This project was conducted at the Neuroengineering and Computational Neuroscience group at i3s, under the supervision of {" "}
-                    <a className="underline" href="https://scholar.google.com/citations?user=Jwr9SgMAAAAJ&hl=en&inst=1381320739207392350" target="_blank">Prof. Paulo Aguiar</a>.
+                    This project was conducted at the Neuroengineering and
+                    Computational Neuroscience group at i3s, under the
+                    supervision of{" "}
+                    <a
+                        className="underline"
+                        href="https://scholar.google.com/citations?user=Jwr9SgMAAAAJ&hl=en&inst=1381320739207392350"
+                        target="_blank"
+                    >
+                        Prof. Paulo Aguiar
+                    </a>
+                    .
                     <br /> <br />
-                    Intel Labs supported the project by providing access to the Loihi Neuromorphic Chip. The written dissertation can be found {" "}
-                    <a className="underline" href="https://hdl.handle.net/10216/161063" target="_blank">here</a>.
+                    Intel Labs supported the project by providing access to the
+                    Loihi Neuromorphic Chip. The written dissertation can be
+                    found{" "}
+                    <a
+                        className="underline"
+                        href="https://hdl.handle.net/10216/161063"
+                        target="_blank"
+                    >
+                        here
+                    </a>
+                    .
                 </p>
             );
         },
@@ -37,7 +64,8 @@ const cards: cardsContentProps[] = [
     {
         animID: "anim_2",
         title: "NIJobs - Web Application",
-        location: "A Platform for Companies to advertise their Job Opportunities to University of Porto's Students",
+        location:
+            "A Platform for Companies to advertise their Job Opportunities to University of Porto's Students",
         date: "Jan. 2021 - Jan. 2023",
         src: {
             url: "projects/nijobs_square.png",
@@ -47,10 +75,18 @@ const cards: cardsContentProps[] = [
         landscapeSrc: "projects/nijobs.png",
         ctaText: "Repository",
         ctaLink: "https://github.com/NIAEFEUP/nijobs-fe",
+        iconLists: [
+            "/technologies/react.svg",
+            "/technologies/typescript.svg",
+            "/technologies/nodejs.svg",
+            "/technologies/docker.svg",
+            "/technologies/material-ui.svg",
+        ],
         content: () => {
             return (
                 <p>
-                    Contributed to a Web Application from NIAEFEUP that connects companies and students looking for jobs.
+                    Contributed to a Web Application from NIAEFEUP that connects
+                    companies and students looking for jobs.
                     <br /> <br />
                 </p>
             );
@@ -59,7 +95,8 @@ const cards: cardsContentProps[] = [
     {
         animID: "anim_3",
         title: "Monkin's Habitat - Personal Website",
-        location: "A Personal Portfolio to introduce myself and showcase my work",
+        location:
+            "A Personal Portfolio to introduce myself and showcase my work",
         date: "Feb. 2020 - Feb. 2023",
         src: {
             url: "projects/portfolio_square.png",
@@ -69,12 +106,20 @@ const cards: cardsContentProps[] = [
         landscapeSrc: "projects/portfolio.png",
         ctaText: "Repository",
         ctaLink: "https://github.com/monkin77/personal_website",
+        iconLists: [
+            "/technologies/next.svg",
+            "/technologies/typescript.svg",
+            "/technologies/tailwind.svg",
+            "/technologies/threejs.svg",
+            "/technologies/vercel.svg",
+        ],
         content: () => {
             return (
                 <p>
-                    A Personal Portfolio Website, introducing myself to the world and showcasing my projects, experiences, and unique traits :)
+                    A Personal Portfolio Website, introducing myself to the
+                    world and showcasing my projects, experiences, and unique
+                    traits :)
                     <br /> <br />
-
                 </p>
             );
         },
@@ -92,13 +137,19 @@ const cards: cardsContentProps[] = [
         landscapeSrc: "projects/java_compiler_code.png",
         ctaText: "Repository",
         ctaLink: "https://github.com/monkin77/feup-comp",
+        iconLists: [
+            "/technologies/java.svg",
+            "/technologies/gradle.svg",
+            "/technologies/github-white.svg",
+        ],
         content: () => {
             return (
                 <p>
-                    Built a compiler for a subset of the Java programming language (JMM), going through all the stages of compilation:
-                    Lexical Analysis, Syntactic Analysis, Semantic Analysis, High & Low level Optimization, and Code Generation.
+                    Built a compiler for a subset of the Java programming
+                    language (JMM), going through all the stages of compilation:
+                    Lexical Analysis, Syntactic Analysis, Semantic Analysis,
+                    High & Low level Optimization, and Code Generation.
                     <br /> <br />
-                    
                 </p>
             );
         },
@@ -106,7 +157,8 @@ const cards: cardsContentProps[] = [
     {
         animID: "anim_5",
         title: "Distributed Key-Value Store",
-        location: "Distributed Key-Value Persistent Store for a Large Cluster, inspired by Amazon Dynamo Design",
+        location:
+            "Distributed Key-Value Persistent Store for a Large Cluster, inspired by Amazon Dynamo Design",
         date: "Mar. 2022 - Jun. 2022",
         src: {
             url: "projects/distributed_db_square.png",
@@ -116,11 +168,14 @@ const cards: cardsContentProps[] = [
         landscapeSrc: "projects/distributed_db.png",
         ctaText: "Repository",
         ctaLink: "https://github.com/monkin77/feup-key-value-store",
+        iconLists: ["/technologies/java.svg", "/technologies/github-white.svg"],
         content: () => {
             return (
                 <p>
-                    Built a distributed key-value persistent store for a large cluster, inspired by the Amazon Dynamo design. This service
-                    is able to handle concurrent requests and tolerates both node crashes and message loss.
+                    Built a distributed key-value persistent store for a large
+                    cluster, inspired by the Amazon Dynamo design. This service
+                    is able to handle concurrent requests and tolerates both
+                    node crashes and message loss.
                     <br /> <br />
                     {/* TALK ABOUT TECHNOLOGIES USED */}
                 </p>
@@ -140,13 +195,20 @@ const cards: cardsContentProps[] = [
         landscapeSrc: "projects/fakeSocial.png",
         ctaText: "Repository",
         ctaLink: "https://github.com/monkin77/feup-sdle-2/tree/main",
+        iconLists: [
+            "/technologies/nodejs.svg",
+            "/technologies/svelte.svg",
+            "/technologies/tailwind.svg",
+            "/technologies/github-white.svg",
+        ],
         content: () => {
             return (
                 <p>
-                    Created a peer-to-peer timeline service, similar to the centralized option Twitter. The application supports peer
-                    discovery, content routing, pub/sub, persistent storage, crash recovery, garbage collection, as well as a clean UI.
+                    Created a peer-to-peer timeline service, similar to the
+                    centralized option Twitter. The application supports peer
+                    discovery, content routing, pub/sub, persistent storage,
+                    crash recovery, garbage collection, as well as a clean UI.
                     <br /> <br />
-                    
                 </p>
             );
         },
@@ -164,17 +226,34 @@ const cards: cardsContentProps[] = [
         landscapeSrc: "projects/panik_feup.png",
         ctaText: "Play Game",
         ctaLink: "https://monkin77.itch.io/panik-feup",
+        iconLists: ["/technologies/unity.svg"],
         content: () => {
             return (
                 <p>
-                    Panik @Feup is located at the FEUP’s library cafeteria, where the main character is the Primary Baker of the Cafe. The Baker is very greedy and wants all 
-                    the Panikes for herself. Therefore, she has to protect them from all the starving people, such as students and teachers, 
-                    that may wish to have a bite of this delicacy.
+                    Panik @Feup is located at the FEUP’s library cafeteria,
+                    where the main character is the Primary Baker of the Cafe.
+                    The Baker is very greedy and wants all the Panikes for
+                    herself. Therefore, she has to protect them from all the
+                    starving people, such as students and teachers, that may
+                    wish to have a bite of this delicacy.
                     <br /> <br />
-                    This is a survival game that is divided into waves. The primary purpose of this game is to survive the most waves possible, 
-                    using every game mechanic to help. Beware that there are special waves, the Panike Rounds, where a freshly baked Panike will 
-                    be out of the oven and ready to be picked up by the Baker! Enemies will be especially stronger in these rounds.
-                    
+                    This is a survival game that is divided into waves. The
+                    primary purpose of this game is to survive the most waves
+                    possible, using every game mechanic to help. Beware that
+                    there are special waves, the Panike Rounds, where a freshly
+                    baked Panike will be out of the oven and ready to be picked
+                    up by the Baker! Enemies will be especially stronger in
+                    these rounds.
+                    <br /> <br />
+                    Check the{" "}
+                    <a
+                        className="underline"
+                        href="https://github.com/monkin77/feup-panik-at-feup"
+                        target="_blank"
+                    >
+                        GitHub Repository here
+                    </a>
+                    .
                 </p>
             );
         },
@@ -195,12 +274,19 @@ const cards: cardsContentProps[] = [
         content: () => {
             return (
                 <p>
-                    Implemented a real-time kernel to optimize task scheduling in an embedded system. Two versions of the kernel were developed using Python and C languages, respectively.
+                    Implemented a real-time kernel to optimize task scheduling
+                    in an embedded system. Two versions of the kernel were
+                    developed using Python and C languages, respectively.
                     <br /> <br />
-                    The system employed a Raspberry Pi, a Wii Balance Board, and an AlphaBot2-Pi robot. We used the Wii Balance Board to control the robot's movements and the Raspberry Pi 
-                    to process the data and send commands to the robot. We defined a set of tasks and their respective time constraints to test the kernel's task scheduling capabilities.
+                    The system employed a Raspberry Pi, a Wii Balance Board, and
+                    an AlphaBot2-Pi robot. We used the Wii Balance Board to
+                    control the robot's movements and the Raspberry Pi to
+                    process the data and send commands to the robot. We defined
+                    a set of tasks and their respective time constraints to test
+                    the kernel's task scheduling capabilities.
                     <br /> <br />
-                    For more details, check the repository linked above that contains the project's report and a video demonstration.
+                    For more details, check the repository linked above that
+                    contains the project's report and a video demonstration.
                 </p>
             );
         },
@@ -208,7 +294,8 @@ const cards: cardsContentProps[] = [
     {
         animID: "anim_9",
         title: "Mystic Realms - Unity 3D Game",
-        location: "3D RPG Game with a focus on Elemental Magic and Exploration.",
+        location:
+            "3D RPG Game with a focus on Elemental Magic and Exploration.",
         date: "Sept. 2023 - Feb. 2024",
         src: {
             url: "projects/mystic_realms_square.png",
@@ -217,14 +304,19 @@ const cards: cardsContentProps[] = [
         },
         landscapeSrc: "projects/mystic_realms.png",
         ctaText: "Play Game",
-        ctaLink: "https://brunogomes30.itch.io/mystical-realms-power-of-the-elements",
+        ctaLink:
+            "https://brunogomes30.itch.io/mystical-realms-power-of-the-elements",
         content: () => {
             return (
                 <p>
-                    Help the hero take revenge against the FireMighters and reconquer freedom for the 4 Great Villages: Earth, Wind, Fire and Lightning!
-                    2 Gamemodes available, story and a Playground with all skills unlocked and enemies all around the map
+                    Help the hero take revenge against the FireMighters and
+                    reconquer freedom for the 4 Great Villages: Earth, Wind,
+                    Fire and Lightning! 2 Gamemodes available, story and a
+                    Playground with all skills unlocked and enemies all around
+                    the map
                     <br /> <br />
-                    This game was made by 7 Developers, 1 Sound Designer, and 1 Game Modeler.
+                    This game was made by 7 Developers, 1 Sound Designer, and 1
+                    Game Modeler.
                 </p>
             );
         },
@@ -245,9 +337,12 @@ const cards: cardsContentProps[] = [
         content: () => {
             return (
                 <p>
-                    Mobile Application developed on my first year's summer break, that was available on Play Store, with more than 1200 users.
+                    Mobile Application developed on my first year's summer
+                    break, that was available on Play Store, with more than 1200
+                    users.
                     <br /> <br />
-                    Implemented authentication, cloud storage, firestore database, videostreaming, payments, notifications and ads.
+                    Implemented authentication, cloud storage, firestore
+                    database, videostreaming, payments, notifications and ads.
                 </p>
             );
         },
@@ -268,10 +363,13 @@ const cards: cardsContentProps[] = [
         content: () => {
             return (
                 <p>
-                    Developed a sandbox game to learn more about OOP and good design pratices.
-                    Including unit and property based testing of the game, achieving high code coverage and mutation testing results.
+                    Developed a sandbox game to learn more about OOP and good
+                    design pratices. Including unit and property based testing
+                    of the game, achieving high code coverage and mutation
+                    testing results.
                     <br /> <br />
-                    Usage of design patterns, such as MVC, State Pattern, Game loop. Search for code smells and respective refactors.
+                    Usage of design patterns, such as MVC, State Pattern, Game
+                    loop. Search for code smells and respective refactors.
                 </p>
             );
         },
@@ -279,7 +377,8 @@ const cards: cardsContentProps[] = [
     {
         animID: "anim_12",
         title: "Computer Networks Configuration",
-        location: "Configured a LAN with a Router, Switch, and 2 Computers to transfer files.",
+        location:
+            "Configured a LAN with a Router, Switch, and 2 Computers to transfer files.",
         date: "Oct. 2021 - Jan. 2022",
         src: {
             url: "projects/feup_rcom.png",
@@ -292,11 +391,13 @@ const cards: cardsContentProps[] = [
         content: () => {
             return (
                 <p>
-                    Developed a system capable of sending data through 2 computers connected by serial port, using the OSI model as reference and 
-                    implementing the Data Link Layer.
+                    Developed a system capable of sending data through 2
+                    computers connected by serial port, using the OSI model as
+                    reference and implementing the Data Link Layer.
                     <br /> <br />
-                    Configured a LAN from scratch to transfer files between PCs connected to a Cisco router, using a self-developed application
-                     that relies on the FTP protocol.
+                    Configured a LAN from scratch to transfer files between PCs
+                    connected to a Cisco router, using a self-developed
+                    application that relies on the FTP protocol.
                 </p>
             );
         },
@@ -317,8 +418,9 @@ const cards: cardsContentProps[] = [
         content: () => {
             return (
                 <p>
-                    Data Mining project following the <i>CRISP-DM</i> methodology to identify good and bad clients for a bank, as well as 
-                    to predict if a loan would be successful.
+                    Data Mining project following the <i>CRISP-DM</i>{" "}
+                    methodology to identify good and bad clients for a bank, as
+                    well as to predict if a loan would be successful.
                     <br /> <br />
                     For more details, follow the Repository link above.
                 </p>
@@ -328,7 +430,8 @@ const cards: cardsContentProps[] = [
     {
         animID: "anim_14",
         title: "Interactive Graphic Systems (WebGL)",
-        location: "Projects developed in the Computer Graphics course using WebGL",
+        location:
+            "Projects developed in the Computer Graphics course using WebGL",
         date: "Sept. 2021 - Jan. 2022",
         src: {
             url: "projects/sgi_square.png",
@@ -341,11 +444,15 @@ const cards: cardsContentProps[] = [
         content: () => {
             return (
                 <p>
-                    Explored several features from WebGL that culminated into a final project where it is possible to play Checkers in an interactive environment, including a robust parser to
-                    parse the scene file, a scene inspired in the <i>Lara Croft</i> videogame, custom primitives, NURBS, materials, textures,
-                     keyframe animations, 3D objects, etc.
+                    Explored several features from WebGL that culminated into a
+                    final project where it is possible to play Checkers in an
+                    interactive environment, including a robust parser to parse
+                    the scene file, a scene inspired in the <i>Lara Croft</i>{" "}
+                    videogame, custom primitives, NURBS, materials, textures,
+                    keyframe animations, 3D objects, etc.
                     <br /> <br />
-                    For more details, follow the Repository link above containing the 3 sub-projects.
+                    For more details, follow the Repository link above
+                    containing the 3 sub-projects.
                 </p>
             );
         },
@@ -366,13 +473,16 @@ const cards: cardsContentProps[] = [
         content: () => {
             return (
                 <p>
-                    Developed a search engine to find companies that match users' interests and see their rating according to workers.
+                    Developed a search engine to find companies that match
+                    users' interests and see their rating according to workers.
                     <br /> <br />
-                    The Process was divided into 3 main parts: <i>Data Preparation</i>, <i>Document Indexing and Retrieval</i>, and the <i>UI</i>.
+                    The Process was divided into 3 main parts:{" "}
+                    <i>Data Preparation</i>,{" "}
+                    <i>Document Indexing and Retrieval</i>, and the <i>UI</i>.
                 </p>
             );
         },
-    }
+    },
     /* {
         animID: "anim_13",
         title: "Newtify, Web App",
@@ -393,7 +503,6 @@ const cards: cardsContentProps[] = [
             );
         },
     }, */
-    
 ];
 
 const ProjectCards = () => {
