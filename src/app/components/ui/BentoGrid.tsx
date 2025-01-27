@@ -12,8 +12,13 @@ import { aboutGridItems as gridItems } from "@/app/data";
 import { LinkPreview } from "./LinkPreview";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
+import { ClassValue } from "clsx";
 
 const animationList = [compEngAnimData, brainAnimData];
+
+const clickableItemClasses: ClassValue = "shadow-sm shadow-white/40 \
+                max-sm:active:ring-2 max-sm:active:ring-indigo-500 \
+                md:hover:ring-1 md:hover:ring-indigo-500";
 
 const BentoGridItemWrapper = ({
     className,
@@ -27,7 +32,8 @@ const BentoGridItemWrapper = ({
     return (
         <div
             className={cn(
-                "row-span-1 relative overflow-hidden rounded-3xl group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none justify-between flex flex-col space-y-4 border border-white/[0.1]",
+                "row-span-1 relative overflow-hidden rounded-3xl group/bento transition duration-200 justify-between flex \
+                flex-col space-y-4 border border-white/[0.1]",
                 className
             )}
             style={{
@@ -36,7 +42,7 @@ const BentoGridItemWrapper = ({
                     "linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(59, 59, 68, 1) 26%, rgba(93, 108, 111, 1) 100%)",
             }}
         >
-            <div className={cn("h-full", innerClassName)}>{children}</div>
+            <div className={cn("h-full ", innerClassName)}>{children}</div>
         </div>
     );
 };
@@ -59,7 +65,7 @@ export const BentoGrid = ({ className }: { className?: string }) => {
         >
             {/* Grid Item 1 */}
             <BentoGridItemWrapper
-                className="lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60-vh] overflow-visible"
+                className={`lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60-vh] overflow-visible ${clickableItemClasses}`}
                 innerClassName="relative"
             >
                 <div className="relative h-full">
@@ -99,6 +105,7 @@ export const BentoGrid = ({ className }: { className?: string }) => {
                                 <span className="text-purple underline">
                                     Extended Resume
                                 </span>
+                                {/* <SimpleButton title="Extended Resume" /> */}
                             </LinkPreview>
                             {/* </Link> */}
                         </div>
@@ -107,7 +114,7 @@ export const BentoGrid = ({ className }: { className?: string }) => {
             </BentoGridItemWrapper>
 
             {/* Grid Item 2 */}
-            <BentoGridItemWrapper className="lg:col-span-2 md:col-span-3 md:row-span-2">
+            <BentoGridItemWrapper className={`lg:col-span-2 md:col-span-3 md:row-span-2 ${clickableItemClasses}`}>
                 <div
                     className="group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-40 flex flex-col px-5 p-5 lg:p-10 justify-start 
                         cursor-pointer hover:scale-105 hover:shadow-md hover:opacity-85 focus:ring-2"
@@ -223,7 +230,7 @@ export const BentoGrid = ({ className }: { className?: string }) => {
 
             {/* Grid Item 6 */}
             <BentoGridItemWrapper
-                className="lg:col-span-2 md:col-span-3 md:row-span-1"
+                className={`lg:col-span-2 md:col-span-3 md:row-span-1 ${clickableItemClasses}`}
                 innerClassName="flex justify-center"
             >
                 <BackgroundGradientAnimation />
