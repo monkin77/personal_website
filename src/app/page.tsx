@@ -6,6 +6,19 @@ import { navItems } from "./data";
 import Experience from "./components/Experience";
 import Footer from "./components/Footer";
 import Awards from "./components/Awards";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Monkin's Habitat - Personal Portfolio",
+    description: "Digital Profile of João Mesquita (Monkin). A Computer Engineer from Portugal interested in Neuroscience, AI, and many more...",
+    openGraph: {
+        title: "Monkin's Habitat - Personal Portfolio",
+        description: "Digital Profile of João Mesquita (Monkin). A Computer Engineer from Portugal interested in Neuroscience, AI, and many more...",
+        type: "website",
+        url: "https://monkin-habitat.vercel.app/",
+        images: ["/homepage_preview.png"],
+    },
+}
 
 export default function Home() {
     return (
@@ -22,7 +35,7 @@ export default function Home() {
                 <Experience />
 
                 <Awards />
-                
+
                 <Footer />
             </div>
         </main>
