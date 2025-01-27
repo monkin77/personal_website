@@ -53,11 +53,18 @@ const cards: cardsContentProps[] = [
         content: () => {
             return (
                 <p>
-                    Apply data science and machine learning techniques to
+                    Applied data science and machine learning techniques to
                     analyze the Dynamic Range Adaptation phenomenon in the
                     Primary Motor Cortex, under the supervision of Prof. Steven
                     Chase.
                     <br /> <br />
+                    Participated in several initiatives organized by the {" "}
+                    <a className="underline" href="https://www.cnbc.cmu.edu/" target="_blank">Center for the Neural Basis of Cognition (CNBC)</a> to learn more about
+                    the state-of-the-art research in the field of Computational Neuroscience.
+                    <br /> <br />
+                    Weekly Meetings with {" "} <a className="underline" href=" https://chaselab.github.io/" target="_blank">The Chase Lab</a>
+                    {" "} to discuss the progress of the various projects and promote inter-lab collaboration. Also had the opportunity of shadowing a PhD student on a
+                    Brain-Computer Interface practical experiment on non-human primates.
                 </p>
             );
         },
