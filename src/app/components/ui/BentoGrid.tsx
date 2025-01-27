@@ -17,7 +17,7 @@ import { ClassValue } from "clsx";
 const animationList = [compEngAnimData, brainAnimData];
 
 const clickableItemClasses: ClassValue = "shadow-sm shadow-white/40 \
-                max-sm:active:ring-2 max-sm:active:ring-indigo-500 \
+                max-sm:active:ring-2 max-sm:active:ring-indigo-500 max-sm:active:opacity-85 \
                 md:hover:ring-1 md:hover:ring-indigo-500";
 
 const BentoGridItemWrapper = ({
@@ -55,6 +55,11 @@ export const BentoGrid = ({ className }: { className?: string }) => {
         router.push("/travels");
     };
 
+    const handleResume = () => {
+        // Redirect to the resume page
+        router.push("/resume");
+    }
+
     return (
         <div
             className={cn(
@@ -68,26 +73,26 @@ export const BentoGrid = ({ className }: { className?: string }) => {
                 className={`lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60-vh] overflow-visible ${clickableItemClasses}`}
                 innerClassName="relative"
             >
+                <div className="hidden absolute max-sm:block h-full w-full z-50" onClick={handleResume} />
+
                 <div className="relative h-full">
                     {/* ANIMATION BG*/}
-                    <div className="w-full h-full absolute">
-                        <div className="bottom-1 h-[95%]">
-                            {gridItems[0].animIdx != null && (
-                                <Lottie
-                                    options={{
-                                        loop: true,
-                                        autoplay: true,
-                                        animationData:
-                                            animationList[gridItems[0].animIdx],
-                                        rendererSettings: {
-                                            /* preserveAspectRatio:
-                                            "xMidYMid slice", */
-                                        },
-                                    }}
-                                    speed={0.5}
-                                />
-                            )}
-                        </div>
+                    <div className="absolute w-full bottom-1 h-5/6 md:h-[95%] ">
+                        {gridItems[0].animIdx != null && (
+                            <Lottie
+                                options={{
+                                    loop: true,
+                                    autoplay: true,
+                                    animationData:
+                                        animationList[gridItems[0].animIdx],
+                                    rendererSettings: {
+                                        /* preserveAspectRatio:
+                                        "xMidYMid slice", */
+                                    },
+                                }}
+                                speed={0.5}
+                            />
+                        )}
                     </div>
 
                     {/* Main Grid Item Content (Title and so on)*/}
