@@ -1,4 +1,6 @@
 import React from "react";
+import { Spotlight } from "../components/ui/Spotlight";
+import Image from "next/image";
 
 type sourceType =
     | "Animation"
@@ -22,11 +24,26 @@ const sources: { author: string; link: string; type: sourceType }[] = [
         link: "https://lottiefiles.com/",
         type: "Animation",
     },
+    {
+        author: "Daru Broodryk",
+        link: "https://lottiefiles.com/",
+        type: "Animation",
+    },
 ];
 
 const Attributions = () => {
     return (
-        <div className="py-5 md:py-10 w-full relative overflow-x-clip">
+        <div className="p-5 md:p-10 w-full relative overflow-x-clip bg-background">
+            <div className="w-full absolute left-0 -bottom-72 min-h-96">
+                <Image
+                    src="/footer-grid.svg"
+                    alt="grid"
+                    className="w-full h-full opacity-50"
+                    width={1920}
+                    height={1080}
+                />
+            </div>
+
             <h1 className="font-bold text-xl md:text-4xl dark:text-white text-black">
                 Attributions
             </h1>

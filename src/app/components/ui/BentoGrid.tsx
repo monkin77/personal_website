@@ -6,7 +6,7 @@ import { GridGlobe } from "./Globe/GridGlobe";
 import Lottie from "react-lottie";
 import MagicButton from "./Buttons/MagicButton";
 import { IoNavigateOutline } from "react-icons/io5";
-import compEngAnimData from "../../data/anim/computer_engineer_anim2.json";
+import compEngAnimData from "../../data/anim/computer_engineer_anim.json";
 import brainAnimData from "../../data/anim/brain.json";
 import { aboutGridItems as gridItems } from "@/app/data";
 import { LinkPreview } from "./LinkPreview";
