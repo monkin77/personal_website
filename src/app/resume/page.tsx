@@ -5,9 +5,21 @@ import { FaArrowLeft } from "react-icons/fa";
 import InvertButton from "../components/ui/Buttons/InvertButton";
 import Link from 'next/link';
 import { BackgroundBeams } from "../components/ui/Bg/BackgroundBeams";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Monkin's Habitat - Resume",
+    description: "Extended Resume of João Mesquita (Monkin). A Computer Engineer from Portugal interested in Neuroscience, AI, and many more...",
+    openGraph: {
+        title: "Monkin's Habitat - Resume",
+        description: "Extended Resume of João Mesquita (Monkin). A Computer Engineer from Portugal interested in Neuroscience, AI, and many more...",
+        type: "website",
+        url: "https://monkin-habitat.vercel.app/resume",
+        images: ["/resume_preview.png"],
+    },
+}
 
 const Resume = () => {
-
     return (
         <main className="relative bg-background flex justify-center items-center flex-col overflow-x-clip mx-auto sm:px-10 px-5">
             <BackgroundBeams className="h-1/3" />

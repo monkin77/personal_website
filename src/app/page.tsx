@@ -9,10 +9,10 @@ import Awards from "./components/Awards";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "Monkin's Habitat - Personal Portfolio",
+    title: "Monkin's Habitat - Portfolio",
     description: "Digital Profile of João Mesquita (Monkin). A Computer Engineer from Portugal interested in Neuroscience, AI, and many more...",
     openGraph: {
-        title: "Monkin's Habitat - Personal Portfolio",
+        title: "Monkin's Habitat - Portfolio",
         description: "Digital Profile of João Mesquita (Monkin). A Computer Engineer from Portugal interested in Neuroscience, AI, and many more...",
         type: "website",
         url: "https://monkin-habitat.vercel.app/",
