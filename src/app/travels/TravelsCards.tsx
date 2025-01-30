@@ -9,7 +9,7 @@ const cards: { [continentName: string]: Card[] } = {
         },
         {
             title: "Spain",
-            src: "/countries/spain.jpg",
+            src: "/countries/spain.webp",
         },
         {
             title: "France",
@@ -35,14 +35,19 @@ const cards: { [continentName: string]: Card[] } = {
             title: "Scotland",
             src: "/countries/scotland.jpg",
         },
-        /* {
+        {
             title: "Austria",
             src: "/countries/austria.jpg",
         },
         {
             title: "Belgium",
-            src: "/countries/belgium.jpg",
+            src: "/countries/belgium.webp",
         },
+        {
+            title: "Sweden",
+            src: "/countries/sweden.jpg",
+        },
+        /*
         {
             title: "Greece",
             src: "/countries/greece.jpg",
@@ -59,10 +64,7 @@ const cards: { [continentName: string]: Card[] } = {
             title: "Norway",
             src: "/countries/norway.jpg",
         },
-        {
-            title: "Sweden",
-            src: "/countries/sweden.jpg",
-        },
+        
         {
             title: "Finland",
             src: "/countries/sweden.jpg",
@@ -79,7 +81,7 @@ const cards: { [continentName: string]: Card[] } = {
     "Asia": [
         {
             title: "Hong Kong",
-            src: "/countries/hongKong.jpeg",
+            src: "/countries/hongKong.webp",
         },
         {
             title: "China",
@@ -87,7 +89,7 @@ const cards: { [continentName: string]: Card[] } = {
         },
         {
             title: "Taiwan",
-            src: "/countries/taiwan.jpg",
+            src: "/countries/taiwan.webp",
         },
         {
             title: "Thailand",
@@ -97,7 +99,29 @@ const cards: { [continentName: string]: Card[] } = {
             title: "Vietnam",
             src: "/countries/vietnam.jpg",
         },
+        {
+            title: "Macau",
+            src: "/countries/macau.webp",
+        },
+        {
+            title: "Malaysia",
+            src: "/countries/malaysia.jpg",
+        },
     ],
+    "North America": [
+        {
+            title: "Pittsburgh",
+            src: "/countries/pittsburgh.jpg",
+        },
+        {
+            title: "Miami",
+            src: "/countries/miami.jpg",
+        },
+        {
+            title: "Canada",
+            src: "/countries/canada.webp",
+        },
+    ]
 };
 
 const TravelsCards = () => {
