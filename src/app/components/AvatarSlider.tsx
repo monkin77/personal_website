@@ -5,14 +5,17 @@ import { ImagesSlider } from "./ui/ImagesSlider";
 import { motion } from "framer-motion";
 
 const avatarSrcs = [
-    "avatars/monkin_avatar_firefly.jpg",
     "avatars/portrait_nature.jpg",
     "avatars/funny_portrait.jpg",
     "avatars/portrait_led.jpg",
     "avatars/funny_portrait_2.jpg",
     "avatars/halloween_portrait.jpg",
     "avatars/portrait_rainbow.jpg",
-    "avatars/pool_portrait.jpg"
+    "avatars/pool_portrait.jpg",
+    "avatars/morocco_1.jpg",
+    "avatars/morocco_2.jpg",
+    "avatars/morocco_3.jpg",
+    "avatars/morocco_4.jpg"
 ];
 // Sort the avatarSrcs array randomly. Keep the first element as it is.
 avatarSrcs.sort(() => Math.random() - 0.5);
