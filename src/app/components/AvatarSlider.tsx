@@ -6,7 +6,6 @@ import { motion } from "framer-motion";
 
 const avatarSrcs = [
     "avatars/portrait_nature.jpg",
-    "avatars/funny_portrait.jpg",
     "avatars/portrait_led.jpg",
     "avatars/funny_portrait_2.jpg",
     "avatars/halloween_portrait.jpg",
@@ -15,7 +14,10 @@ const avatarSrcs = [
     "avatars/morocco_1.jpg",
     "avatars/morocco_2.jpg",
     "avatars/morocco_3.jpg",
-    "avatars/morocco_4.jpg"
+    "avatars/morocco_4.jpg",
+    "avatars/drums.jpg",
+    "avatars/ireland.jpg",
+    "avatars/normandy.jpg",
 ];
 // Sort the avatarSrcs array randomly. Keep the first element as it is.
 avatarSrcs.sort(() => Math.random() - 0.5);
