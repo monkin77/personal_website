@@ -8,6 +8,66 @@ import {
 
 const cards: cardsContentProps[] = [
     {
+        animID: "anim_16",
+        title: "Real-Time Tweet Disaster Detection",
+        location:
+            "An end-to-end pipeline for Disaster Detection from real-time Tweets, using Transformer ML models.", // Using the location field as the subtitle
+        date: "July. 2025 - Aug. 2025",
+        src: {
+            url: "projects/disaster_det_grafana_stats.png",
+            width: 1080,
+            height: 1080,
+        },
+        landscapeSrc: "projects/disaster_det_grafana_timeseries.png",
+        ctaText: "Repository",
+        ctaLink: "https://github.com/monkin77/real-time-tweet-classification/tree/master",
+        iconLists: [
+            "/technologies/python.svg",
+            "/technologies/golang.svg",
+            "/technologies/tensorflow.svg",
+            "/technologies/grafana.svg",
+            "/technologies/kafka.svg",
+            "/technologies/docker.svg",
+        ],
+        content: () => {
+            return (
+                <p>
+                    Building a complete pipeline to classify Tweets in real-time, using fine-tuned Transformer models, such as <i>DistilBERT</i>. The system covers
+                    data collection, preprocessing, model training, deployment, and real-time inference, to visualization of results using Grafana dashboards.
+                    <br /> <br />
+                    
+                    Opted for a microservices architectures, exploring popular technologies used by Data and AI Engineers: Python, Golang, Kafka, Docker,
+                    Tensorflow, Keras, Grafana, etc. All services were deployed using Docker containers, orchestrated with Docker Compose, making the deployment to a
+                    cloud provider, such as Google Cloud, straightforward.
+                  
+                    <br /> <br />
+
+                    Due to X API's rate limits, a mock API was crated to simulate real-time data ingestion, using a previously collected dataset of Tweets from this {" "}
+                    <a
+                        className="underline"
+                        href="https://www.kaggle.com/c/nlp-getting-started"
+                        target="_blank"
+                    >
+                        kaggle competition
+                    </a>
+                    . {" "} Different AI models were trained separately and loaded by the <i>inference service</i> to perform real-time classification of incoming Tweets.
+
+                    <br /> <br />
+                    Finally, a {" "}
+                    <a
+                        className="underline"
+                        href="https://monkin77.grafana.net/public-dashboards/17a40ecb0b1649b6ab6ff1a03aad06f7"
+                        target="_blank"
+                    >
+                        Grafana Dashboard
+                    </a>
+                    {" "} was created to visualize the results, including time series of Disaster Tweets, class distribution, classification confidence, etc.
+                </p>
+            );
+        },
+    },
+
+    {
         animID: "anim_1",
         title: "SNNs to Detect Patterns of Neuronal Activity",
         location:
@@ -61,6 +121,9 @@ const cards: cardsContentProps[] = [
             );
         },
     },
+    
+    
+
     {
         animID: "anim_2",
         title: "NIJobs - Web Application",

@@ -73,17 +73,18 @@ export const rightTechStack = ["React.js", "Next.js", "Typescript", "Java"]; // 
 export const projects = [
     {
         id: 1,
-        title: "NIJobs",
-        des: "A platform for companies to advertise their job opportunities to University of Porto's students.",
-        img: "/projects/nijobs.png",
+        title: "Real-Time Tweet Disaster Detection",
+        des: "An end-to-end pipeline for Disaster Detection from real-time Tweets, using Transformer ML models.",
+        img: "/projects/disaster_det_grafana_stats.png",
         iconLists: [
-            "/technologies/react.svg",
-            "/technologies/typescript.svg",
-            "/technologies/nodejs.svg",
+            "/technologies/python.svg",
+            "/technologies/golang.svg",
+            "/technologies/tensorflow.svg",
+            "/technologies/grafana.svg",
+            "/technologies/kafka.svg",
             "/technologies/docker.svg",
-            "/technologies/material-ui.svg",
         ],
-        link: "https://github.com/NIAEFEUP/nijobs-fe",
+        link: "https://github.com/monkin77/real-time-tweet-classification/tree/master",
         linkText: "Check Repository",
     },
     {
@@ -119,6 +120,21 @@ export const projects = [
     },
     {
         id: 4,
+        title: "NIJobs",
+        des: "A platform for companies to advertise their job opportunities to University of Porto's students.",
+        img: "/projects/nijobs.png",
+        iconLists: [
+            "/technologies/react.svg",
+            "/technologies/typescript.svg",
+            "/technologies/nodejs.svg",
+            "/technologies/docker.svg",
+            "/technologies/material-ui.svg",
+        ],
+        link: "https://github.com/NIAEFEUP/nijobs-fe",
+        linkText: "Check Repository",
+    },
+    /* {
+        id: 4,
         title: "Java Compiler",
         des: "A Compiler for a subset of Java (Java--), going through all compilation stages: Lexical, Syntatic, and Semantic Analysis,\
          Optimizations and Code Generation.",
@@ -130,7 +146,7 @@ export const projects = [
         ],
         link: "https://github.com/monkin77/feup-comp",
         linkText: "Check Repository",
-    },
+    }, */
 ];
 
 export const testimonials: {
