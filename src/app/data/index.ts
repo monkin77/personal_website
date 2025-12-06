@@ -274,6 +274,20 @@ export const companies: {
 
 export const slideData: SlideCardData[] = [
     {
+        title: "AI Engineer",
+        dates: "Sept. 2025 - Present",
+        company: "Anchorage Digital",
+        src: "experiences/anchorage.png",
+        companyLogo: "companies/anchorage.png",
+        logoW: 443,
+        logoH: 450,
+        slideClassName: "opacity-70",
+        bulletPoints: [
+            "Joined the newly established AI team, focusing on delivering state-of-the-art AI solutions to enhance Anchorage's products and services.", 
+            "Using GCloud infrastructure along with MLOps best practices to develop Generative AI solutions tailored for the financial sector."
+        ]
+    },
+    {
         title: "CERN OpenLab Intern 2023",
         dates: "June 2023 - Aug. 2023",
         company: "CERN",

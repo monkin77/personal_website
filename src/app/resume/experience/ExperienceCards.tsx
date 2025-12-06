@@ -8,6 +8,32 @@ import {
 
 const cards: cardsContentProps[] = [
     {
+        animID: "anim_7",
+        title: "AI Engineer",
+        location: "Porto, Portugal",
+        date: "Sept. 2025 - Present",
+        src: {
+            url: "companies/anchorage.png",
+            width: 443,
+            height: 450,
+        },
+        landscapeSrc: "experiences/anchorage.png",
+        ctaText: "Company Website",
+        ctaLink: "https://www.anchorage.com/",
+        content: () => {
+            return (
+                <p>
+                    Joined the newly established AI team, focusing on delivering
+                    state-of-the-art AI solutions to enhance Anchorage&apos;s products
+                    and services.
+                    <br /> <br />
+                    Using GCloud infrastructure along with MLOps best practices to develop
+                    Generative AI solutions tailored for the financial sector.
+                </p>
+            );
+        },
+    },
+    {
         animID: "anim_1",
         title: "CERN OpenLab Intern 2023",
         location: "CERN, Switzerland",
